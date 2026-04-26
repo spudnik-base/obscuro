@@ -715,12 +715,12 @@
     return svg;
   }
 
-  const PAPERS = [
+  const PRACTICE_PAPERS = [
     {
       level: 'SL',
       cls: 'sl-card',
       title: 'Obscuro Practice Paper',
-      sub: '30 obscure-detail MCQs - SL level',
+      sub: '30 obscure-detail MCQs at SL level',
       file: 'docs/IB_Biology_SL_Obscure_Practice_Paper.docx',
       downloadName: 'IB_Biology_SL_Obscure_Practice_Paper.docx',
     },
@@ -728,11 +728,48 @@
       level: 'HL',
       cls: 'hl-card',
       title: 'Obscuro Practice Paper',
-      sub: '30 obscure-detail MCQs - HL level',
+      sub: '30 obscure-detail MCQs at HL level',
       file: 'docs/IB_Biology_HL_Obscure_Practice_Paper.docx',
       downloadName: 'IB_Biology_HL_Obscure_Practice_Paper.docx',
     },
   ];
+
+  const ALL_QUESTIONS_PAPERS = [
+    {
+      level: 'SL',
+      cls: 'sl-card',
+      title: 'All Obscure SL Questions',
+      sub: 'Every SL flashcard in one paper',
+      file: 'docs/Obscuro_SL_All_Questions.pdf',
+      downloadName: 'Obscuro_SL_All_Questions.pdf',
+    },
+    {
+      level: 'HL',
+      cls: 'hl-card',
+      title: 'All Obscure HL Questions',
+      sub: 'Every HL flashcard in one paper',
+      file: 'docs/Obscuro_HL_All_Questions.pdf',
+      downloadName: 'Obscuro_HL_All_Questions.pdf',
+    },
+  ];
+
+  function buildPaperCard(p) {
+    const card = el('div', { class: 'paper-card ' + p.cls });
+    card.appendChild(el('div', { class: 'lvl', text: `${p.level} - Obscuro` }));
+    card.appendChild(el('div', { class: 'paper-title', text: p.title }));
+    card.appendChild(el('div', { class: 'paper-sub', text: p.sub }));
+    const dl = el('div', { class: 'dl-row' });
+    const link = el('a', {
+      href: p.file,
+      download: p.downloadName,
+      class: 'dl-link',
+    });
+    link.appendChild(downloadIcon());
+    link.appendChild(document.createTextNode('Download'));
+    dl.appendChild(link);
+    card.appendChild(dl);
+    return card;
+  }
 
   function renderPapers() {
     const root = $('screen-papers');
@@ -740,31 +777,19 @@
 
     const intro = el('div', { class: 'section' });
     intro.appendChild(el('div', { class: 'label-sm', text: 'Practice papers' }));
-    intro.appendChild(el('div', { class: 'session-text', text: 'Detail-focused MCQ practice papers built around the obscure 2023-syllabus specifics. Tap to download.' }));
+    intro.appendChild(el('div', { class: 'session-text', text: 'Detail-focused MCQ practice papers built around the obscure 2023-syllabus specifics. 30 questions each, exam-style.' }));
+    const practiceRow = el('div', { class: 'papers-row' });
+    PRACTICE_PAPERS.forEach((p) => practiceRow.appendChild(buildPaperCard(p)));
+    intro.appendChild(practiceRow);
     root.appendChild(intro);
 
-    const cardSection = el('div', { class: 'section' });
-    const row = el('div', { class: 'papers-row' });
-    PAPERS.forEach((p) => {
-      const card = el('div', { class: 'paper-card ' + p.cls });
-      card.appendChild(el('div', { class: 'lvl', text: `${p.level} - Obscuro` }));
-      card.appendChild(el('div', { class: 'paper-title', text: p.title }));
-      card.appendChild(el('div', { class: 'paper-sub', text: p.sub }));
-
-      const dl = el('div', { class: 'dl-row' });
-      const link = el('a', {
-        href: p.file,
-        download: p.downloadName,
-        class: 'dl-link',
-      });
-      link.appendChild(downloadIcon());
-      link.appendChild(document.createTextNode('Download paper'));
-      dl.appendChild(link);
-      card.appendChild(dl);
-      row.appendChild(card);
-    });
-    cardSection.appendChild(row);
-    root.appendChild(cardSection);
+    const allSection = el('div', { class: 'section' });
+    allSection.appendChild(el('div', { class: 'label-sm', text: 'All questions' }));
+    allSection.appendChild(el('div', { class: 'session-text', text: 'Every flashcard from the daily set, compiled into a single reference paper. Useful for revision before the exam.' }));
+    const allRow = el('div', { class: 'papers-row' });
+    ALL_QUESTIONS_PAPERS.forEach((p) => allRow.appendChild(buildPaperCard(p)));
+    allSection.appendChild(allRow);
+    root.appendChild(allSection);
   }
 
   /* ============================================================

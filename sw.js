@@ -1,4 +1,4 @@
-const VERSION = 'obscuro-v4';
+const VERSION = 'obscuro-v5';
 const SHELL = [
   './',
   'index.html',
@@ -36,8 +36,8 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  // Network-first for the practice paper docx so updates propagate; cache as fallback
-  if (url.pathname.endsWith('.docx')) {
+  // Network-first for the practice papers (docx, pdf) so updates propagate; cache as fallback
+  if (url.pathname.endsWith('.docx') || url.pathname.endsWith('.pdf')) {
     event.respondWith(
       fetch(req).then((res) => {
         const copy = res.clone();
