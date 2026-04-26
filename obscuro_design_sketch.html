@@ -1,0 +1,525 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --cream:#F2EBD9;--paper:#FAF6EE;--ink:#1A1705;--red:#C8341A;
+  --gold:#C48A00;--mid:#8A7D6A;--light:#E8E0CE;
+}
+body{background:var(--cream);font-family:'Courier New',monospace;color:var(--ink);padding:16px;}
+h2.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+
+.sketch{border:2.5px solid var(--ink);border-radius:3px 5px 4px 6px / 5px 3px 6px 4px;}
+.sketch-thin{border:1.5px solid var(--ink);border-radius:2px 4px 3px 5px / 4px 2px 5px 3px;}
+
+.annot{position:absolute;font-size:10px;color:var(--red);font-style:italic;line-height:1.3;max-width:110px;}
+.annot::before{content:'← ';}
+.annot.right::before{content:'';}
+.annot.right::after{content:' →';}
+
+@keyframes cw{to{transform:rotate(360deg);}}
+@keyframes ccw{to{transform:rotate(-360deg);}}
+@keyframes ccw2{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}
+@keyframes wobble{0%,100%{transform:rotate(0deg);}25%{transform:rotate(2deg);}75%{transform:rotate(-2deg);}}
+@keyframes tick{0%,89%{transform:scaleY(1);}90%,100%{transform:scaleY(0.95);}}
+
+.machine-wrap{display:flex;justify-content:center;margin:0 0 24px;gap:0;}
+
+.screens-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:660px;margin:0 auto;}
+.screen-col{position:relative;}
+.screen-label{font-size:11px;font-weight:bold;color:var(--red);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px;padding-left:4px;}
+
+.phone{width:100%;background:var(--paper);position:relative;overflow:visible;}
+.phone-screen{padding:0;overflow:hidden;}
+
+.status-bar{background:var(--ink);color:var(--cream);font-size:9px;padding:4px 10px;display:flex;justify-content:space-between;letter-spacing:0.06em;}
+
+.top-machine{background:var(--ink);padding:10px;display:flex;align-items:center;justify-content:center;gap:6px;position:relative;}
+
+.wordmark{color:var(--cream);font-size:24px;font-weight:bold;letter-spacing:0.15em;line-height:1;position:relative;}
+.wordmark sup{font-size:8px;color:var(--red);letter-spacing:0;vertical-align:super;}
+
+.cog-inline{display:inline-block;vertical-align:middle;margin:0 2px;}
+
+.section{padding:10px;border-bottom:1.5px solid var(--light);}
+.section:last-child{border-bottom:none;}
+.label-sm{font-size:8px;text-transform:uppercase;letter-spacing:0.1em;color:var(--mid);margin-bottom:4px;}
+
+.countdown-row{display:flex;align-items:center;gap:8px;}
+.ratchet-wrap{position:relative;width:44px;height:44px;}
+
+.big-num{font-size:28px;font-weight:bold;color:var(--ink);line-height:1;}
+.sub-num{font-size:9px;color:var(--mid);}
+
+.chain{display:flex;gap:3px;flex-wrap:wrap;}
+.link{width:14px;height:8px;background:transparent;border:2px solid var(--mid);border-radius:4px;position:relative;}
+.link.done{border-color:var(--gold);background:var(--gold);}
+.link.today{border-color:var(--red);background:var(--red);}
+
+.belt-track{height:12px;border:1.5px solid var(--ink);border-radius:6px;background:var(--light);position:relative;overflow:hidden;}
+.belt-car{position:absolute;top:1px;left:0;width:24px;height:8px;background:var(--red);border-radius:4px;}
+
+.btn-primary{display:block;width:100%;background:var(--red);color:#FAF6EE;border:none;padding:10px;font-family:inherit;font-size:13px;font-weight:bold;letter-spacing:0.12em;text-align:center;margin-bottom:6px;border-radius:2px 4px 3px 5px / 4px 2px 5px 3px;cursor:pointer;}
+.btn-secondary{display:block;width:100%;background:transparent;color:var(--ink);border:2px solid var(--ink);padding:8px;font-family:inherit;font-size:11px;letter-spacing:0.08em;text-align:center;border-radius:2px 4px 3px 5px / 4px 2px 5px 3px;cursor:pointer;}
+
+.q-badge{display:inline-block;font-size:8px;font-weight:bold;letter-spacing:0.1em;padding:2px 7px;border:1.5px solid var(--ink);border-radius:2px;margin-right:4px;}
+.hl-badge{background:var(--ink);color:var(--cream);}
+.sl-badge{background:transparent;color:var(--ink);}
+
+.q-counter{font-size:10px;color:var(--mid);}
+
+.q-stem{font-size:11px;line-height:1.5;padding:10px;background:var(--light);margin:8px 0;border-left:3px solid var(--ink);}
+
+.option{display:flex;align-items:flex-start;gap:7px;padding:7px 8px;margin-bottom:5px;border:1.5px solid var(--ink);border-radius:2px 3px 2px 4px / 3px 2px 4px 2px;cursor:pointer;font-size:10px;line-height:1.4;}
+.option-letter{font-weight:bold;min-width:14px;font-size:12px;}
+.option.correct{background:#E8F5EE;border-color:#2D6A4F;color:#2D6A4F;}
+.option.wrong{background:#FDF0ED;border-color:var(--red);color:var(--red);}
+
+.verdict-stamp{text-align:center;padding:12px;position:relative;}
+.stamp-text{font-size:26px;font-weight:bold;letter-spacing:0.2em;border:4px solid;padding:4px 10px;display:inline-block;border-radius:3px;transform:rotate(-3deg);}
+.stamp-correct{color:#2D6A4F;border-color:#2D6A4F;}
+.stamp-wrong{color:var(--red);border-color:var(--red);}
+
+.explain-box{background:var(--light);border-left:3px solid var(--ink);padding:8px;font-size:10px;line-height:1.5;margin:8px 0;}
+
+.gauge-wrap{display:flex;align-items:center;gap:10px;padding:8px 0;}
+.gauge-svg{flex-shrink:0;}
+.gauge-text{font-size:11px;line-height:1.5;}
+
+.synopsis-box{background:var(--ink);color:var(--cream);padding:10px;font-size:9px;line-height:1.6;font-family:'Courier New',monospace;margin:8px 0;border-radius:2px;}
+.cursor{display:inline-block;width:6px;height:9px;background:var(--red);vertical-align:text-bottom;animation:tick 0.8s steps(1) infinite;}
+
+.nav-bar{display:flex;border-top:2.5px solid var(--ink);background:var(--paper);}
+.nav-item{flex:1;text-align:center;padding:7px 2px 5px;font-size:8px;letter-spacing:0.05em;color:var(--mid);}
+.nav-item.active{color:var(--ink);border-top:2.5px solid var(--red);margin-top:-2.5px;}
+
+.papers-row{display:flex;gap:6px;padding:6px 0;}
+.paper-card{flex:1;padding:7px;border:1.5px solid var(--ink);border-radius:3px;font-size:9px;line-height:1.5;cursor:pointer;}
+.paper-card .lvl{font-size:8px;font-weight:bold;letter-spacing:0.1em;display:block;margin-bottom:2px;}
+.paper-card .dl{font-size:8px;color:var(--red);margin-top:4px;}
+
+.divider{height:1.5px;background:var(--light);margin:6px 0;}
+
+.syllabus-item{display:flex;gap:6px;align-items:flex-start;padding:4px 0;border-bottom:1px dashed var(--light);font-size:9px;}
+.syllabus-id{font-size:8px;font-weight:bold;color:var(--red);min-width:40px;}
+
+.token-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px;}
+.token-swatch{height:20px;border:1.5px solid var(--ink);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:7px;}
+</style>
+
+<h2 class="sr-only">Obscuro — IB Biology app design sketch, Jean Tinguely mechanical cartoon aesthetic</h2>
+
+<div style="max-width:660px;margin:0 auto;">
+
+<div style="text-align:center;margin-bottom:20px;">
+  <svg width="500" height="100" viewBox="0 0 500 100" style="overflow:visible;">
+    <defs>
+      <style>
+        .ga{animation:cw 10s linear infinite;transform-origin:80px 50px;}
+        .gb{animation:ccw 6.67s linear infinite;transform-origin:164px 50px;}
+        .gc{animation:cw 4.17s linear infinite;transform-origin:229px 62px;}
+        .gd{animation:ccw 3.33s linear infinite;transform-origin:278px 70px;}
+        @keyframes cw{to{transform:rotate(360deg);}}
+        @keyframes ccw{to{transform:rotate(-360deg);}}
+      </style>
+    </defs>
+
+    <g class="ga">
+      <polygon id="ga-poly" fill="#1A1705" stroke="#1A1705" stroke-width="1"/>
+      <circle cx="80" cy="50" r="8" fill="#F2EBD9"/>
+      <circle cx="80" cy="50" r="3" fill="#1A1705"/>
+    </g>
+    <line x1="80" y1="50" x2="164" y2="50" stroke="#1A1705" stroke-width="2.5"/>
+    <circle cx="80" cy="50" r="4" fill="#C8341A"/>
+    <circle cx="164" cy="50" r="4" fill="#C8341A"/>
+    <g class="gb">
+      <polygon id="gb-poly" fill="#1A1705" stroke="#1A1705" stroke-width="1"/>
+      <circle cx="164" cy="50" r="6" fill="#F2EBD9"/>
+      <circle cx="164" cy="50" r="2.5" fill="#1A1705"/>
+    </g>
+    <line x1="164" y1="50" x2="229" y2="62" stroke="#1A1705" stroke-width="2"/>
+    <circle cx="229" cy="62" r="3" fill="#C8341A"/>
+    <g class="gc">
+      <polygon id="gc-poly" fill="#1A1705" stroke="#1A1705" stroke-width="0.8"/>
+      <circle cx="229" cy="62" r="4" fill="#F2EBD9"/>
+      <circle cx="229" cy="62" r="2" fill="#1A1705"/>
+    </g>
+    <line x1="229" y1="62" x2="278" y2="70" stroke="#1A1705" stroke-width="1.5"/>
+    <circle cx="278" cy="70" r="2.5" fill="#C8341A"/>
+    <g class="gd">
+      <polygon id="gd-poly" fill="#1A1705" stroke="#1A1705" stroke-width="0.8"/>
+      <circle cx="278" cy="70" r="3" fill="#F2EBD9"/>
+      <circle cx="278" cy="70" r="1.5" fill="#1A1705"/>
+    </g>
+
+    <text x="310" y="45" font-family="'Courier New',monospace" font-weight="bold" font-size="38" fill="#1A1705" letter-spacing="8">OBSCURO</text>
+    <text x="310" y="62" font-family="'Courier New',monospace" font-size="10" fill="#8A7D6A" letter-spacing="2">IB BIOLOGY · OBSCURE DETAIL TRAINER</text>
+    <rect x="308" y="68" width="175" height="2" fill="#C8341A"/>
+  </svg>
+</div>
+
+<div class="screens-grid">
+
+  <div class="screen-col">
+    <div class="screen-label">Screen 1 — Dashboard / machine</div>
+    <div class="phone sketch" style="position:relative;">
+      <div class="status-bar"><span>09:41</span><span>▋▋▋▋</span></div>
+      <div class="top-machine">
+        <svg width="100%" height="40" viewBox="0 0 260 40" style="display:block;">
+          <defs>
+            <style>.ha{animation:cw 8s linear infinite;transform-origin:20px 20px;}.hb{animation:ccw 5.5s linear infinite;transform-origin:59px 20px;}.hc{animation:cw 3.8s linear infinite;transform-origin:90px 28px;}</style>
+          </defs>
+          <g class="ha"><polygon id="ha-p" fill="#FAF6EE" stroke="#FAF6EE" stroke-width="0.5"/><circle cx="20" cy="20" r="5" fill="#1A1705"/><circle cx="20" cy="20" r="2" fill="#C8341A"/></g>
+          <line x1="20" y1="20" x2="59" y2="20" stroke="#FAF6EE" stroke-width="1.5"/>
+          <circle cx="20" cy="20" r="2.5" fill="#C8341A"/>
+          <circle cx="59" cy="20" r="2.5" fill="#C8341A"/>
+          <g class="hb"><polygon id="hb-p" fill="#FAF6EE" stroke="#FAF6EE" stroke-width="0.5"/><circle cx="59" cy="20" r="3.5" fill="#1A1705"/><circle cx="59" cy="20" r="1.5" fill="#C8341A"/></g>
+          <line x1="59" y1="20" x2="90" y2="28" stroke="#FAF6EE" stroke-width="1.2"/>
+          <g class="hc"><polygon id="hc-p" fill="#FAF6EE" stroke="#FAF6EE" stroke-width="0.5"/><circle cx="90" cy="28" r="2.5" fill="#1A1705"/><circle cx="90" cy="28" r="1" fill="#C8341A"/></g>
+          <text x="115" y="26" font-family="'Courier New',monospace" font-weight="bold" font-size="18" fill="#FAF6EE" letter-spacing="4">OBSCURO</text>
+        </svg>
+      </div>
+
+      <div class="section">
+        <div class="label-sm">Days until exam</div>
+        <div class="countdown-row">
+          <svg width="44" height="44" viewBox="0 0 44 44">
+            <circle cx="22" cy="22" r="18" fill="none" stroke="#E8E0CE" stroke-width="3"/>
+            <circle cx="22" cy="22" r="18" fill="none" stroke="#C8341A" stroke-width="3" stroke-dasharray="113" stroke-dashoffset="30" stroke-linecap="round"/>
+            <text x="22" y="26" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="14" fill="#1A1705">14</text>
+          </svg>
+          <div>
+            <div class="big-num">14</div>
+            <div class="sub-num">days remaining</div>
+          </div>
+          <div style="margin-left:auto;text-align:right;">
+            <div style="font-size:9px;color:var(--mid);">questions left</div>
+            <div style="font-size:16px;font-weight:bold;">143<span style="font-size:9px;color:var(--mid);">/190</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="label-sm">Streak</div>
+        <div class="chain" style="margin-bottom:4px;">
+          <div class="link done"></div><div class="link done"></div>
+          <div class="link done"></div><div class="link done"></div>
+          <div class="link done"></div><div class="link today"></div>
+          <div class="link"></div><div class="link"></div>
+          <div class="link"></div><div class="link"></div>
+        </div>
+        <div style="font-size:9px;color:var(--mid);">6 days · keep the chain going</div>
+      </div>
+
+      <div class="section">
+        <div class="label-sm">Today's session</div>
+        <div style="font-size:10px;margin-bottom:6px;">Completed <strong>3/5</strong> today — 2 more for your daily set</div>
+        <div class="belt-track">
+          <div class="belt-car" style="left:calc(62% - 12px);"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:8px;color:var(--mid);margin-top:2px;"><span>0</span><span>5 daily</span><span>190 total</span></div>
+      </div>
+
+      <div class="section">
+        <button class="btn-primary">FIRE UP THE MACHINE</button>
+        <button class="btn-secondary">+ more questions today</button>
+      </div>
+
+      <div class="nav-bar">
+        <div class="nav-item active">
+          <svg width="14" height="14" viewBox="0 0 14 14" style="display:block;margin:0 auto 2px;"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="2" fill="currentColor"/><line x1="7" y1="2" x2="7" y2="0" stroke="currentColor" stroke-width="1.5"/></svg>
+          Machine
+        </div>
+        <div class="nav-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" style="display:block;margin:0 auto 2px;"><rect x="2" y="1" width="10" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="4" y1="5" x2="10" y2="5" stroke="currentColor" stroke-width="1"/><line x1="4" y1="7.5" x2="10" y2="7.5" stroke="currentColor" stroke-width="1"/><line x1="4" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="1"/></svg>
+          Papers
+        </div>
+        <div class="nav-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" style="display:block;margin:0 auto 2px;"><line x1="2" y1="3" x2="12" y2="3" stroke="currentColor" stroke-width="1.5"/><line x1="2" y1="7" x2="12" y2="7" stroke="currentColor" stroke-width="1.5"/><line x1="2" y1="11" x2="8" y2="11" stroke="currentColor" stroke-width="1.5"/></svg>
+          Syllabus
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div class="screen-label">Screen 3 — Answer revealed</div>
+      <div class="phone sketch">
+        <div class="status-bar"><span>09:47</span><span>Q 3 of 5</span></div>
+
+        <div class="section verdict-stamp">
+          <div class="stamp-text stamp-correct">CORRECT</div>
+          <div style="font-size:9px;color:var(--mid);margin-top:6px;">+1 today · 47 total</div>
+        </div>
+
+        <div class="section">
+          <div class="label-sm">Why C is right — and why B fools you</div>
+          <div class="explain-box">
+            Brown adipose tissue contains <strong>uncoupling protein (thermogenin)</strong> in the inner mitochondrial membrane. Protons leak back without driving ATP synthase → energy released as heat. Heat YES, ATP NO. <br><br>
+            Trap: shivering (option A) also generates heat but via ATP-powered contraction, not uncoupling.
+          </div>
+        </div>
+
+        <div class="section" style="display:flex;gap:8px;">
+          <div style="flex:1;text-align:center;padding:8px;background:var(--light);border-radius:3px;">
+            <div style="font-size:18px;font-weight:bold;color:#2D6A4F;">3</div>
+            <div style="font-size:8px;color:var(--mid);">correct today</div>
+          </div>
+          <div style="flex:1;text-align:center;padding:8px;background:var(--light);border-radius:3px;">
+            <div style="font-size:18px;font-weight:bold;color:var(--red);">0</div>
+            <div style="font-size:8px;color:var(--mid);">missed today</div>
+          </div>
+          <div style="flex:1;text-align:center;padding:8px;background:var(--light);border-radius:3px;">
+            <div style="font-size:18px;font-weight:bold;">2</div>
+            <div style="font-size:8px;color:var(--mid);">to go</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <button class="btn-primary">NEXT QUESTION →</button>
+        </div>
+
+        <div class="nav-bar">
+          <div class="nav-item active">Machine</div>
+          <div class="nav-item">Papers</div>
+          <div class="nav-item">Syllabus</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen-col">
+    <div class="screen-label">Screen 2 — Question</div>
+    <div class="phone sketch">
+      <div class="status-bar"><span>09:43</span><span>Q 1 of 5</span></div>
+
+      <div style="padding:8px 10px;display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px solid var(--light);">
+        <div>
+          <span class="q-badge hl-badge">HL</span>
+          <span style="font-size:9px;color:var(--mid);">Cell biology</span>
+        </div>
+        <div style="display:flex;gap:4px;">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--red);"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--light);border:1.5px solid var(--mid);"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--light);border:1.5px solid var(--mid);"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--light);border:1.5px solid var(--mid);"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--light);border:1.5px solid var(--mid);"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="q-stem">
+          In a 2020 study, researchers imaged the GABA-A receptor protein by flash-freezing the sample in vitreous ice before using an electron beam. Which technique did they use?
+        </div>
+
+        <div class="option">
+          <span class="option-letter">A</span>
+          <span>Immunofluorescence microscopy using antibody-linked fluorescent tags</span>
+        </div>
+        <div class="option">
+          <span class="option-letter">B</span>
+          <span>Gel electrophoresis combined with Western blotting</span>
+        </div>
+        <div class="option correct">
+          <span class="option-letter">C</span>
+          <span>Cryogenic electron microscopy (cryo-EM)</span>
+        </div>
+        <div class="option">
+          <span class="option-letter">D</span>
+          <span>Confocal laser scanning microscopy</span>
+        </div>
+      </div>
+
+      <div style="padding:6px 10px;display:flex;gap:6px;align-items:center;">
+        <svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0;">
+          <g style="animation:cw 4s linear infinite;transform-origin:9px 9px;">
+            <polygon fill="#1A1705"/>
+          </g>
+        </svg>
+        <div style="font-size:9px;color:var(--mid);font-style:italic;">AI explanation loading after you answer…</div>
+      </div>
+
+      <div class="nav-bar">
+        <div class="nav-item active">Machine</div>
+        <div class="nav-item">Papers</div>
+        <div class="nav-item">Syllabus</div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div class="screen-label">Screen 4 — Daily synopsis</div>
+      <div class="phone sketch">
+        <div class="status-bar"><span>09:52</span><span>Session complete</span></div>
+
+        <div class="top-machine" style="padding:8px 10px;flex-direction:column;align-items:flex-start;">
+          <div style="color:var(--cream);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:2px;">Today's output</div>
+          <div style="display:flex;align-items:baseline;gap:6px;">
+            <span style="font-size:30px;font-weight:bold;color:var(--cream);font-family:'Courier New',monospace;">4/5</span>
+            <span style="font-size:10px;color:#8A7D6A;">correct · streak: 6 days</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label-sm">Machine analysis — today's run</div>
+          <div class="synopsis-box">
+            Good run. You nailed cryo-EM, clathrin,<br>
+            brown adipose uncoupling and the<br>
+            zooxanthellae exchange — all precision<br>
+            targets.<br><br>
+            One slip: <strong style="color:#EF9F27;">aquaporin relocation</strong> — not<br>
+            "ADH opens channels" but aquaporins<br>
+            physically moving to the membrane.<br>
+            Retest this tomorrow.<span class="cursor"></span>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label-sm">Weak spots to revisit</div>
+          <div style="font-size:9px;line-height:1.8;">
+            <div style="display:flex;gap:6px;align-items:center;"><span style="width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;display:inline-block;"></span> HO-02 · Aquaporin relocation (ADH)</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label-sm">Tomorrow's queue</div>
+          <div style="font-size:9px;color:var(--mid);">HO-02 · CB-07 · EC-05 · M-02 · NS-02</div>
+        </div>
+
+        <div class="section" style="display:flex;gap:6px;">
+          <button class="btn-primary" style="flex:2;margin:0;">KEEP GOING</button>
+          <button class="btn-secondary" style="flex:1;margin:0;">DONE</button>
+        </div>
+
+        <div class="nav-bar">
+          <div class="nav-item active">Machine</div>
+          <div class="nav-item">Papers</div>
+          <div class="nav-item">Syllabus</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:24px;">
+  <div class="screen-label">Papers + Syllabus view</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:660px;margin:0 auto;">
+
+    <div class="phone sketch">
+      <div class="status-bar"><span>09:54</span><span>Papers</span></div>
+      <div class="section">
+        <div class="label-sm">Past papers — download</div>
+        <div class="papers-row">
+          <div class="paper-card sketch-thin">
+            <span class="lvl">SL · 2025</span>
+            Paper 1A + 1B<br>TZ1, TZ2, TZ3
+            <div class="dl">↓ Paper &nbsp; ↓ Mark scheme</div>
+          </div>
+          <div class="paper-card sketch-thin">
+            <span class="lvl">HL · 2025</span>
+            Paper 1A + 1B<br>TZ1, TZ2, TZ3
+            <div class="dl">↓ Paper &nbsp; ↓ Mark scheme</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="label-sm">Practice papers</div>
+        <div class="papers-row">
+          <div class="paper-card sketch-thin" style="background:#F5F9F0;">
+            <span class="lvl" style="color:#2D6A4F;">SL · Obscuro</span>
+            30 obscure Q<br>detail focus
+            <div class="dl" style="color:#2D6A4F;">↓ Questions &nbsp; ↓ Answers</div>
+          </div>
+          <div class="paper-card sketch-thin" style="background:#FDF5F5;">
+            <span class="lvl" style="color:#7B1A1A;">HL · Obscuro</span>
+            30 obscure Q<br>detail focus
+            <div class="dl" style="color:#7B1A1A;">↓ Questions &nbsp; ↓ Answers</div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-item">Machine</div>
+        <div class="nav-item active">Papers</div>
+        <div class="nav-item">Syllabus</div>
+      </div>
+    </div>
+
+    <div class="phone sketch">
+      <div class="status-bar"><span>09:55</span><span>Syllabus</span></div>
+      <div class="section">
+        <div class="label-sm">Obscure details — linked to questions</div>
+        <div class="syllabus-item">
+          <span class="syllabus-id">CB-01</span>
+          <span style="flex:1;">Fungi cell walls contain <strong>chitin</strong> — not cellulose</span>
+        </div>
+        <div class="syllabus-item">
+          <span class="syllabus-id">CB-02</span>
+          <span style="flex:1;"><strong>Plastids</strong> = chloroplasts, chromoplasts, leucoplasts</span>
+        </div>
+        <div class="syllabus-item">
+          <span class="syllabus-id">CB-03</span>
+          <span style="flex:1;">Atypical cells: aseptate hyphae, RBCs, phloem sieve tubes</span>
+        </div>
+        <div class="syllabus-item">
+          <span class="syllabus-id">EC-01</span>
+          <span style="flex:1;"><strong>Euglena</strong> = named mixotroph example</span>
+        </div>
+        <div class="syllabus-item">
+          <span class="syllabus-id">HO-02</span>
+          <span style="flex:1;">ADH → aquaporins <strong>move</strong> to membrane (not "open")</span>
+        </div>
+        <div style="font-size:9px;color:var(--red);margin-top:6px;text-align:center;">tap any entry to drill it →</div>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-item">Machine</div>
+        <div class="nav-item">Papers</div>
+        <div class="nav-item active">Syllabus</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="max-width:660px;margin:24px auto 0;padding:12px;background:var(--ink);border-radius:3px;">
+  <div style="font-size:9px;color:#8A7D6A;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Design tokens for Claude Code</div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:9px;color:#F2EBD9;font-family:'Courier New',monospace;">
+    <div>--cream: #F2EBD9</div><div>--paper: #FAF6EE</div>
+    <div>--ink: #1A1705</div><div>--red: #C8341A</div>
+    <div>--gold: #C48A00</div><div>--mid: #8A7D6A</div>
+    <div>--light: #E8E0CE</div><div>font: 'Courier New', mono</div>
+    <div>border: 2.5px solid --ink</div><div>radius: irregular (sketch)</div>
+    <div>cog-large: 24t, r42, 10s CW</div><div>cog-med: 16t, r28, 6.67s CCW</div>
+    <div>cog-sm: 10t, r17, 4.17s CW</div><div>cog-xs: 8t, r14, 3.33s CCW</div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function gearPoints(cx, cy, teeth, outerR, innerR) {
+  const pts = [];
+  const step = (Math.PI * 2) / teeth;
+  const tw = step * 0.32;
+  for (let i = 0; i < teeth; i++) {
+    const base = i * step;
+    pts.push([(cx + Math.cos(base - tw) * outerR).toFixed(2), (cy + Math.sin(base - tw) * outerR).toFixed(2)]);
+    pts.push([(cx + Math.cos(base + tw) * outerR).toFixed(2), (cy + Math.sin(base + tw) * outerR).toFixed(2)]);
+    pts.push([(cx + Math.cos(base + step/2 - tw*0.4) * innerR).toFixed(2), (cy + Math.sin(base + step/2 - tw*0.4) * innerR).toFixed(2)]);
+    pts.push([(cx + Math.cos(base + step/2 + tw*0.4) * innerR).toFixed(2), (cy + Math.sin(base + step/2 + tw*0.4) * innerR).toFixed(2)]);
+  }
+  return pts.map(p => p.join(',')).join(' ');
+}
+
+const gearDefs = [
+  {id:'ga-poly', cx:80, cy:50, t:24, or:38, ir:28},
+  {id:'gb-poly', cx:164, cy:50, t:16, or:26, ir:19},
+  {id:'gc-poly', cx:229, cy:62, t:10, or:16, ir:12},
+  {id:'gd-poly', cx:278, cy:70, t:8, or:13, ir:10},
+  {id:'ha-p', cx:20, cy:20, t:20, or:18, ir:13},
+  {id:'hb-p', cx:59, cy:20, t:13, or:12, ir:9},
+  {id:'hc-p', cx:90, cy:28, t:8, or:8, ir:6},
+];
+
+gearDefs.forEach(g => {
+  const el = document.getElementById(g.id);
+  if (el) el.setAttribute('points', gearPoints(g.cx, g.cy, g.t, g.or, g.ir));
+});
+</script>
