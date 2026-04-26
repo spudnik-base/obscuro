@@ -1485,6 +1485,87 @@ body.reader-mode .synopsis-header .score {
   flex: 1;
 }
 
+/* ============================================================
+   Guide screen - rationale + feature reference
+   ============================================================ */
+
+.guide-intro {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.guide-block {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--light);
+}
+.guide-block:last-child { border-bottom: none; }
+
+.guide-block-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--red);
+  margin-top: 1px;
+}
+
+.guide-block-body { flex: 1; }
+
+.guide-block-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.guide-block-text {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.guide-block-text strong { font-weight: 700; }
+
+.guide-rule-row {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 7px 0;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--light);
+  line-height: 1.55;
+}
+.guide-rule-row:last-child { border-bottom: none; }
+.guide-rule-num {
+  font-weight: 700;
+  color: var(--red);
+  min-width: 22px;
+  font-size: 13px;
+}
+
+.guide-tagline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-align: center;
+  padding: 14px 0 4px;
+}
+
+/* In reader mode the guide reads as plain sans body */
+body.reader-mode .guide-intro,
+body.reader-mode .guide-block-text,
+body.reader-mode .guide-rule-row {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 /* Tighter dashboard sections so 6 sections + nav fit on small phones */
 .app-frame .section { padding: 11px 16px; }
 .app-frame .section.section-buttons { padding-bottom: 8px; }

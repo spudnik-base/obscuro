@@ -7,8 +7,8 @@
   'use strict';
 
   const SVG_NS = 'http://www.w3.org/2000/svg';
-  const SCREENS = ['dashboard', 'question', 'answer', 'synopsis', 'papers', 'syllabus'];
-  const NAV_SCREENS = ['dashboard', 'papers', 'syllabus'];
+  const SCREENS = ['dashboard', 'question', 'answer', 'synopsis', 'papers', 'syllabus', 'guide'];
+  const NAV_SCREENS = ['dashboard', 'papers', 'syllabus', 'guide'];
 
   function $(id) { return document.getElementById(id); }
 
@@ -894,6 +894,137 @@
     renderList('');
   }
 
+  /* ============================================================
+     Guide screen - rationale, how it works, features reference
+     ============================================================ */
+
+  function iconCog() {
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('class', 'guide-block-icon');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    const g = window.OB_GEARS.buildGear(12, 12, {
+      teeth: 10, outerR: 9, innerR: 6.5,
+      bodyFill: 'currentColor', accentFill: '#FAF6EE',
+      hubFill: '#FAF6EE', spokeHoles: 0, showTick: false,
+    });
+    svg.appendChild(g);
+    return svg;
+  }
+
+  function iconSimple(paths) {
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('class', 'guide-block-icon');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    paths.forEach((d) => {
+      const p = document.createElementNS(SVG_NS, 'path');
+      p.setAttribute('d', d);
+      p.setAttribute('fill', 'none');
+      p.setAttribute('stroke', 'currentColor');
+      p.setAttribute('stroke-width', '1.7');
+      p.setAttribute('stroke-linecap', 'round');
+      p.setAttribute('stroke-linejoin', 'round');
+      svg.appendChild(p);
+    });
+    return svg;
+  }
+
+  function iconStar() {
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('class', 'guide-block-icon');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    const poly = document.createElementNS(SVG_NS, 'polygon');
+    poly.setAttribute('points', '12,2.5 14.7,9 21.5,9.4 16.4,14 18.1,21 12,17.3 5.9,21 7.6,14 2.5,9.4 9.3,9');
+    poly.setAttribute('fill', 'currentColor');
+    poly.setAttribute('stroke', 'currentColor');
+    poly.setAttribute('stroke-width', '1.4');
+    poly.setAttribute('stroke-linejoin', 'round');
+    svg.appendChild(poly);
+    return svg;
+  }
+
+  function renderGuide() {
+    const root = $('screen-guide');
+    root.innerHTML = '';
+
+    // Why
+    const whySection = el('div', { class: 'section' });
+    whySection.appendChild(el('div', { class: 'label-sm', text: 'Why' }));
+    const whyText = el('div', { class: 'guide-intro' });
+    whyText.innerHTML = 'The 2023 IB Biology syllabus is full of obscure specifics that examiners love and standard teaching tends to skip. Named organisms, exact mechanisms, the easy-to-miss details that turn up in past papers. Five questions a day on those, every day, until they stop catching you out.';
+    whySection.appendChild(whyText);
+    root.appendChild(whySection);
+
+    // How it works (numbered rules)
+    const howSection = el('div', { class: 'section' });
+    howSection.appendChild(el('div', { class: 'label-sm', text: 'How it works' }));
+
+    const rules = [
+      'Five questions a day. Wrong answers get queued for tomorrow.',
+      'Pick your level on the dashboard. SL, HL, or both.',
+      'Streak grows when you complete a daily set. Skip a day, it resets.',
+      'After each answer the explanation shows the lead. Tap "+ More detail" to expand.',
+      'Once you finish all 140, the queue recycles, leading with the ones you got wrong.',
+    ];
+    rules.forEach((text, i) => {
+      const row = el('div', { class: 'guide-rule-row' });
+      row.appendChild(el('span', { class: 'guide-rule-num', text: String(i + 1) }));
+      row.appendChild(el('span', { class: 'guide-block-text', text: text }));
+      howSection.appendChild(row);
+    });
+    root.appendChild(howSection);
+
+    // Features
+    const featSection = el('div', { class: 'section' });
+    featSection.appendChild(el('div', { class: 'label-sm', text: 'Features' }));
+
+    const features = [
+      {
+        icon: iconStar(),
+        title: 'Star questions',
+        text: 'Tap the star top-right of any answer screen to mark a question for review. Starred count and a Review button appear on the dashboard. Tap Review to drill just your starred set.',
+      },
+      {
+        icon: iconSimple(['M5 7 H19 M5 12 H19 M5 17 H14']),
+        title: 'Syllabus reference',
+        text: 'The Syllabus tab lists 54 obscure detail entries grouped by topic. Search any term, tap an entry to expand the trap or misconception note.',
+      },
+      {
+        icon: iconSimple(['M5 3 H15 L19 7 V21 H5 Z', 'M15 3 V7 H19', 'M8 11 H16 M8 14 H16 M8 17 H13']),
+        title: 'Practice papers',
+        text: 'The Papers tab has full SL and HL practice papers covering the obscure detail set. Tap to download.',
+      },
+      {
+        icon: iconSimple(['M4 7 H20 M4 12 H20 M4 17 H20', 'M4 5 V19 M20 5 V19']),
+        title: 'Display toggle',
+        text: 'Bottom of the dashboard. Aa switches between the Machine (Courier monospace) and Reader (sans-serif) typeface. Reader is bigger and easier on tired eyes.',
+      },
+      {
+        icon: iconSimple(['M12 4 V12 L17 17', 'M12 22 a10 10 0 1 1 0 -20 a10 10 0 1 1 0 20']),
+        title: 'Streak and countdown',
+        text: 'The dashboard shows your streak chain, daily progress on the conveyor belt, and days until the exam. Skip a day and the chain breaks.',
+      },
+      {
+        icon: iconSimple(['M5 6 V20 H19 V6', 'M5 6 H19 M5 6 V4 H19 V6', 'M9 10 V16 M12 10 V16 M15 10 V16']),
+        title: 'Reset',
+        text: 'Bottom right of the dashboard. Wipes all progress, streak, and starred questions. A confirmation popup appears first.',
+      },
+    ];
+    features.forEach((f) => {
+      const block = el('div', { class: 'guide-block' });
+      block.appendChild(f.icon);
+      const body = el('div', { class: 'guide-block-body' });
+      body.appendChild(el('div', { class: 'guide-block-title', text: f.title }));
+      body.appendChild(el('div', { class: 'guide-block-text', text: f.text }));
+      block.appendChild(body);
+      featSection.appendChild(block);
+    });
+    root.appendChild(featSection);
+
+    // Tagline
+    const tag = el('div', { class: 'guide-tagline', text: 'Five a day. Every day.' });
+    root.appendChild(tag);
+  }
+
   // Register
   window.OB_RENDERERS = window.OB_RENDERERS || {};
   window.OB_RENDERERS.dashboard = renderDashboard;
@@ -902,6 +1033,7 @@
   window.OB_RENDERERS.synopsis  = renderSynopsis;
   window.OB_RENDERERS.papers    = renderPapers;
   window.OB_RENDERERS.syllabus  = renderSyllabus;
+  window.OB_RENDERERS.guide     = renderGuide;
 
   window.OB_SCREENS = { showScreen, $, el, escapeHtml, distillExplanation, typewriter };
 })();
