@@ -1,0 +1,18 @@
+{
+  "name": "Obscuro - IB Biology Obscure Detail Trainer",
+  "short_name": "Obscuro",
+  "description": "Daily five-question revision drill on the easy-to-miss specifics of the 2023 IB Biology syllabus.",
+  "start_url": "obscuro.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2EBD9",
+  "theme_color": "#1A1705",
+  "lang": "en",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "CB-01",
+    "level": "SL+HL",
+    "ref": "A2.2.8",
+    "detail": "Fungi cell walls contain chitin (not cellulose, not peptidoglycan)",
+    "trap": "Students default to saying all cell walls = cellulose. Chitin is correct for fungi. Bacterial = peptidoglycan. Plant = cellulose.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-02",
+    "level": "SL+HL",
+    "ref": "A2.2.8",
+    "detail": "Plastids are a category of organelle in plants (not just chloroplasts). Types: chloroplasts, chromoplasts, leucoplasts (incl. amyloplasts)",
+    "trap": "Most teachers only mention chloroplasts. Syllabus says 'chloroplasts and other plastids' — chromoplasts store pigments (fruit/flower colour); leucoplasts store starch.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-03",
+    "level": "SL+HL",
+    "ref": "A2.2.9",
+    "detail": "Atypical cell structures: aseptate fungal hyphae (multinucleate / no cross-walls), skeletal muscle fibres (multinucleate), mature red blood cells (anucleate), phloem sieve tube elements (no nucleus at maturity)",
+    "trap": "These are explicitly listed in syllabus A2.2.9. Students confuse 'no nucleus' with 'prokaryote'. Sieve tube elements also lack most organelles incl. tonoplast and nucleus.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-04",
+    "level": "SL+HL",
+    "ref": "A2.2.5/A2.2.12",
+    "detail": "70S ribosomes in prokaryotes AND in mitochondria and chloroplasts (evidence for endosymbiosis). Eukaryotic cytoplasm = 80S",
+    "trap": "Students often say mitochondria have 80S ribosomes. The 70S ribosomes in organelles = key endosymbiosis evidence alongside naked circular DNA and ability to replicate.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-05",
+    "level": "SL+HL",
+    "ref": "A2.2.3",
+    "detail": "Cryogenic electron microscopy (cryo-EM): flash-freezing in vitreous ice preserves protein structure at a moment in time; images single protein molecules",
+    "trap": "Students confuse cryo-EM (electron beam, frozen sample) with immunofluorescence (antibody + fluorescent dye, light microscope) or freeze-fracture.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-06",
+    "level": "SL+HL",
+    "ref": "A2.2.5",
+    "detail": "Prokaryote model required = Gram-positive eubacteria (Bacillus, Staphylococcus). Cell wall, plasma membrane, cytoplasm, naked circular DNA, 70S ribosomes",
+    "trap": "Syllabus specifies Gram-positive as the model. Students may describe Gram-negative (with outer membrane) which is not required.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-07",
+    "level": "SL+HL",
+    "ref": "A2.2.14",
+    "detail": "Multicellularity has evolved REPEATEDLY — not just once. Fungi, algae, plants, animals all evolved multicellularity independently",
+    "trap": "Students assume multicellularity evolved once. Syllabus explicitly states it evolved repeatedly. Advantages: larger body size and cell specialisation.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-08",
+    "level": "HL",
+    "ref": "B2.3.8",
+    "detail": "Type I pneumocytes: extremely thin (rapid diffusion); Type II pneumocytes: contain lamellar bodies (secretory vesicles) — produce and secrete pulmonary surfactant",
+    "trap": "Students often only know that alveoli are thin. Type II cells and their lamellar bodies / surfactant secretion are specific HL requirements. Surfactant reduces surface tension.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-09",
+    "level": "HL",
+    "ref": "B2.1.9",
+    "detail": "Glycoproteins and glycolipids: carbohydrate groups are ALWAYS on the extracellular side. Functions: cell adhesion and cell recognition",
+    "trap": "Students forget the extracellular-only location. Also: ABO blood group antigens are glycoproteins (named in syllabus as example).",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "CB-10",
+    "level": "SL+HL",
+    "ref": "B2.2.9",
+    "detail": "Clathrin coats the cytoplasmic face of the membrane and polymerises to form a pit that buds off as a coated vesicle — it is a mechanical scaffolding protein only",
+    "trap": "Clathrin is not a transport protein, does not create gradients or transport ions. It simply curves the membrane. Easy to confuse with integral transport proteins.",
+    "section": "CELL BIOLOGY"
+  },
+  {
+    "id": "W-01",
+    "level": "SL+HL",
+    "ref": "A1.1.6",
+    "detail": "Named organisms: ringed seal (Pusa hispida) — thermal conductivity → blubber; black-throated loon (Gavia arctica) — buoyancy/viscosity of water",
+    "trap": "Both named organisms are explicitly in the syllabus. Gavia arctica is often missed completely. Questions can ask which property explains a specific adaptation of either species.",
+    "section": "WATER PROPERTIES"
+  },
+  {
+    "id": "W-02",
+    "level": "SL+HL",
+    "ref": "A1.1.6",
+    "detail": "Four physical properties explicitly listed: buoyancy, viscosity, thermal conductivity, specific heat capacity — all must be compared to air",
+    "trap": "Students know specific heat capacity but forget buoyancy and viscosity as separate named properties. Thermal conductivity (25× greater than air) explains why aquatic endotherms need insulation.",
+    "section": "WATER PROPERTIES"
+  },
+  {
+    "id": "W-03",
+    "level": "HL",
+    "ref": "A1.1.7/A1.1.8",
+    "detail": "Extraplanetary origin of water: asteroids. Retention on Earth: gravity + temperatures low enough to condense. Goldilocks zone — liquid water as criterion for life",
+    "trap": "HL-only. 'Goldilocks zone' is the actual term used in the syllabus. Two hypotheses for retention: gravity (stops escape) and condensation temperature.",
+    "section": "WATER PROPERTIES"
+  },
+  {
+    "id": "W-04",
+    "level": "SL+HL",
+    "ref": "A1.1.5",
+    "detail": "Capillary action occurs in soil AND in plant cell walls (not only in xylem). Cohesion-tension theory requires all three: capillarity at evaporation surface, cohesion, tension",
+    "trap": "Students attribute capillary action only to xylem vessels. The syllabus explicitly mentions plant cell walls as a site of capillary action, contributing to the evaporation of water.",
+    "section": "WATER PROPERTIES"
+  },
+  {
+    "id": "OL-01",
+    "level": "HL",
+    "ref": "A2.1.6",
+    "detail": "RNA as presumed first genetic material. Ribozymes still function in ribosomes today — they catalyse peptide bond formation (peptidyl transferase activity)",
+    "trap": "Students know RNA was first genetic material but don't connect ribozymes to the ribosome's peptidyl transferase centre. 'Ribozymes are RNA enzymes' — the ribosome's catalytic core is RNA, not protein.",
+    "section": "ORIGIN OF LIFE (HL ONLY)"
+  },
+  {
+    "id": "OL-02",
+    "level": "HL",
+    "ref": "A2.1.7/A2.1.9",
+    "detail": "LUCA (Last Universal Common Ancestor): evidence = universal genetic code + conserved genes. Evidence for hydrothermal vent origin = fossilised precipitates + conserved genomic sequences",
+    "trap": "Students may not know what LUCA stands for or what evidence supports a hydrothermal vent location. The universal genetic code is cited as evidence for LUCA, not for evolution by selection.",
+    "section": "ORIGIN OF LIFE (HL ONLY)"
+  },
+  {
+    "id": "CL-01",
+    "level": "SL+HL",
+    "ref": "A3.2.7",
+    "detail": "Cladogram terminology: root (earliest common ancestor), node (hypothetical common ancestor), terminal branch (extant/named taxon). Parsimony = fewest sequence changes",
+    "trap": "Students label nodes incorrectly or confuse node with terminal branch. Node = hypothetical common ancestor at a branch point, not a named organism.",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "CL-02",
+    "level": "SL+HL",
+    "ref": "A3.2.5",
+    "detail": "Molecular clock: gradual accumulation of sequence differences used to estimate when clades diverged. Rate affected by: generation time, population size, selective pressure",
+    "trap": "Students say molecular clock is perfectly accurate. Syllabus emphasises it gives estimates only, because mutation rates vary with these three factors.",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "CL-03",
+    "level": "SL+HL",
+    "ref": "A3.2.9",
+    "detail": "Three-domain system established using rRNA base sequences (specifically 16S/18S rRNA), not mRNA, not cytochrome c, not DNA methylation",
+    "trap": "Students often say DNA sequences or amino acid sequences. Must be rRNA. Woese used 16S rRNA (prokaryotes) and 18S rRNA (eukaryotes).",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "CL-04",
+    "level": "SL+HL",
+    "ref": "A4.1.11",
+    "detail": "Abrupt speciation in plants by hybridization + polyploidy. Named example: Persicaria (knotweed/smartweed genus). Mule = sterile interspecific hybrid (not a new species)",
+    "trap": "Students confuse polyploidy (new species) with hybrid sterility (mule). Polyploidy CAN produce new species abruptly in plants. Mule = hybrid but sterile, so NOT speciation.",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "CL-05",
+    "level": "SL+HL",
+    "ref": "A4.2.3",
+    "detail": "Named extinct species: North Island giant moa (Dinornis novaezealandiae) = terrestrial megafauna loss; Caribbean monk seal (Neomonachus tropicalis) = marine species loss",
+    "trap": "Both full binomial names may appear in exam questions. Students need to know which category each represents (terrestrial megafauna vs marine).",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "CL-06",
+    "level": "SL+HL",
+    "ref": "A4.2.8",
+    "detail": "EDGE of Existence programme: conserves Evolutionarily Distinct and Globally Endangered species. Rationale: unique evolutionary history = irreplaceable if extinct",
+    "trap": "'EDGE' stands for Evolutionarily Distinct and Globally Endangered. Students may not know the full term or rationale (not just rarity but evolutionary uniqueness).",
+    "section": "CLASSIFICATION & CLADISTICS"
+  },
+  {
+    "id": "M-01",
+    "level": "HL",
+    "ref": "B1.2.11",
+    "detail": "Conjugated proteins: haemoglobin (contains haem prosthetic groups). Non-conjugated: insulin (polypeptide only), collagen (polypeptide only)",
+    "trap": "Students often say haemoglobin is non-conjugated or forget the term 'conjugated'. The haem group (Fe²⁺-containing porphyrin ring) makes it conjugated.",
+    "section": "MOLECULES & BIOCHEMISTRY"
+  },
+  {
+    "id": "M-02",
+    "level": "HL",
+    "ref": "C1.1.16",
+    "detail": "Feedback inhibition example: isoleucine synthesis. Isoleucine (end product) inhibits the first enzyme in its own biosynthetic pathway — prevents wasteful production",
+    "trap": "Students must name isoleucine as the specific example. This is allosteric inhibition by the end product (not the substrate).",
+    "section": "MOLECULES & BIOCHEMISTRY"
+  },
+  {
+    "id": "M-03",
+    "level": "HL",
+    "ref": "C1.1.17",
+    "detail": "Mechanism-based inhibition: penicillin inhibits transpeptidase (irreversible). Resistance occurs when transpeptidase is modified so penicillin can no longer bind",
+    "trap": "Students know penicillin inhibits cell wall synthesis but often can't name the enzyme (transpeptidase). Resistance = enzyme modification, not antibiotic degradation (for this mechanism).",
+    "section": "MOLECULES & BIOCHEMISTRY"
+  },
+  {
+    "id": "EC-01",
+    "level": "SL+HL",
+    "ref": "B4.2.5",
+    "detail": "Mixotrophic nutrition: both autotrophic AND heterotrophic. Named example = Euglena. Obligate vs facultative mixotrophs (syllabus distinction)",
+    "trap": "Mixotrophy is a new emphasis in 2023 syllabus. Students must know Euglena is the named example and understand obligate (always mixotrophic) vs facultative (can switch).",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "EC-02",
+    "level": "SL+HL",
+    "ref": "B4.2.7",
+    "detail": "Archaea: metabolically very diverse — use light, oxidation of inorganic chemicals, or oxidation of carbon compounds. Archaea are NOT known to cause any disease in humans",
+    "trap": "Two traps in one: (1) archaea nutrition is diverse (not just one mode); (2) archaea cause NO known human diseases — this explicit statement is new in 2023 syllabus.",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "EC-03",
+    "level": "SL+HL",
+    "ref": "B4.2.8",
+    "detail": "Dentition study: named hominids for inferring diet from skull morphology — Homo sapiens, Homo floresiensis, Paranthropus robustus",
+    "trap": "Homo floresiensis and Paranthropus robustus are named in the syllabus. Students may know H. sapiens but miss the other two. P. robustus had large molars = herbivorous/hard plant diet.",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "EC-04",
+    "level": "SL+HL",
+    "ref": "C4.1.12",
+    "detail": "Three required mutualism examples: (1) root nodules in Fabaceae (legume family); (2) mycorrhizae in Orchidaceae (orchid family); (3) zooxanthellae in hard corals",
+    "trap": "Students often only know one example. The syllabus uses 'In each case include the benefits to both organisms.' All three examples with BOTH benefits required.",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "EC-05",
+    "level": "SL+HL",
+    "ref": "C4.1.18",
+    "detail": "Allelopathy: a plant/organism secretes chemicals to inhibit competitors (e.g. walnut juglone). Antibiotic secretion by fungi/bacteria serves same function. Both are chemical competition",
+    "trap": "Allelopathy is new emphasis in 2023 syllabus. Students confuse it with herbivory deterrence. It is one organism releasing chemicals to suppress competitors, not pathogens.",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "EC-06",
+    "level": "SL+HL",
+    "ref": "A4.2.4",
+    "detail": "Named ecosystem loss case study: mixed dipterocarp forest in Southeast Asia (Borneo/Sumatra). Must know this specific ecosystem, not just 'tropical rainforest'",
+    "trap": "Syllabus specifies mixed dipterocarp forest, not generic rainforest. Dipterocarps are a family of tall hardwood trees dominant in SE Asian forests.",
+    "section": "ECOLOGY"
+  },
+  {
+    "id": "NS-01",
+    "level": "SL+HL",
+    "ref": "C2.2.12",
+    "detail": "Two named synapse-affecting chemicals: neonicotinoids (bind to nAChRs as persistent agonists — block transmission by continuous activation) AND cocaine (blocks neurotransmitter reuptake)",
+    "trap": "Students often confuse mechanism: neonicotinoids are AGONISTS (not blockers of release). Cocaine blocks REUPTAKE (prevents recycling of neurotransmitter — causes accumulation in synapse).",
+    "section": "NERVOUS SYSTEM & PHARMACOLOGY"
+  },
+  {
+    "id": "NS-02",
+    "level": "SL+HL",
+    "ref": "C2.2.15",
+    "detail": "Pain receptors: free nerve endings with ion channels that open in response to heat, acid, or capsaicin (the chemical in chilli peppers). Entry of positive ions = threshold reached = pain signal",
+    "trap": "Capsaicin is the named chemical example. Students may not know the receptor mechanism: positive ion channel opening (not G-protein signalling). This generates an action potential identical to heat/acid.",
+    "section": "NERVOUS SYSTEM & PHARMACOLOGY"
+  },
+  {
+    "id": "NS-03",
+    "level": "HL",
+    "ref": "C2.2.11",
+    "detail": "Saltatory conduction: ion pumps and channels CLUSTERED AT NODES OF RANVIER. Action potential jumps node to node. Myelin sheaths formed by Schwann cells (PNS)",
+    "trap": "Students say 'depolarisation occurs along the whole axon' in myelinated neurons. In reality it is only at nodes. The ions cannot cross the myelin, so current spreads passively to the next node.",
+    "section": "NERVOUS SYSTEM & PHARMACOLOGY"
+  },
+  {
+    "id": "NS-04",
+    "level": "HL",
+    "ref": "C2.2.13",
+    "detail": "Inhibitory neurotransmitters cause hyperpolarisation of the postsynaptic membrane (not just 'prevent action potential'). The membrane becomes MORE negative.",
+    "trap": "Students say 'inhibitory neurotransmitters block the action potential'. More precisely: they open Cl⁻ or K⁺ channels → hyperpolarisation → threshold is harder to reach.",
+    "section": "NERVOUS SYSTEM & PHARMACOLOGY"
+  },
+  {
+    "id": "RH-01",
+    "level": "HL",
+    "ref": "D3.1.13",
+    "detail": "Puberty initiated by increased GnRH (gonadotropin-releasing hormone) from hypothalamus → increased LH and FSH from pituitary → increased sex hormone production",
+    "trap": "Students often say 'the pituitary starts puberty'. The hypothalamus initiates it via GnRH. The sequence matters: hypothalamus → pituitary → gonads.",
+    "section": "REPRODUCTION & HORMONES"
+  },
+  {
+    "id": "RH-02",
+    "level": "HL",
+    "ref": "D3.1.15",
+    "detail": "Pregnancy testing detects hCG (human chorionic gonadotropin) produced by embryo/placenta. Monoclonal antibodies bind to hCG in urine. hCG maintains the corpus luteum",
+    "trap": "Students know pregnancy tests detect hCG but forget (1) it is produced by the embryo (not the mother's glands), (2) monoclonal antibodies are the detection mechanism.",
+    "section": "REPRODUCTION & HORMONES"
+  },
+  {
+    "id": "RH-03",
+    "level": "SL+HL",
+    "ref": "D3.1.11",
+    "detail": "Self-incompatibility: genetic mechanism preventing self-fertilisation. Named example: Prunus avium (cherry). S-locus alleles prevent pollen tube growth if S-allele matches pistil allele",
+    "trap": "Prunus avium is the named organism. Self-incompatibility = genetic (not physical) barrier to inbreeding. Promotes outbreeding and maintains genetic diversity.",
+    "section": "REPRODUCTION & HORMONES"
+  },
+  {
+    "id": "MV-01",
+    "level": "SL+HL",
+    "ref": "B3.3.3",
+    "detail": "Titin: the largest protein in the body. Prevents overstretching of sarcomeres. In intercostal muscles: stores potential energy when antagonistic muscles stretch it",
+    "trap": "Students know actin and myosin but miss titin entirely. The syllabus explicitly states both its role in preventing overstretching AND its energy-storing role in intercostal antagonism.",
+    "section": "MUSCLE, SKELETON & MOVEMENT"
+  },
+  {
+    "id": "MV-02",
+    "level": "SL+HL",
+    "ref": "B3.3.7",
+    "detail": "Goniometer measures joint angles. Students should measure joint angles using computer analysis of images OR a goniometer. Not a ruler (can't measure curved joint angles)",
+    "trap": "The goniometer appeared in Paper 1B 2025. Students need to know what it measures (angles) and why a ruler is inappropriate (measures straight-line distances; joints are curved).",
+    "section": "MUSCLE, SKELETON & MOVEMENT"
+  },
+  {
+    "id": "MV-03",
+    "level": "SL+HL",
+    "ref": "B3.3.10",
+    "detail": "Marine mammal swimming adaptations: streamlining, limbs → flippers, tail → fluke with up-and-down (not side-to-side) movement, airways adapted for periodic breathing between dives",
+    "trap": "Students often say 'tail moves side to side' — that is fish. Marine mammals (whales, seals) move their tail/fluke UP AND DOWN. Also: airways (not gills) are modified.",
+    "section": "MUSCLE, SKELETON & MOVEMENT"
+  },
+  {
+    "id": "HO-01",
+    "level": "HL",
+    "ref": "D3.3.9",
+    "detail": "Loop of Henle: Na⁺ is actively transported OUT in the ASCENDING limb (not descending). This creates high osmotic concentration in medulla → drives water reabsorption in collecting duct",
+    "trap": "Students confuse descending/ascending. Descending = permeable to water (water leaves passively). Ascending = impermeable to water but actively pumps Na⁺ out. Only ascending = active transport.",
+    "section": "HOMEOSTASIS & OSMOREGULATION (HL)"
+  },
+  {
+    "id": "HO-02",
+    "level": "HL",
+    "ref": "D3.3.10",
+    "detail": "Aquaporin regulation: ADH causes aquaporins to move FROM cytoplasm TO the cell membrane of collecting duct cells — increasing water permeability. Without ADH = aquaporins in cytoplasm = dilute urine",
+    "trap": "This is a subtle new syllabus detail: aquaporins SWITCH LOCATION between cytoplasm and membrane in response to ADH. Not 'ADH opens channels' — the channels physically move.",
+    "section": "HOMEOSTASIS & OSMOREGULATION (HL)"
+  },
+  {
+    "id": "HO-03",
+    "level": "SL+HL",
+    "ref": "D3.3.5",
+    "detail": "Thermoregulation hormones: the syllabus includes thyroxin as a thermoregulation hormone (increases basal metabolic rate in cold). Often forgotten alongside vasodilation, shivering, brown adipose tissue",
+    "trap": "The syllabus explicitly includes thyroxin in thermoregulation (D3.3.5). Students list vasodilation/vasoconstriction/shivering/sweating but forget thyroxin as a hormonal mechanism.",
+    "section": "HOMEOSTASIS & OSMOREGULATION (HL)"
+  },
+  {
+    "id": "GC-01",
+    "level": "HL",
+    "ref": "D2.1.15",
+    "detail": "Cyclins: concentration increases and decreases during cell cycle. A threshold level of each specific cyclin is required to pass each checkpoint (G1/S, G2/M). Students do NOT need names of specific cyclins",
+    "trap": "Students confuse cyclins with CDKs. The key syllabus point: concentration changes and threshold concept only. The idea that a specific threshold must be reached to pass each checkpoint is the testable fact.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-02",
+    "level": "HL",
+    "ref": "D2.1.16/D2.1.17",
+    "detail": "Proto-oncogenes → oncogenes (gain of function mutation = cancer). Tumour suppressor genes → loss of function mutation = cancer. Benign = no metastasis; malignant = can metastasize (invade)",
+    "trap": "Students often confuse oncogene and tumour suppressor. Oncogene = mutated proto-oncogene that is overactive. Tumour suppressor = loses function. Malignant specifically = capacity for metastasis.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-03",
+    "level": "HL",
+    "ref": "A3.1.7",
+    "detail": "Human chromosome 2 is hypothesised to have arisen from fusion of chromosomes 12 and 13 of a shared primate ancestor. Evidence: banding patterns, telomeric sequences at centre, two centromeres fused into one",
+    "trap": "This is a named hypothesis in the syllabus requiring evaluation. Students should know: humans 46 chromosomes, chimpanzees 48 — the difference is accounted for by chromosome 2 fusion.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-04",
+    "level": "HL",
+    "ref": "D1.1.8/D1.1.9",
+    "detail": "DNA replication enzymes (prokaryotic): DNA primase (makes RNA primer), DNA polymerase III (main synthesis, also proofreads 3' mismatches), DNA polymerase I (removes RNA primer), DNA ligase (joins Okazaki fragments)",
+    "trap": "Students know DNA polymerase but confuse roles of polymerase I vs III. III = main synthesis AND proofreading. I = primer removal and gap filling. Primase makes the primer that starts each Okazaki fragment.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-05",
+    "level": "HL",
+    "ref": "D1.3.10",
+    "detail": "Conserved sequences: two hypotheses — (1) functional requirement (product must maintain precise structure); (2) slower rate of mutation. Highly conserved = identical across long evolutionary time",
+    "trap": "Students often only think of selective pressure. The syllabus presents TWO distinct hypotheses. Mutation rate itself varying (intrinsic) is separate from purifying selection (extrinsic).",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-06",
+    "level": "HL",
+    "ref": "D4.1.13/D4.1.14",
+    "detail": "Hardy-Weinberg: p + q = 1; p² + 2pq + q² = 1. Conditions for equilibrium: random mating, no selection, no mutation, no migration, large population (no genetic drift)",
+    "trap": "Students forget both equations or the 5 conditions. A deviation from HW proportions indicates one or more conditions are violated — this is the main use of HW in practice.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-07",
+    "level": "HL",
+    "ref": "D2.2.2",
+    "detail": "Gene regulation: promoters (RNA polymerase binding site), enhancers (increase transcription when proteins bind), transcription factors (proteins that bind to promoters/enhancers)",
+    "trap": "Students often only know 'promoter'. Enhancers can be distant from the gene they regulate. Transcription factors are the proteins that bind to these regulatory sequences.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "GC-08",
+    "level": "HL",
+    "ref": "D2.2.4",
+    "detail": "Epigenesis: development of differentiation patterns WITHOUT altering DNA base sequence. Phenotype is altered, genotype is NOT. Examples: histone methylation, DNA methylation of cytosine",
+    "trap": "Students confuse 'epigenetics' and 'mutation'. Key distinction: epigenetic changes alter phenotype NOT genotype (base sequence unchanged). This is explicitly stated in the syllabus.",
+    "section": "GENETICS & CELL CYCLE (HL)"
+  },
+  {
+    "id": "ST-01",
+    "level": "SL+HL",
+    "ref": "D3.2.15",
+    "detail": "Box-and-whisker plots show 6 aspects: minimum, Q1, median, Q3, maximum, AND outliers. Outlier = data point >1.5 × IQR above Q3 or below Q1 — shown as individual circles/dots",
+    "trap": "Students say box plots show mean. They show median. Outliers are >1.5 × IQR from quartile — shown as circles outside the whiskers. Many students think whiskers extend to all data.",
+    "section": "STATISTICAL SKILLS (NEW EMPHASIS)"
+  },
+  {
+    "id": "ST-02",
+    "level": "SL+HL",
+    "ref": "D3.2.21",
+    "detail": "Chi-squared test at p=0.05. Null hypothesis = no association (or 1:1:1:1 expected). If chi-squared > critical value at p=0.05, reject null hypothesis. Used for dihybrid crosses AND interspecific competition",
+    "trap": "Students often just know chi-squared exists. The syllabus requires: understanding p=0.05, null vs alternative hypothesis, observed vs expected, and that the test is used in TWO contexts: genetics AND ecology.",
+    "section": "STATISTICAL SKILLS (NEW EMPHASIS)"
+  }
+]
