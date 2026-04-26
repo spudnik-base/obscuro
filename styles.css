@@ -1244,6 +1244,119 @@ body {
 .paper-card { padding: 14px 12px; line-height: 1.65; }
 
 /* ============================================================
+   Syllabus screen - sized up 30% so reading the obscure detail
+   list isn't a strain
+   ============================================================ */
+
+.syllabus-item       { font-size: 14.5px; line-height: 1.65; padding: 13px 0; }
+.syllabus-detail     { font-size: 14.5px; }
+.syllabus-id         { font-size: 12.5px; min-width: 56px; }
+.syllabus-ref        { font-size: 12.5px; }
+.syllabus-section-label { font-size: 13px; }
+.search-input        { font-size: 15px; padding: 11px 12px 11px 38px; }
+.detail-panel        { font-size: 14.5px; line-height: 1.7; padding: 13px 14px; }
+.detail-panel .trap-label { font-size: 12px; margin-bottom: 6px; }
+
+/* ============================================================
+   READER MODE - opt-in via body.reader-mode class.
+   Body text swaps to system sans-serif, sized up another notch.
+   The chrome that defines Obscuro's mechanical aesthetic stays
+   in Courier: wordmark, stamp text, synopsis terminal output,
+   big numerals.
+   ============================================================ */
+
+body.reader-mode {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+body.reader-mode .modal-sub,
+body.reader-mode .session-text,
+body.reader-mode .chain-sub,
+body.reader-mode .q-topic,
+body.reader-mode .q-stem,
+body.reader-mode .option,
+body.reader-mode .option-letter,
+body.reader-mode .explain-box,
+body.reader-mode .explain-toggle,
+body.reader-mode .correct-reveal,
+body.reader-mode .stamp-sub,
+body.reader-mode .stat-cell .lbl,
+body.reader-mode .synopsis-header .score-meta,
+body.reader-mode .synopsis-header .label,
+body.reader-mode .weak-item,
+body.reader-mode .queue-list,
+body.reader-mode .paper-card,
+body.reader-mode .paper-title,
+body.reader-mode .paper-sub,
+body.reader-mode .dl-link,
+body.reader-mode .syllabus-item,
+body.reader-mode .syllabus-detail,
+body.reader-mode .syllabus-section-label,
+body.reader-mode .detail-panel,
+body.reader-mode .detail-panel .trap-label,
+body.reader-mode .empty-state,
+body.reader-mode .search-input,
+body.reader-mode .modal-input,
+body.reader-mode .modal-label,
+body.reader-mode .label-sm,
+body.reader-mode .nav-item,
+body.reader-mode .belt-scale,
+body.reader-mode .sub-num,
+body.reader-mode .q-left-num,
+body.reader-mode .q-left-num .denom,
+body.reader-mode .btn-primary,
+body.reader-mode .btn-secondary,
+body.reader-mode .mode-btn,
+body.reader-mode .q-badge,
+body.reader-mode .syllabus-id,
+body.reader-mode .syllabus-ref,
+body.reader-mode .weak-id {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+/* Larger sizes in reader mode for the body content */
+body.reader-mode .modal-sub      { font-size: 16px; line-height: 1.6; font-weight: 400; }
+body.reader-mode .q-stem         { font-size: 18px; line-height: 1.55; font-weight: 500; }
+body.reader-mode .option         { font-size: 16px; line-height: 1.5; font-weight: 500; }
+body.reader-mode .option-letter  { font-size: 17px; font-weight: 700; }
+body.reader-mode .explain-box    { font-size: 17px; line-height: 1.6; font-weight: 500; }
+body.reader-mode .correct-reveal { font-size: 15.5px; font-weight: 600; line-height: 1.5; }
+body.reader-mode .syllabus-item  { font-size: 16px; line-height: 1.55; }
+body.reader-mode .syllabus-detail { font-weight: 400; }
+body.reader-mode .detail-panel   { font-size: 15.5px; line-height: 1.6; font-weight: 400; }
+body.reader-mode .paper-title    { font-size: 16px; font-weight: 700; }
+body.reader-mode .paper-sub      { font-size: 14px; }
+body.reader-mode .session-text   { font-size: 15px; font-weight: 500; }
+body.reader-mode .weak-item      { font-size: 15px; }
+body.reader-mode .queue-list     { font-size: 15px; }
+body.reader-mode .search-input   { font-size: 16px; }
+body.reader-mode .stamp-sub      { font-size: 14px; }
+body.reader-mode .stat-cell .lbl { font-size: 12px; letter-spacing: 0.06em; }
+body.reader-mode .label-sm       { font-size: 12px; letter-spacing: 0.1em; }
+body.reader-mode .modal-label    { font-size: 12px; letter-spacing: 0.1em; }
+body.reader-mode .q-topic        { font-size: 13px; }
+body.reader-mode .q-badge        { font-size: 12px; padding: 4px 9px; }
+body.reader-mode .nav-item       { font-size: 12px; letter-spacing: 0.06em; }
+
+/* Synopsis terminal stays mono - that's the typewriter readout */
+body.reader-mode .synopsis-terminal {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14.5px;
+}
+
+/* Wordmark, stamps, and big numerals stay mono - the aesthetic spine */
+body.reader-mode .wordmark,
+body.reader-mode .stamp,
+body.reader-mode .modal-title,
+body.reader-mode .big-num,
+body.reader-mode .stat-cell .num,
+body.reader-mode .synopsis-header .score {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ============================================================
    Readability pass 2 - Courier New regular weight is too thin
    for the dark-background terminal blocks. Bumping size further
    and switching key reading surfaces to bold weight.

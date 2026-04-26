@@ -249,6 +249,28 @@
     modeSection.appendChild(toggle);
     root.appendChild(modeSection);
 
+    // Display toggle - Machine vs Reader (font + size mode)
+    const dispSection = el('div', { class: 'section' });
+    dispSection.appendChild(el('div', { class: 'label-sm', text: 'Display' }));
+    const dispToggle = el('div', { class: 'mode-toggle' });
+    [['machine', 'Machine'], ['reader', 'Reader']].forEach(([val, label]) => {
+      const btn = el('button', {
+        type: 'button',
+        class: 'mode-btn' + ((S.display || 'machine') === val ? ' active' : ''),
+        'data-display': val,
+        text: label,
+        onclick: () => {
+          S.display = val;
+          window.OB_STORE.persistAll();
+          window.OB_STORE.applyDisplay();
+          renderDashboard();
+        },
+      });
+      dispToggle.appendChild(btn);
+    });
+    dispSection.appendChild(dispToggle);
+    root.appendChild(dispSection);
+
     // Buttons
     const btnSection = el('div', { class: 'section' });
     const fireBtn = el('button', {
