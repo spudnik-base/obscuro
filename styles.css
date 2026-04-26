@@ -1242,3 +1242,87 @@ body {
 
 /* Paper card body */
 .paper-card { padding: 14px 12px; line-height: 1.65; }
+
+/* ============================================================
+   Readability pass 2 - Courier New regular weight is too thin
+   for the dark-background terminal blocks. Bumping size further
+   and switching key reading surfaces to bold weight.
+   ============================================================ */
+
+body { font-size: 16px; line-height: 1.6; }
+
+/* The two dark terminal-style blocks - bold gives Courier the
+   weight it needs against the cream-on-ink contrast */
+.explain-box {
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 700;
+  padding: 18px;
+}
+
+.synopsis-terminal {
+  font-size: 15.5px;
+  line-height: 1.9;
+  font-weight: 700;
+  padding: 18px;
+}
+
+/* Question stem - larger, bolder, more breathing room */
+.q-stem {
+  font-size: 16.5px;
+  line-height: 1.75;
+  font-weight: 700;
+  padding: 18px;
+}
+
+/* Options - the answer choices need to be easy to read */
+.option {
+  font-size: 14.5px;
+  line-height: 1.6;
+  padding: 14px;
+  font-weight: 600;
+}
+.option-letter { font-size: 17px; min-width: 20px; }
+
+/* Modal explainer - the welcome paragraph */
+.modal-sub {
+  font-size: 14.5px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Cards, lists, supporting text */
+.session-text  { font-size: 14px;   font-weight: 600; }
+.correct-reveal { font-size: 14px;  font-weight: 700; line-height: 1.6; padding: 10px 14px; }
+.detail-panel  { font-size: 13.5px; line-height: 1.7; font-weight: 500; }
+.syllabus-item { font-size: 13.5px; line-height: 1.6; padding: 11px 0; }
+.syllabus-detail { font-weight: 500; }
+.paper-title   { font-size: 15px;   font-weight: 700; }
+.paper-sub     { font-size: 12.5px; }
+.weak-item     { font-size: 13.5px; }
+.queue-list    { font-size: 13.5px; }
+.stamp-sub     { font-size: 13px; }
+
+/* Stat numbers prominent */
+.stat-cell .num { font-size: 26px; }
+.stat-cell .lbl { font-size: 11.5px; margin-top: 6px; font-weight: 700; }
+
+/* Synopsis score larger */
+.synopsis-header .score { font-size: 36px; }
+.synopsis-header .score-meta { font-size: 13.5px; }
+
+/* Badges and chips need a touch more substance */
+.q-badge { font-size: 11.5px; padding: 4px 10px; font-weight: 700; }
+
+/* Buttons - more weight, slightly more padding */
+.btn-primary { font-size: 14.5px; padding: 15px 16px; font-weight: 700; }
+.btn-secondary { font-size: 13.5px; padding: 12px 14px; font-weight: 700; }
+.mode-btn { font-size: 12.5px; padding: 11px 4px; font-weight: 700; }
+
+/* Nav bar - text more present, icons proportional */
+.nav-item { font-size: 11.5px; font-weight: 700; }
+.nav-icon { width: 24px; height: 24px; }
+
+/* Wordmark and stamp scale up to match the new bigger feel */
+.wordmark { font-size: 30px; }
+.stamp { font-size: 32px; padding: 8px 20px; }
