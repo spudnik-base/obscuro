@@ -1357,6 +1357,144 @@ body.reader-mode .synopsis-header .score {
 }
 
 /* ============================================================
+   Compact dashboard layout, star button, reset modal, footer
+   ============================================================ */
+
+.section.compact { padding: 9px 16px; }
+
+.dash-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px 10px;
+  gap: 10px;
+  border-top: 1.5px solid var(--light);
+}
+
+.display-mini { display: inline-flex; align-items: center; gap: 6px; }
+.display-mini-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--mid);
+}
+.display-mini-toggle {
+  display: inline-flex;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.display-mini-btn {
+  padding: 4px 9px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: transparent;
+  border: none;
+  border-right: 1.5px solid var(--ink);
+  color: var(--mid);
+  cursor: pointer;
+}
+.display-mini-btn:last-child { border-right: none; }
+.display-mini-btn.active { background: var(--ink); color: var(--paper); }
+
+.reset-link {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--mid);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  text-transform: uppercase;
+}
+.reset-link:hover { color: var(--red); }
+
+.starred-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-left: 8px;
+  letter-spacing: 0.04em;
+}
+
+.starred-review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  border-radius: 2px 4px 3px 5px / 4px 2px 5px 3px;
+  cursor: pointer;
+}
+.starred-review-btn:hover { background: var(--gold); color: var(--paper); }
+.starred-review-btn .star-icon-mini { width: 10px; height: 10px; }
+
+.stamp-wrap { position: relative; }
+.star-toggle {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1.5px solid var(--mid);
+  border-radius: 3px 5px 4px 6px / 5px 3px 6px 4px;
+  cursor: pointer;
+  color: var(--mid);
+  transition: color 0.15s, border-color 0.15s, transform 0.1s, background 0.15s;
+}
+.star-toggle:hover { color: var(--gold); border-color: var(--gold); background: rgba(196, 138, 0, 0.06); }
+.star-toggle:active { transform: scale(0.94); }
+.star-toggle.starred { color: var(--gold); border-color: var(--gold); background: rgba(196, 138, 0, 0.1); }
+.star-toggle .star-icon { width: 22px; height: 22px; }
+.star-toggle .star-icon polygon {
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  fill: none;
+  transition: fill 0.15s;
+}
+.star-toggle.starred .star-icon polygon { fill: currentColor; }
+
+.reset-modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.reset-modal-buttons .btn-secondary,
+.reset-modal-buttons .btn-primary {
+  margin: 0;
+  flex: 1;
+}
+
+/* Tighter dashboard sections so 6 sections + nav fit on small phones */
+.app-frame .section { padding: 11px 16px; }
+.app-frame .section.section-buttons { padding-bottom: 8px; }
+.belt-wrap { margin: 6px 0 2px; }
+.chain { margin-bottom: 6px; padding: 2px 0; }
+.session-text { margin-bottom: 4px; }
+.countdown-row { gap: 10px; }
+.big-num { font-size: 26px; }
+
+/* ============================================================
    Readability pass 2 - Courier New regular weight is too thin
    for the dark-background terminal blocks. Bumping size further
    and switching key reading surfaces to bold weight.

@@ -34,6 +34,7 @@
     PROGRESS:   'obscuro_progress',
     STREAK:     'obscuro_streak',
     QUEUE:      'obscuro_queue',
+    STARRED:    'obscuro_starred',
     DAILY_DATE: 'obscuro_daily_date',
     DAILY_DONE: 'obscuro_daily_done',
   };
@@ -67,6 +68,7 @@
     progress:  {},              // { id: { seen, correct, lastSeen, timesAnswered } }
     streak:    { lastDate: null, count: 0 },
     weakQueue: [],              // ids queued for tomorrow
+    starred:   [],              // user-starred question ids
     daily:     { date: null, done: 0 },
     session:   {                // current session
       queue: [],
@@ -84,6 +86,7 @@
     state.progress  = Store.get(KEYS.PROGRESS, {});
     state.streak    = Store.get(KEYS.STREAK, { lastDate: null, count: 0 });
     state.weakQueue = Store.get(KEYS.QUEUE, []);
+    state.starred   = Store.get(KEYS.STARRED, []);
     const dDate     = Store.get(KEYS.DAILY_DATE, null);
     const dDone     = Store.get(KEYS.DAILY_DONE, 0);
     if (dDate === todayISO()) {
@@ -102,6 +105,7 @@
     Store.set(KEYS.PROGRESS,   state.progress);
     Store.set(KEYS.STREAK,     state.streak);
     Store.set(KEYS.QUEUE,      state.weakQueue);
+    Store.set(KEYS.STARRED,    state.starred);
     Store.set(KEYS.DAILY_DATE, state.daily.date);
     Store.set(KEYS.DAILY_DONE, state.daily.done);
   }
@@ -153,6 +157,22 @@
     document.body.classList.toggle('reader-mode', state.display === 'reader');
   }
 
+  function resetAll() {
+    Object.values(KEYS).forEach((k) => Store.remove(k));
+  }
+
+  function isStarred(qid) {
+    return state.starred.indexOf(qid) !== -1;
+  }
+
+  function toggleStar(qid) {
+    const i = state.starred.indexOf(qid);
+    if (i === -1) state.starred.push(qid);
+    else state.starred.splice(i, 1);
+    Store.set(KEYS.STARRED, state.starred);
+    return state.starred.indexOf(qid) !== -1;
+  }
+
   // Export
   window.OB_STORE = {
     Store,
@@ -169,5 +189,8 @@
     daysBetween,
     defaultExamDate,
     applyDisplay,
+    resetAll,
+    isStarred,
+    toggleStar,
   };
 })();

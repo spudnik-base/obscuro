@@ -60,6 +60,67 @@
     window.OB_SCREENS.showScreen('question');
   }
 
+  function startStarredSession() {
+    const S = window.OB_STORE.state;
+    const starredIds = S.starred || [];
+    if (starredIds.length === 0) {
+      window.OB_SCREENS.showScreen('dashboard');
+      return;
+    }
+    const queue = S.questions.filter((q) => starredIds.indexOf(q.id) !== -1);
+    if (queue.length === 0) {
+      window.OB_SCREENS.showScreen('dashboard');
+      return;
+    }
+    shuffle(queue);
+    S.session = { queue, index: 0, results: [], starredOnly: true };
+    window.OB_SCREENS.showScreen('question');
+  }
+
+  function confirmReset() {
+    // Build modal on the fly using existing modal styles
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.style.zIndex = '95';
+
+    const box = document.createElement('div');
+    box.className = 'modal-box';
+
+    const title = document.createElement('div');
+    title.className = 'modal-title';
+    title.textContent = 'RESET THE MACHINE';
+    box.appendChild(title);
+
+    const sub = document.createElement('div');
+    sub.className = 'modal-sub';
+    sub.textContent = 'This wipes all progress, streak, starred questions, and level setting. Cannot be undone.';
+    box.appendChild(sub);
+
+    const btnRow = document.createElement('div');
+    btnRow.className = 'reset-modal-buttons';
+
+    const cancel = document.createElement('button');
+    cancel.type = 'button';
+    cancel.className = 'btn-secondary';
+    cancel.textContent = 'CANCEL';
+    cancel.addEventListener('click', () => overlay.remove());
+    btnRow.appendChild(cancel);
+
+    const reset = document.createElement('button');
+    reset.type = 'button';
+    reset.className = 'btn-primary';
+    reset.textContent = 'RESET';
+    reset.addEventListener('click', () => {
+      window.OB_STORE.resetAll();
+      window.location.reload();
+    });
+    btnRow.appendChild(reset);
+
+    box.appendChild(btnRow);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+  }
+
   function recordAnswerAndAdvance(question, userAnswer, isCorrect) {
     const S = window.OB_STORE.state;
 
@@ -253,10 +314,12 @@
   // Export
   window.OB_APP = {
     startSession,
+    startStarredSession,
     recordAnswerAndAdvance,
     advanceFromAnswer,
     buildSynopsis,
     updateStreak,
+    confirmReset,
   };
 
   if (document.readyState === 'loading') {

@@ -33,6 +33,18 @@
     return e;
   }
 
+  function buildStarIcon(opts) {
+    opts = opts || {};
+    const cls = opts.class || 'star-icon';
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('class', cls);
+    svg.setAttribute('viewBox', '0 0 24 24');
+    const poly = document.createElementNS(SVG_NS, 'polygon');
+    poly.setAttribute('points', '12,2.5 14.7,9 21.5,9.4 16.4,14 18.1,21 12,17.3 5.9,21 7.6,14 2.5,9.4 9.3,9');
+    svg.appendChild(poly);
+    return svg;
+  }
+
   function escapeHtml(s) {
     if (s == null) return '';
     return String(s)
@@ -186,12 +198,32 @@
     ]);
     root.appendChild(countdownSection);
 
-    // Streak
-    const streakSection = el('div', { class: 'section' }, [
-      el('div', { class: 'label-sm', text: 'Streak' }),
-      buildChain(S.streak.count || 0),
-      el('div', { class: 'chain-sub', text: `${S.streak.count || 0} day${S.streak.count === 1 ? '' : 's'} - keep the chain going` }),
-    ]);
+    // Streak (with inline starred count + review button if any)
+    const streakSection = el('div', { class: 'section' });
+    streakSection.appendChild(el('div', { class: 'label-sm', text: 'Streak' }));
+    streakSection.appendChild(buildChain(S.streak.count || 0));
+    const subRow = el('div', { style: 'display:flex; align-items:center; flex-wrap:wrap; gap:4px;' });
+    subRow.appendChild(el('span', {
+      class: 'chain-sub',
+      text: `${S.streak.count || 0} day${S.streak.count === 1 ? '' : 's'} - keep the chain going`,
+    }));
+    const starCount = (S.starred || []).length;
+    if (starCount > 0) {
+      const reviewBtn = el('button', {
+        type: 'button',
+        class: 'starred-review-btn',
+        title: 'Review starred questions',
+        onclick: () => window.OB_APP.startStarredSession(),
+      });
+      const ic = buildStarIcon({ class: 'star-icon-mini' });
+      ic.querySelector('polygon').setAttribute('fill', 'currentColor');
+      ic.querySelector('polygon').setAttribute('stroke', 'currentColor');
+      ic.querySelector('polygon').setAttribute('stroke-width', '1');
+      reviewBtn.appendChild(ic);
+      reviewBtn.appendChild(document.createTextNode(`Review ${starCount}`));
+      subRow.appendChild(reviewBtn);
+    }
+    streakSection.appendChild(subRow);
     root.appendChild(streakSection);
 
     // Today's session belt
@@ -249,27 +281,6 @@
     modeSection.appendChild(toggle);
     root.appendChild(modeSection);
 
-    // Display toggle - Machine vs Reader (font + size mode)
-    const dispSection = el('div', { class: 'section' });
-    dispSection.appendChild(el('div', { class: 'label-sm', text: 'Display' }));
-    const dispToggle = el('div', { class: 'mode-toggle' });
-    [['machine', 'Machine'], ['reader', 'Reader']].forEach(([val, label]) => {
-      const btn = el('button', {
-        type: 'button',
-        class: 'mode-btn' + ((S.display || 'machine') === val ? ' active' : ''),
-        'data-display': val,
-        text: label,
-        onclick: () => {
-          S.display = val;
-          window.OB_STORE.persistAll();
-          window.OB_STORE.applyDisplay();
-          renderDashboard();
-        },
-      });
-      dispToggle.appendChild(btn);
-    });
-    dispSection.appendChild(dispToggle);
-    root.appendChild(dispSection);
 
     // Buttons
     const btnSection = el('div', { class: 'section' });
@@ -293,6 +304,46 @@
       }));
     }
     root.appendChild(btnSection);
+
+    // Footer: compact Display toggle + Reset link
+    const footer = el('div', { class: 'dash-footer' });
+
+    const dispMini = el('div', { class: 'display-mini' });
+    dispMini.appendChild(el('span', { class: 'display-mini-label', text: 'Font' }));
+    const miniToggle = el('div', { class: 'display-mini-toggle' });
+    [['machine', 'Aa'], ['reader', 'Aa']].forEach(([val, label], idx) => {
+      const isActive = (S.display || 'machine') === val;
+      const btn = el('button', {
+        type: 'button',
+        class: 'display-mini-btn' + (isActive ? ' active' : ''),
+        'data-display': val,
+        title: val === 'machine' ? 'Machine font (Courier)' : 'Reader font (sans-serif)',
+        onclick: () => {
+          S.display = val;
+          window.OB_STORE.persistAll();
+          window.OB_STORE.applyDisplay();
+          renderDashboard();
+        },
+      });
+      // Visually differentiate the two by font-family on the button itself
+      if (val === 'reader') {
+        btn.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      }
+      btn.textContent = label;
+      miniToggle.appendChild(btn);
+    });
+    dispMini.appendChild(miniToggle);
+    footer.appendChild(dispMini);
+
+    const resetBtn = el('button', {
+      type: 'button',
+      class: 'reset-link',
+      text: 'Reset',
+      onclick: () => window.OB_APP.confirmReset(),
+    });
+    footer.appendChild(resetBtn);
+
+    root.appendChild(footer);
   }
 
   /* ============================================================
@@ -437,13 +488,28 @@
     const userAnswer = last.userAnswer;
     const isCorrect = last.correct;
 
-    // Stamp
+    // Stamp + star toggle (top right of stamp area)
     const stampWrap = el('div', { class: 'stamp-wrap' });
     const stamp = el('div', {
       class: 'stamp reveal ' + (isCorrect ? 'correct' : 'wrong'),
       text: isCorrect ? 'CORRECT' : 'WRONG',
     });
     stampWrap.appendChild(stamp);
+
+    const starredNow = window.OB_STORE.isStarred(q.id);
+    const starBtn = el('button', {
+      type: 'button',
+      class: 'star-toggle' + (starredNow ? ' starred' : ''),
+      'aria-label': 'Star this question for review',
+      title: starredNow ? 'Unstar this question' : 'Star for review',
+    });
+    starBtn.appendChild(buildStarIcon());
+    starBtn.addEventListener('click', () => {
+      const isStarred = window.OB_STORE.toggleStar(q.id);
+      starBtn.classList.toggle('starred', isStarred);
+      starBtn.title = isStarred ? 'Unstar this question' : 'Star for review';
+    });
+    stampWrap.appendChild(starBtn);
 
     const todayCorrect = S.session.results.filter((r) => r.correct).length;
     const totalCorrect = (() => {
