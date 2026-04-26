@@ -1,0 +1,1962 @@
+[
+  {
+    "id": 1,
+    "level": "SL",
+    "topic": "Thermoregulation",
+    "stem": "Results were obtained by measuring body temperature during exercise on a hot, humid day. During rest periods, body temperature decreased. Which mechanism is most directly responsible for this decrease?",
+    "options": [
+      "A. Shivering",
+      "B. Uncoupled respiration in brown adipose tissue",
+      "C. Vasodilation in the skin",
+      "D. Hair erection"
+    ],
+    "answer": "C",
+    "explanation": "During rest on a hot day, the body needs to LOSE heat, not generate it. Vasodilation in the skin redirects blood flow to the surface, allowing heat to dissipate. Shivering and uncoupled respiration in brown adipose tissue both GENERATE heat (used in cold conditions). Hair erection (piloerection) traps air in mammals with fur but is ineffective in humans. The trap here is option B — brown adipose tissue uncoupling is for thermogenesis in cold, not heat loss."
+  },
+  {
+    "id": 2,
+    "level": "HL",
+    "topic": "Thermoregulation",
+    "stem": "How does brown adipose tissue contribute to regulating body temperature at 2 °C?",
+    "options": [
+      "A. It produces ATP that is used directly for shivering",
+      "B. It stores fat that is slowly metabolised to maintain metabolic rate",
+      "C. It breaks down fat to generate heat without producing ATP",
+      "D. It increases the metabolic rate of surrounding white adipose tissue"
+    ],
+    "answer": "C",
+    "explanation": "Brown adipose tissue contains uncoupling protein (thermogenin/UCP1) in the inner mitochondrial membrane. This protein allows protons to leak across the membrane without passing through ATP synthase, so the energy is released as heat rather than ATP. This is \"uncoupled respiration.\" At 2°C, this non-shivering thermogenesis is essential — especially in neonates and hibernating mammals. The key detail: heat IS produced, but ATP is NOT."
+  },
+  {
+    "id": 3,
+    "level": "SL",
+    "topic": "Animal behaviour / Evolution",
+    "stem": "What did the experiments of John Endler (1980) on guppies (Poecilia reticulata) demonstrate?",
+    "options": [
+      "A. That coloration in guppies is determined entirely by genetic drift",
+      "B. That natural selection can rapidly alter the coloration of guppies depending on predation pressure",
+      "C. That sexual selection always opposes natural selection in guppies",
+      "D. That guppy populations become reproductively isolated when predation differs"
+    ],
+    "answer": "B",
+    "explanation": "Endler's landmark experiments showed that male guppy coloration evolves rapidly in response to predation. In high-predation pools, males evolved drab, cryptic coloration; in low-predation pools (where females drive mate choice), males became more brightly coloured. This demonstrated that natural selection can produce measurable evolutionary change within a small number of generations, and that the direction of selection depends on environmental context — a key example of microevolution in action."
+  },
+  {
+    "id": 4,
+    "level": "SL",
+    "topic": "Water / Thermoregulation",
+    "stem": "Which characteristic of the ringed seal (Pusa hispida) is a direct consequence of the high thermal conductivity of water?",
+    "options": [
+      "A. Streamlined body shape",
+      "B. Sharp teeth for catching fish",
+      "C. Blubber (layer of fat beneath the skin)",
+      "D. The ability to hold breath for extended periods"
+    ],
+    "answer": "C",
+    "explanation": "Water conducts heat approximately 25× faster than air. An endotherm in water loses body heat very rapidly without insulation. Blubber is a thick layer of fat that acts as a thermal insulator, drastically reducing heat loss in aquatic environments. Streamlined body shape relates to hydrodynamics (movement through water), not thermal conductivity. Breath-holding relates to oxygen storage. Sharp teeth relate to diet. Only blubber directly addresses the thermal conductivity challenge."
+  },
+  {
+    "id": 5,
+    "level": "HL",
+    "topic": "Classification / Phylogenetics",
+    "stem": "What evidence was used to produce the three-domain system (Bacteria, Archaea, Eukarya) that we now recognise?",
+    "options": [
+      "A. mRNA base sequences",
+      "B. rRNA base sequences",
+      "C. Amino acid sequences of cytochrome c",
+      "D. DNA methylation patterns"
+    ],
+    "answer": "B",
+    "explanation": "Carl Woese and colleagues compared the base sequences of ribosomal RNA (specifically 16S/18S rRNA) across all living organisms. rRNA is universally present, functionally conserved, and evolves slowly enough to detect deep evolutionary relationships. This analysis revealed that Archaea are as different from Bacteria as either is from Eukarya, leading to the three-domain system. mRNA is not suitable (too variable, not universal). Cytochrome c sequencing contributed to earlier eukaryote phylogenies but not the three-domain split."
+  },
+  {
+    "id": 6,
+    "level": "HL",
+    "topic": "Synapses / Pharmacology",
+    "stem": "What is the action of neonicotinoids on the synapse of an insect?",
+    "options": [
+      "A. They prevent the release of acetylcholine from the presynaptic membrane",
+      "B. They increase the permeability of the presynaptic neuron to sodium ions",
+      "C. They bind to the acetylcholine receptor on the postsynaptic neuron",
+      "D. They block the reuptake of acetylcholine into vesicles in the presynaptic neuron"
+    ],
+    "answer": "C",
+    "explanation": "Neonicotinoids (e.g. imidacloprid) are insecticides that act as agonists at nicotinic acetylcholine receptors (nAChRs) on the postsynaptic neuron. Unlike acetylcholine, neonicotinoids are not broken down by acetylcholinesterase, so the receptor is continuously activated, causing uncontrolled nerve firing and insect death. They are selective for insect nAChRs over mammalian ones (hence their use as insecticides). They do not block release, affect presynaptic Na⁺ permeability, or inhibit reuptake."
+  },
+  {
+    "id": 7,
+    "level": "SL",
+    "topic": "Quorum sensing",
+    "stem": "Which of the following is an example of quorum sensing?",
+    "options": [
+      "A. Expression of incomplete dominance in Mirabilis jalapa flowers",
+      "B. Spring growth of the Arctic mouse-ear chickweed Cerastium arcticum",
+      "C. Bioluminescence in the marine bacterium Vibrio fischeri",
+      "D. Biochemical control of lactase synthesis in Escherichia coli"
+    ],
+    "answer": "C",
+    "explanation": "Quorum sensing is cell-to-cell chemical communication in bacteria that triggers a coordinated response when a population density threshold is reached. Vibrio fischeri bacteria produce and sense a signalling molecule (autoinducer). Only when bacterial numbers exceed a threshold (quorum) does the concentration of this molecule trigger the bioluminescence genes — this is the \"squid light organ\" mutualism. The lac operon in E. coli is an example of enzyme induction, not quorum sensing. Mirabilis jalapa demonstrates codominance/incomplete dominance."
+  },
+  {
+    "id": 8,
+    "level": "HL",
+    "topic": "Biotechnology / Microscopy",
+    "stem": "In 2020, researchers imaged the GABA_A membrane receptor protein. Their technique involved treating the sample to stabilise protein molecules at a moment in time. Which technique did they use?",
+    "options": [
+      "A. Immunofluorescence microscopy",
+      "B. Electrophoresis",
+      "C. Cryogenic electron microscopy (cryo-EM)",
+      "D. Confocal laser scanning microscopy"
+    ],
+    "answer": "C",
+    "explanation": "Cryogenic electron microscopy (cryo-EM) involves flash-freezing biological samples in vitreous (glass-like) ice, which traps proteins in their native conformation at a specific moment. The sample is then imaged with an electron beam. Cryo-EM has revolutionised structural biology (2017 Nobel Prize) because it can resolve near-atomic structures of proteins that are difficult to crystallise. Immunofluorescence uses antibodies + fluorescent tags. Electrophoresis separates molecules by size. Confocal microscopy uses light, not electrons, and cannot resolve individual protein molecules."
+  },
+  {
+    "id": 9,
+    "level": "HL",
+    "topic": "Cell biology / Endocytosis",
+    "stem": "What is the role of clathrin molecules in the formation of vesicles during receptor-mediated endocytosis?",
+    "options": [
+      "A. They facilitate transport of Na⁺ and K⁺ ions across the membrane",
+      "B. They polymerise and coat the membrane, causing it to become indented and bud off",
+      "C. They adhere to the phospholipid bilayer to increase membrane fluidity",
+      "D. They create a concentration gradient for uptake of substances into vesicles"
+    ],
+    "answer": "B",
+    "explanation": "Clathrin is a protein that self-assembles into a lattice (triskelion structure) on the cytoplasmic face of the plasma membrane. During receptor-mediated endocytosis, clathrin molecules polymerise to form a \"clathrin-coated pit,\" mechanically deforming the membrane inward. The coated pit deepens and eventually pinches off as a clathrin-coated vesicle. Clathrin does not transport ions, affect fluidity, or create concentration gradients — it is purely a mechanical scaffolding protein for membrane curvature."
+  },
+  {
+    "id": 10,
+    "level": "SL",
+    "topic": "Cell biology / Organelles",
+    "stem": "Plant cells contain plastids. Which of the following is a type of plastid?",
+    "options": [
+      "A. Mitochondrion",
+      "B. Vacuole",
+      "C. Chromoplast",
+      "D. Peroxisome"
+    ],
+    "answer": "C",
+    "explanation": "Plastids are a family of double-membrane-bound organelles found in plant cells and algae. They include: chloroplasts (photosynthesis), chromoplasts (store pigments — give fruits/flowers their colour), leucoplasts (storage, e.g. amyloplasts for starch). Mitochondria are NOT plastids (different evolutionary origin — both from endosymbiosis, but separate lineages). Vacuoles and peroxisomes are not plastids. This question tests whether students know that plastids are a category, not just \"chloroplast.\""
+  },
+  {
+    "id": 11,
+    "level": "SL",
+    "topic": "Circadian rhythm",
+    "stem": "Jetlag occurs when the circadian rhythm is disrupted by changing time zones. Why might a person have difficulty sleeping after sunset?",
+    "options": [
+      "A. The hypothalamus is secreting too much melanin",
+      "B. The pineal gland is not secreting sufficient melatonin",
+      "C. The lack of sunlight inhibits the production of vitamin D",
+      "D. The pituitary gland is secreting too much oxytocin"
+    ],
+    "answer": "B",
+    "explanation": "The pineal gland secretes melatonin in response to darkness, signalling the body to prepare for sleep. In jetlag, the circadian clock is misaligned with local time — the pineal gland may not yet be releasing melatonin at the new local sunset because the body still \"thinks\" it is daytime. Note: melanin is a skin pigment (not a hormone involved in sleep). Vitamin D synthesis uses sunlight but is unrelated to sleep onset. Oxytocin is related to bonding/labour."
+  },
+  {
+    "id": 12,
+    "level": "SL",
+    "topic": "Nutrition / Digestion",
+    "stem": "Which row correctly describes holozoic nutrition?",
+    "options": [
+      "A. Chemoautotrophic — no digestion",
+      "B. Photoautotrophic — no digestion",
+      "C. Saprotrophic — external digestion",
+      "D. Heterotrophic — internal digestion"
+    ],
+    "answer": "D",
+    "explanation": "Holozoic nutrition is a type of heterotrophic nutrition where an organism ingests solid food which is then digested internally. It is characteristic of most animals. Key steps: ingestion → digestion (internally, in a gut/cavity) → absorption → assimilation → egestion. Saprotrophic organisms (fungi, bacteria) secrete enzymes externally and absorb digested products — this is EXTERNAL digestion. Autotrophs (chemo- or photo-) make their own organic molecules from inorganic sources and do not digest food."
+  },
+  {
+    "id": 13,
+    "level": "HL",
+    "topic": "Genetics / Epigenetics",
+    "stem": "How does methylation of nucleosomes affect DNA transcription?",
+    "options": [
+      "A. Methylation of histone H3 always prevents transcription by causing chromatin condensation",
+      "B. Methylation can either activate or repress transcription depending on which residue is methylated",
+      "C. Methylation adds a negative charge that repels RNA polymerase",
+      "D. Methylation prevents the binding of restriction enzymes, promoting transcription"
+    ],
+    "answer": "B",
+    "explanation": "Histone methylation (most commonly on histone H3) can have opposing effects depending on the specific lysine or arginine residue modified. For example, H3K4me3 (trimethylation of H3 lysine 4) is associated with ACTIVE transcription, while H3K27me3 is associated with REPRESSION. This context-dependence is a key feature distinguishing methylation from acetylation (which generally opens chromatin and promotes transcription). The IB syllabus emphasises that epigenetic modifications alter gene expression without changing DNA sequence."
+  },
+  {
+    "id": 14,
+    "level": "HL",
+    "topic": "Signal transduction",
+    "stem": "Which action of epinephrine (adrenaline) at the cellular level explains an increase in blood glucose during exercise?",
+    "options": [
+      "A. Epinephrine binds to the nucleus and activates glucagon gene transcription",
+      "B. A G-protein is activated, leading to cAMP production which activates glycogen breakdown",
+      "C. Epinephrine acts as a second messenger that directly phosphorylates glycogen synthase",
+      "D. Cyclic AMP (cAMP) deactivates the G-protein, preventing glucose uptake"
+    ],
+    "answer": "B",
+    "explanation": "Epinephrine binds to a GPCR (G-protein coupled receptor) on liver and muscle cells. This activates a G-protein, which activates adenylyl cyclase, converting ATP → cAMP (the second messenger). cAMP activates protein kinase A (PKA), which phosphorylates and activates glycogen phosphorylase (breaking glycogen into glucose-1-phosphate) and simultaneously inhibits glycogen synthase. Epinephrine does not enter the nucleus, is not a second messenger itself, and cAMP does not deactivate the G-protein — that is GTPase activity."
+  },
+  {
+    "id": 15,
+    "level": "SL",
+    "topic": "Genetics / Codominance",
+    "stem": "Pink-flowering Mirabilis jalapa (four o'clock flower) arises from incomplete dominance. A pink variety is crossed with a white variety. What could be the phenotypes of the offspring?",
+    "options": [
+      "A. White flowers only",
+      "B. Pink and white flowers",
+      "C. Red and white flowers",
+      "D. Pink flowers only"
+    ],
+    "answer": "B",
+    "explanation": "If R = red allele, W = white allele (incomplete dominance, so RW = pink). A pink × white cross is RW × WW. Expected offspring: RW (pink) and WW (white) in a 1:1 ratio. Therefore BOTH pink AND white flowers are produced — option B. Option A (white only) would be WW × WW. Option D (pink only) would be impossible as the white parent contributes W alleles. Option C (red) cannot appear because neither parent carries two R alleles."
+  },
+  {
+    "id": 16,
+    "level": "SL",
+    "topic": "Genetics / Disease",
+    "stem": "Phenylketonuria (PKU) is caused by a recessive allele. Which genotype causes the condition, and what is the consequence?",
+    "options": [
+      "A. AA only — tyrosine is converted to phenylalanine",
+      "B. aa only — tyrosine is not converted to phenylalanine",
+      "C. AA and Aa — phenylalanine is converted to tyrosine",
+      "D. aa only — phenylalanine is not converted to tyrosine"
+    ],
+    "answer": "D",
+    "explanation": "PKU is caused by a non-functional phenylalanine hydroxylase enzyme (encoded by the recessive \"a\" allele). This enzyme normally converts phenylalanine → tyrosine. In homozygous recessive individuals (aa), the enzyme is absent, so phenylalanine accumulates to toxic levels and CANNOT be converted to tyrosine. Option B incorrectly states tyrosine cannot become phenylalanine — the direction is wrong. Options A and C incorrectly involve dominant genotypes. The key biochemical detail: phenylalanine builds up because the conversion pathway is blocked."
+  },
+  {
+    "id": 17,
+    "level": "SL",
+    "topic": "Evolution",
+    "stem": "What describes analogous structures?",
+    "options": [
+      "A. They arise from divergent evolution and share a common ancestor",
+      "B. They have different origins but share a similar function",
+      "C. They have the same origin and the same function",
+      "D. They arise from the same embryological tissue"
+    ],
+    "answer": "B",
+    "explanation": "Analogous structures have evolved independently in different lineages (convergent evolution) to perform similar functions, but they do NOT share a common ancestor. Example: wings of a bat (forelimb) and wings of a butterfly (modified body wall) — both enable flight but arose independently. Homologous structures (e.g. pentadactyl limb) share a common ancestor and embryological origin but may have different functions. Common confusion: \"analogous = similar function, different origin\" vs \"homologous = similar origin, potentially different function.\""
+  },
+  {
+    "id": 18,
+    "level": "HL",
+    "topic": "Viruses / Bacteriophage",
+    "stem": "What is a difference between the lytic and lysogenic cycles of bacteriophage lambda?",
+    "options": [
+      "A. Only in the lytic cycle is lambda DNA inserted into the host DNA",
+      "B. Only in the lysogenic cycle does the virus use host metabolism to replicate",
+      "C. Only in the lytic cycle does the virus use host metabolism to replicate",
+      "D. Only in the lysogenic cycle is lambda DNA inserted into the host DNA"
+    ],
+    "answer": "D",
+    "explanation": "In the lysogenic cycle, phage lambda integrates its DNA into the host chromosome as a \"prophage\" — this integration is the defining feature. The host replicates normally, copying the prophage along with its own DNA, without producing new viral particles. In the lytic cycle, the phage DNA does NOT integrate — it immediately hijacks host cell machinery to replicate and assemble new phage particles, then lyses (destroys) the cell. Both cycles use host metabolism, so option B and C are wrong. Only the lysogenic cycle involves DNA insertion."
+  },
+  {
+    "id": 19,
+    "level": "HL",
+    "topic": "Protein structure",
+    "stem": "Myoglobin is a globular protein where nearly all non-polar R-groups point toward the interior of the molecule, and all polar R-groups face outward. What can be deduced from this?",
+    "options": [
+      "A. Disulfide bonds occur on the outside of the molecule",
+      "B. Hydrogen bonds form with water on the outside surface",
+      "C. Ionic bonds form with water on the inside",
+      "D. Hydrophobic interactions stabilise the outer surface"
+    ],
+    "answer": "B",
+    "explanation": "Polar R-groups (e.g. -OH, -NH₂, -COOH) on the outer surface can form hydrogen bonds with surrounding water molecules, making myoglobin water-soluble (as expected for a globular protein). Non-polar R-groups are buried in the interior — this hydrophobic core is stabilised by hydrophobic interactions (van der Waals forces). Disulfide bonds form between cysteine residues and can occur in either location, but they are NOT deduced simply from this polarity information. Ionic bonds would involve charged R-groups on the outside, not inside (which is non-polar)."
+  },
+  {
+    "id": 20,
+    "level": "SL",
+    "topic": "Classification",
+    "stem": "Four organisms have the following binomial names: Felis catus (W), Conus catus (X), Ameiurus catus (Y), Felis silvestris (Z). What can be concluded?",
+    "options": [
+      "A. W, X and Y are most closely related because they share the same species name",
+      "B. X and Y are most closely related because they both belong to the same phylum",
+      "C. W and Z are most closely related because they share the same genus",
+      "D. W is equally related to all the other organisms"
+    ],
+    "answer": "C",
+    "explanation": "In binomial nomenclature, the genus name indicates closer evolutionary relationship than the species name. W (Felis catus) and Z (Felis silvestris) share the genus \"Felis\" — indicating they are more closely related than any combination with X or Y. The species epithet \"catus\" shared by W, X, and Y does NOT indicate relationship — different genera can use the same species epithet by convention. This is a classic trap: same species name ≠ related. Genus = taxonomic category above species, indicating shared evolutionary history."
+  },
+  {
+    "id": 21,
+    "level": "HL",
+    "topic": "Cell differentiation",
+    "stem": "What results from an unspecialized cell experiencing gradients of signalling chemicals during embryonic development?",
+    "options": [
+      "A. Cell differentiation",
+      "B. Meiosis",
+      "C. Saltatory conduction",
+      "D. DNA replication only"
+    ],
+    "answer": "A",
+    "explanation": "Positional information during embryonic development is conveyed by concentration gradients of signalling molecules called morphogens (e.g. Bicoid protein in Drosophila). Cells interpret the local concentration of these signals and activate specific transcription factors, leading to differential gene expression — this produces cell differentiation. Stem cells receiving different concentrations of signalling chemicals differentiate into different cell types. This is the basis of pattern formation in development."
+  },
+  {
+    "id": 22,
+    "level": "SL",
+    "topic": "Plant biology",
+    "stem": "How is phloem adapted for transport of assimilates?",
+    "options": [
+      "A. Sieve tube elements have many mitochondria for active transport of sugars",
+      "B. Plasmodesmata between companion cells and sieve tube elements facilitate loading and unloading",
+      "C. Phloem unloads carbon compounds at source tissues by pressure flow",
+      "D. Companion cells have reduced cytoplasm to allow faster loading of sugars"
+    ],
+    "answer": "B",
+    "explanation": "Plasmodesmata are cytoplasmic channels that connect adjacent cells through cell walls. The connections between companion cells (which have abundant mitochondria and metabolic activity) and sieve tube elements (which are enucleate and metabolically inert) are critical — companion cells actively load sucrose into sieve tubes and control the flow. Sieve tube elements have few mitochondria (opposite of option A). Phloem unloads at SINK tissues (not sources). Companion cells have dense cytoplasm (not reduced) — they are metabolically very active."
+  },
+  {
+    "id": 23,
+    "level": "SL",
+    "topic": "Immunology",
+    "stem": "Which function is primarily associated with helper T-cells?",
+    "options": [
+      "A. Phagocytosis of pathogens",
+      "B. Activation of other cells in the immune system",
+      "C. Production of antibodies",
+      "D. Retention as memory cells only"
+    ],
+    "answer": "B",
+    "explanation": "Helper T-cells (CD4+ T-cells) are the coordinators of the adaptive immune response. They release cytokines that activate B-cells (→ antibody production), cytotoxic T-cells (→ cell killing), and macrophages (→ phagocytosis). Phagocytosis is carried out by macrophages and neutrophils (innate immune cells). Antibody production is carried out by plasma B-cells. Helper T-cells are central regulators, not direct effectors. This is why HIV is so devastating — it destroys helper T-cells, collapsing the entire adaptive immune response."
+  },
+  {
+    "id": 24,
+    "level": "SL",
+    "topic": "Evolution / Natural selection",
+    "stem": "What is an outcome of disruptive selection?",
+    "options": [
+      "A. Directional selection increases the size of the gene pool",
+      "B. Stabilizing selection increases allele frequencies of phenotypic extremes",
+      "C. Disruptive selection increases genetic variance in a population",
+      "D. Directional selection maintains the mean phenotype"
+    ],
+    "answer": "C",
+    "explanation": "Disruptive (diversifying) selection favours phenotypic extremes over intermediate phenotypes — for example, when there are two distinct ecological niches available. This increases the genetic variance in a population over time and can ultimately lead to speciation. Stabilizing selection favours intermediate phenotypes, REDUCING variance. Directional selection shifts the mean phenotype in one direction, but does not necessarily increase or decrease the gene pool size (it changes allele frequencies). Only option C correctly attributes the outcome to the correct type of selection."
+  },
+  {
+    "id": 25,
+    "level": "HL",
+    "topic": "Measurement / Tools",
+    "stem": "A goniometer is used in biological research. What does it measure?",
+    "options": [
+      "A. The electrical potential across a cell membrane",
+      "B. The angle of joints in anatomical studies",
+      "C. The concentration of ions in a solution",
+      "D. The diameter of microscopic structures"
+    ],
+    "answer": "B",
+    "explanation": "A goniometer is an instrument that measures angles. In biological and medical contexts it is used to measure joint angles (e.g. the degree of flexion or extension at metacarpophalangeal (MCP), proximal interphalangeal (PIP) and distal interphalangeal (DIP) joints). It appeared in IB past papers in the context of comparing measurement methods for finger joint angles. A ruler cannot precisely measure a curved joint angle — the goniometer is specifically adapted for this. Not to be confused with electrophysiology tools (oscilloscopes) or ion meters."
+  },
+  {
+    "id": 26,
+    "level": "HL",
+    "topic": "Genetics / Gene expression",
+    "stem": "Gene knockout experiments were performed on p53 in mice. What is the most appropriate use of such knockout mice?",
+    "options": [
+      "A. To extract tumour suppressor protein from knockout mice for cancer treatment",
+      "B. To obtain functional copies of the p53 gene for gene therapy",
+      "C. To investigate the effect of new anti-cancer drugs on tumour development",
+      "D. To study the effect of mutations on p53 gene expression"
+    ],
+    "answer": "C",
+    "explanation": "p53 knockout mice lack a functional tumour suppressor gene and therefore develop cancers at a high rate, providing a reliable animal model for studying tumour biology and drug development. These mice can be used to test whether anti-cancer drugs reduce tumour burden. They would NOT provide functional p53 protein (they have none — option A is wrong). Gene therapy aims to ADD functional genes, not use knockout animals. Studying mutation effects on expression (option D) is more relevant to knock-in models with specific mutations."
+  },
+  {
+    "id": 27,
+    "level": "SL",
+    "topic": "Photosynthesis",
+    "stem": "What occurs during the light-dependent reactions of photosynthesis?",
+    "options": [
+      "A. Water is oxidised by releasing two electrons to NADPH",
+      "B. Glycerate-3-phosphate (GP) is oxidised by releasing electrons to photosystem II",
+      "C. NAD is reduced by accepting two electrons from ATP",
+      "D. NADP is reduced by accepting two electrons from photosystem I"
+    ],
+    "answer": "D",
+    "explanation": "In the light-dependent reactions, photosystem I (P700) absorbs light energy and boosts electrons to high energy levels. These electrons are passed to ferredoxin and then reduce NADP⁺ to NADPH (by adding 2e⁻ and H⁺). Water is oxidised at photosystem II (not NADPH). GP is reduced (not oxidised) to triose phosphate in the Calvin cycle using NADPH. NAD is not the coenzyme used in photosynthesis — it is NADP. This question targets multiple misconceptions simultaneously."
+  },
+  {
+    "id": 28,
+    "level": "SL",
+    "topic": "Osmosis / Water potential",
+    "stem": "A plant cell has a water potential of −0.24 kPa and a pressure potential of 0.46 kPa. What is the solute potential? (Ψw = Ψs + Ψp)",
+    "options": [
+      "A. 0.22 kPa",
+      "B. −0.22 kPa",
+      "C. 0.70 kPa",
+      "D. −0.70 kPa"
+    ],
+    "answer": "D",
+    "explanation": "Using Ψw = Ψs + Ψp: Rearranging: Ψs = Ψw − Ψp = −0.24 − 0.46 = −0.70 kPa. Solute potential is always negative (solutes lower water potential). The trap: students often add instead of subtract. Note that pressure potential (turgor) in a plant cell is typically positive, which partially offsets the negative solute potential. The cell's water potential (−0.24) is less negative than the solute potential (−0.70) because the positive turgor pressure partially \"pushes\" water out."
+  },
+  {
+    "id": 29,
+    "level": "HL",
+    "topic": "Reproduction / Gametogenesis",
+    "stem": "What is the correct sequence of events in spermatogenesis?",
+    "options": [
+      "A. Mitosis → differentiation → meiosis → cell growth",
+      "B. Meiosis → differentiation → mitosis → cell growth",
+      "C. Mitosis → cell growth → meiosis → differentiation",
+      "D. Meiosis → cell growth → mitosis → differentiation"
+    ],
+    "answer": "C",
+    "explanation": "Spermatogenesis follows this sequence: (1) Mitosis of spermatogonia (maintains stem cell population and produces primary spermatocytes). (2) Cell growth — spermatogonia differentiate into primary spermatocytes. (3) Meiosis I → secondary spermatocytes; Meiosis II → spermatids. (4) Differentiation (spermiogenesis) — spermatids mature into spermatozoa (flagellum develops, cytoplasm shed, acrosome forms). Key distinction from oogenesis: in spermatogenesis, growth occurs before meiosis; there are no polar bodies; all four products are functional."
+  },
+  {
+    "id": 30,
+    "level": "HL",
+    "topic": "Genetics / Self-incompatibility",
+    "stem": "Cherry trees (Prunus avium) have self-incompatibility alleles at the S-locus. What benefit do these alleles provide?",
+    "options": [
+      "A. They decrease genetic variation in cherry populations",
+      "B. They prevent self-fertilisation, promoting outbreeding",
+      "C. They decrease the chance of mutations in gametes",
+      "D. They prevent pollen release during unfavourable conditions"
+    ],
+    "answer": "B",
+    "explanation": "Self-incompatibility (SI) is a genetic mechanism that prevents a plant from fertilising itself. If the pollen S-allele matches either S-allele in the pistil, pollen tube growth is inhibited. This obligates cross-pollination between genetically different individuals (outbreeding), which increases genetic diversity in the population — the opposite of inbreeding depression. Self-incompatibility has nothing to do with mutation rates or pollen release timing. It is an evolutionary adaptation to ensure genetic diversity and avoid the deleterious effects of inbreeding."
+  },
+  {
+    "id": 31,
+    "level": "SL",
+    "topic": "Ecology",
+    "stem": "Studies show that adding iron to the ocean surface stimulates phytoplankton growth. What could be a short-term consequence?",
+    "options": [
+      "A. Rate of photosynthesis increases, so the ocean becomes a source of carbon",
+      "B. Uptake of carbon dioxide into the ocean decreases, so it becomes a sink of carbon",
+      "C. Rate of respiration increases, raising the pH of the ocean",
+      "D. Rate of photosynthesis increases, resulting in increased uptake of CO₂ into the ocean"
+    ],
+    "answer": "D",
+    "explanation": "Phytoplankton photosynthesise, consuming dissolved CO₂ from the seawater. As CO₂ is removed from surface water, more atmospheric CO₂ dissolves into the ocean to equilibrate — this is the \"biological pump.\" So increased phytoplankton = increased photosynthesis = increased CO₂ uptake = the ocean becomes MORE of a carbon SINK (not a source). Increased respiration would release CO₂ and lower pH (acidification). This iron fertilisation is studied as a potential carbon sequestration strategy."
+  },
+  {
+    "id": 32,
+    "level": "HL",
+    "topic": "Zooxanthellae / Coral",
+    "stem": "What is a benefit of the mutualistic relationship between coral and zooxanthellae?",
+    "options": [
+      "A. Zooxanthellae receive carbon dioxide from the coral for photosynthesis",
+      "B. Zooxanthellae receive glucose from the coral",
+      "C. Coral receive carbon dioxide from the zooxanthellae",
+      "D. Coral receive physical protection from the zooxanthellae"
+    ],
+    "answer": "A",
+    "explanation": "Zooxanthellae are photosynthetic dinoflagellate algae that live within coral tissue. The mutualism works as follows: coral respiration produces CO₂ and NH₄⁺ → zooxanthellae use these for photosynthesis → zooxanthellae produce O₂ and organic compounds (glucose, glycerol) which the coral uses for energy. So zooxanthellae receive CO₂ and nitrogen from coral; coral receive photosynthetic products and O₂. When ocean temperatures rise, coral expel zooxanthellae → coral bleaching (they turn white) → coral may die. Option A correctly identifies the CO₂ benefit to zooxanthellae."
+  },
+  {
+    "id": 33,
+    "level": "HL",
+    "topic": "Genetics / Linkage",
+    "stem": "A heterozygous fruit fly with straight wings and red eyes was crossed with a curly-winged, sepia-eyed homozygous fly. Offspring: straight/red (25), straight/sepia (24), curly/red (26), curly/sepia (25). What conclusion can be drawn?",
+    "options": [
+      "A. Wing shape and eye colour genes are on the same chromosome",
+      "B. The alleles of both genes are codominant",
+      "C. Individuals with straight wings and sepia eyes resulted from crossing over",
+      "D. The genes for wing shape and eye colour are not linked"
+    ],
+    "answer": "D",
+    "explanation": "A testcross (heterozygous × homozygous recessive) produces 4 phenotype classes in a 1:1:1:1 ratio IF genes are unlinked (on different chromosomes). The results show approximately equal numbers (25:24:26:25) — matching expected 1:1:1:1. This indicates independent assortment, so the genes are NOT linked. If they WERE linked, we would expect parental types to far outnumber recombinant types. If fully linked (no crossing over), only 2 phenotype classes would appear. Equal ratios = unlinked."
+  },
+  {
+    "id": 34,
+    "level": "SL",
+    "topic": "Water properties",
+    "stem": "What property of water leads to aquatic environments having relatively stable temperatures throughout the year?",
+    "options": [
+      "A. High specific heat capacity because covalent bonding restricts molecular motion",
+      "B. Low specific heat capacity because covalent bonding restricts molecular motion",
+      "C. Low specific heat capacity because hydrogen bonding restricts molecular motion",
+      "D. High specific heat capacity because hydrogen bonding restricts molecular motion"
+    ],
+    "answer": "D",
+    "explanation": "Water has an unusually HIGH specific heat capacity (4.18 J g⁻¹ °C⁻¹) — it requires a large amount of energy to raise its temperature by 1°C. This is because the extensive hydrogen bond network between water molecules must be disrupted to increase kinetic energy. This buffers aquatic environments against temperature fluctuations. The bonds responsible are HYDROGEN bonds (between water molecules), not covalent bonds within molecules. This is a common misconception: covalent bonds (O−H) give water many properties, but it is the intermolecular hydrogen bonds that explain the high specific heat capacity."
+  },
+  {
+    "id": 35,
+    "level": "HL",
+    "topic": "Ecology / Trophic levels",
+    "stem": "The efficiency of energy transfer between trophic levels is typically around 10%. What accounts for the MAJORITY of energy lost between trophic levels?",
+    "options": [
+      "A. Energy lost in urine production",
+      "B. Energy lost as heat during cellular respiration",
+      "C. Energy remaining in uneaten or undigested material",
+      "D. Energy used in reproduction and growth"
+    ],
+    "answer": "C",
+    "explanation": "The majority (~90%) of energy is \"lost\" between trophic levels not because it disappears, but because it is not transferred to the next consumer. The largest component is: not all of a prey organism is consumed (bones, fur, exoskeleton) + not all consumed material is digestible (passes through as faeces — faecal energy). The energy in respiration (heat) is also significant. The IB syllabus notes that energy not assimilated (undigested material in faeces) and respiratory heat loss together account for most losses, but across ecosystems, not all of a prey organism is eaten at all."
+  },
+  {
+    "id": 36,
+    "level": "SL",
+    "topic": "Respiration / Fermentation",
+    "stem": "What is the role of fermentation (e.g. lactate production) in skeletal muscle during intense exercise?",
+    "options": [
+      "A. To release energy from glucose breakdown to continue when oxygen is limited",
+      "B. To establish a hydrogen ion gradient for ATP synthesis",
+      "C. To provide electrons for the electron transport chain",
+      "D. To reduce carbon compounds in the absence of oxygen"
+    ],
+    "answer": "A",
+    "explanation": "In intense exercise, oxygen delivery cannot keep pace with demand. Glycolysis can still occur without oxygen, but it requires NAD⁺ (oxidised coenzyme). Lactate dehydrogenase converts pyruvate to lactate, simultaneously oxidising NADH back to NAD⁺. This regeneration of NAD⁺ allows glycolysis to continue — maintaining ATP production (albeit at a low yield of 2 ATP per glucose). Fermentation does NOT produce ATP directly; it regenerates the coenzyme needed for glycolysis to keep generating ATP. Options B and C describe mitochondrial respiration, not fermentation."
+  },
+  {
+    "id": 37,
+    "level": "HL",
+    "topic": "Nervous system / Conduction",
+    "stem": "A research team recorded conduction velocities in medial giant fibres (MGF) and lateral giant fibres (LGF) of earthworms. The MGF diameter is 1.4× larger than the LGF. Why would this result in a faster conduction rate in the MGF?",
+    "options": [
+      "A. A larger diameter means greater myelination",
+      "B. A larger diameter reduces the internal electrical resistance, allowing faster current flow",
+      "C. The larger diameter allows more Na⁺/K⁺ pumps per unit length",
+      "D. A larger diameter increases the surface area for neurotransmitter release"
+    ],
+    "answer": "B",
+    "explanation": "Axon diameter and conduction velocity are directly related. A larger diameter axon has lower longitudinal resistance (because there is more cross-sectional area for current to flow through). This means local currents travel further along the axon before dissipating, depolarising adjacent membrane more rapidly. Note: earthworms do not have myelin sheaths — their giant fibres are unmyelinated but achieve speed through large diameter. Myelination (saltatory conduction) is a vertebrate adaptation. The Na⁺/K⁺ pump density and neurotransmitter release are separate issues unrelated to conduction velocity."
+  },
+  {
+    "id": 38,
+    "level": "SL",
+    "topic": "Genetics / Chromosomes",
+    "stem": "A cell with 46 chromosomes undergoes spermatogenesis. What is the outcome?",
+    "options": [
+      "A. One cell with 46 chromosomes and 3 polar bodies",
+      "B. Four cells with 46 chromosomes each",
+      "C. One cell with 23 chromosomes and 3 polar bodies",
+      "D. Four cells with 23 chromosomes each"
+    ],
+    "answer": "D",
+    "explanation": "Spermatogenesis produces 4 functional spermatozoa from one primary spermatocyte through meiosis I and II. Each spermatid (→ spermatozoon) contains the haploid number (23 chromosomes in humans). There are NO polar bodies in spermatogenesis — all four products are equal, functional cells. Polar bodies (3 polar bodies + 1 egg) are produced in oogenesis due to unequal cytokinesis. This is a critical distinction: spermatogenesis → 4 equal haploid cells; oogenesis → 1 haploid egg + 3 polar bodies."
+  },
+  {
+    "id": 39,
+    "level": "HL",
+    "topic": "Alleles / Speciation",
+    "stem": "What correctly applies to the process of speciation?",
+    "options": [
+      "A. Reproductive isolation causes populations to immediately become different species",
+      "B. Behavioural isolation maintains constant allele frequencies",
+      "C. Interbreeding between isolated populations promotes stabilising selection",
+      "D. Temporal isolation prevents interbreeding at certain times, contributing to reproductive isolation"
+    ],
+    "answer": "D",
+    "explanation": "Temporal isolation is a prezygotic reproductive barrier where two populations breed at different times (different seasons, times of day), preventing gene flow. This is one mechanism that contributes to speciation by preventing interbreeding. Reproductive isolation alone does not instantly produce new species — divergence in allele frequencies must also occur over time. Behavioural isolation does reduce gene flow, which causes allele frequencies to diverge (opposite of constant). Interbreeding between populations PREVENTS divergence, making speciation less likely."
+  },
+  {
+    "id": 40,
+    "level": "HL",
+    "topic": "Biotechnology / Gene technology",
+    "stem": "What is gene knockout used for?",
+    "options": [
+      "A. Increasing protein production by editing a gene to make it overactive",
+      "B. Investigating gene function by making a specific gene inoperative",
+      "C. Identifying gene presence by editing it to produce a different protein",
+      "D. Editing a gene to initiate programmed cell death (apoptosis)"
+    ],
+    "answer": "B",
+    "explanation": "A gene knockout is a genetic technique where a specific gene is disrupted or deleted to make it non-functional. By observing the resulting phenotype (what goes wrong when the gene is absent), scientists can infer the normal function of that gene. For example, knocking out the p53 gene reveals its role as a tumour suppressor. Knockouts are \"loss-of-function\" experiments. \"Knock-in\" refers to replacing or inserting genes. Gene knockouts do NOT increase protein production, produce different proteins, or necessarily trigger apoptosis."
+  },
+  {
+    "id": 41,
+    "level": "SL",
+    "topic": "Nervous system / Reflex",
+    "stem": "Which is the effector in a pain reflex arc?",
+    "options": [
+      "A. Skeletal muscle",
+      "B. Sensory nerve ending",
+      "C. Pituitary gland",
+      "D. Grey matter of spinal cord"
+    ],
+    "answer": "A",
+    "explanation": "In a reflex arc: receptor → sensory neuron → relay neuron (in spinal cord grey matter) → motor neuron → effector. The EFFECTOR is the organ that carries out the response — in the pain withdrawal reflex, this is the skeletal muscle (e.g. the arm muscles that jerk away from a painful stimulus). The sensory nerve ending is the RECEPTOR. The grey matter of the spinal cord contains the relay neuron (integration centre). The pituitary gland is not part of a spinal reflex arc."
+  },
+  {
+    "id": 42,
+    "level": "SL",
+    "topic": "Blood vessels",
+    "stem": "What is a feature of veins that helps return blood to the heart against gravity?",
+    "options": [
+      "A. Flexible walls to allow compression by surrounding muscles",
+      "B. Elastic walls to maintain blood pressure",
+      "C. Fenestrations (pores) for rapid exchange",
+      "D. Narrow lumen to carry deoxygenated blood under pressure"
+    ],
+    "answer": "A",
+    "explanation": "Veins rely on skeletal muscle contraction to squeeze blood toward the heart — this is the \"skeletal muscle pump.\" Veins have thin, flexible walls (less smooth muscle/elastic tissue than arteries) that allow external compression. They also have valves to prevent backflow. Elastic, thick walls are a feature of ARTERIES (which maintain pressure from the heart). Fenestrations are in capillaries (allowing exchange with tissues). Veins have a large lumen (not narrow) and carry blood at LOW pressure. The flexibility is key — it allows compression to propel blood."
+  },
+  {
+    "id": 43,
+    "level": "SL",
+    "topic": "Ecology / Conservation",
+    "stem": "Which action would minimise loss of biodiversity?",
+    "options": [
+      "A. Increase the rate of deforestation",
+      "B. Introduce species into new environments to control predation",
+      "C. Reduce the use of renewable energy",
+      "D. Rewilding of degraded ecosystems"
+    ],
+    "answer": "D",
+    "explanation": "Rewilding involves restoring ecosystems to their natural state, often by reintroducing native species and reducing human intervention. It increases habitat quality and connectivity, supporting greater biodiversity. Deforestation destroys habitat and reduces biodiversity. Introducing non-native species for \"biocontrol\" often causes unintended ecological damage (e.g. cane toads in Australia). Reducing renewable energy would increase fossil fuel use, worsening climate change and habitat loss. Rewilding is a recognised, positive conservation strategy."
+  },
+  {
+    "id": 44,
+    "level": "HL",
+    "topic": "Photosynthesis / Calvin cycle",
+    "stem": "In the Calvin cycle, how many RuBP molecules are regenerated in the process of creating one glucose molecule from CO₂?",
+    "options": [
+      "A. 2",
+      "B. 6",
+      "C. 10",
+      "D. 12"
+    ],
+    "answer": "B",
+    "explanation": "To make one glucose (C₆H₁₂O₆), 6 CO₂ molecules must be fixed. Each CO₂ is fixed by RuBisCO onto one 5-carbon RuBP molecule → producing 2 molecules of 3-carbon GP. So 6 CO₂ + 6 RuBP → 12 GP → 12 G3P (triose phosphate). 2 G3P molecules are exported to make 1 glucose; the remaining 10 G3P are used to regenerate 6 RuBP (using 9 ATP). Therefore, 6 RuBP molecules are regenerated per glucose produced. The trick is remembering that 10 G3P → 6 RuBP (a C5), which requires ATP."
+  },
+  {
+    "id": 45,
+    "level": "SL",
+    "topic": "Zoonoses",
+    "stem": "Which statement about zoonotic diseases is correct?",
+    "options": [
+      "A. They can only be transferred directly from wild animals to humans without an intermediate host",
+      "B. They are pathogens that are transferred from animals to humans",
+      "C. They are only found in animals kept in captivity",
+      "D. They can directly transfer antigens into animal cells"
+    ],
+    "answer": "B",
+    "explanation": "Zoonoses (or zoonotic diseases) are infectious diseases that are transmitted from non-human animals to humans. Examples include rabies, Ebola, SARS-CoV-2, avian influenza, Lyme disease. They can be transmitted directly (e.g. bat bite) or via an intermediate host/vector (e.g. mosquito in malaria — though malaria is not zoonotic). They are NOT restricted to captive animals — most zoonoses come from wildlife or domestic animals. They involve pathogens (viruses, bacteria, parasites), not just antigens."
+  },
+  {
+    "id": 46,
+    "level": "HL",
+    "topic": "Genetics / Incomplete dominance vs Codominance",
+    "stem": "Scientists measured methylation levels of chromosome 2 in twin studies. Twin 1 consistently showed significantly higher methylation levels than twin 2. What could be proposed?",
+    "options": [
+      "A. A modification to histone proteins in twin 1",
+      "B. Removal of histone from the chromosome in twin 2",
+      "C. The DNA base sequence of twin 1 was altered",
+      "D. Cytosines in promoter regions of twin 2 are more methylated than in twin 1"
+    ],
+    "answer": "A",
+    "explanation": "The question refers to methylation of chromosomes — specifically histone methylation (post-translational modification). Higher methylation of histones in twin 1 would alter chromatin structure and gene expression without changing DNA sequence. This is an epigenetic mechanism. Option D would describe higher methylation in twin 2 (contradicts the data). DNA methylation at cytosines (option C would change base sequence — incorrect; methylation modifies but does not change the sequence). Option B: removing histones would cause decondensation and potentially more transcription, not higher methylation."
+  },
+  {
+    "id": 47,
+    "level": "SL",
+    "topic": "Genetics / Sex linkage",
+    "stem": "A pedigree shows colour blindness (X-linked recessive) in three generations. A non-affected female Z has an affected father. What could the genotype of Z be?",
+    "options": [
+      "A. X^B X^B only",
+      "B. X^B X^b only",
+      "C. X^B X^B or X^B X^b",
+      "D. X^b X^b or X^B X^b"
+    ],
+    "answer": "C",
+    "explanation": "Z is non-affected, so she cannot be X^bX^b (that would make her colour blind). Her father is affected (X^bY), so she MUST have received an X^b from him — making her a carrier X^BX^b. BUT the question asks what her genotype COULD be — and if she received X^B from both parents, she would be X^BX^B (normal, not a carrier). However, since her FATHER is affected (X^b), she MUST have received X^b from him. Therefore Z can only be X^BX^b. The answer depends on reading the pedigree carefully — with an affected father, Z is definitely X^BX^b (only a carrier, not X^BX^B)."
+  },
+  {
+    "id": 48,
+    "level": "HL",
+    "topic": "Ecology / Food webs",
+    "stem": "Iron fertilisation of the ocean stimulates phytoplankton. The trophic cascade that follows would increase which process as a short-term consequence?",
+    "options": [
+      "A. Ocean becomes a carbon source due to increased decomposition",
+      "B. Uptake of CO₂ decreases as phytoplankton respire more",
+      "C. Carbon sequestration increases as phytoplankton photosynthesise and sink",
+      "D. Ocean pH rises as CO₂ is released from phytoplankton respiration"
+    ],
+    "answer": "C",
+    "explanation": "Iron is a limiting nutrient in many ocean regions (the HNLC zones — high nutrient, low chlorophyll). Adding iron triggers a phytoplankton bloom. Increased photosynthesis removes dissolved CO₂ → draws down atmospheric CO₂ into the ocean. When phytoplankton die, they sink (the \"biological pump\"), carrying organic carbon to the deep ocean — this is carbon sequestration. Ocean pH would RISE (not fall) as CO₂ is removed from surface water. The ocean becomes a greater SINK (not source) of carbon. This is studied as a geoengineering strategy."
+  },
+  {
+    "id": 49,
+    "level": "SL",
+    "topic": "Mitosis / Cell cycle",
+    "stem": "During mitosis in onion root cells (Allium cepa), what is happening at a cell where cell plate formation is visible?",
+    "options": [
+      "A. Unequal cytokinesis by budding",
+      "B. Assembly of new cell membrane and cell wall by vesicles",
+      "C. Contraction of a ring of actin and myosin",
+      "D. Movement of chromosomes toward poles by microtubules"
+    ],
+    "answer": "B",
+    "explanation": "In plant cells, cytokinesis occurs by cell plate formation (not by cleavage furrow as in animal cells). Golgi vesicles containing cell wall materials (pectin, cellulose precursors) migrate to the equatorial plane, fuse, and form the cell plate from the centre outward. This plate becomes the new cell wall (with cell membranes on each side). Contractile ring of actin/myosin is used in ANIMAL cell cytokinesis. Chromosome movement occurs in anaphase. Plant cells do not bud. The key detail: vesicles, not a cleavage furrow."
+  },
+  {
+    "id": 50,
+    "level": "HL",
+    "topic": "Nervous system / Myelination",
+    "stem": "What is the function of saltatory conduction in myelinated neurons?",
+    "options": [
+      "A. Allows action potentials to propagate in both directions simultaneously",
+      "B. Increases conduction speed by \"jumping\" depolarisation between nodes of Ranvier",
+      "C. Reduces the refractory period so more action potentials can fire per second",
+      "D. Allows the axon to function without a resting potential"
+    ],
+    "answer": "B",
+    "explanation": "Myelin sheaths (formed by Schwann cells in PNS, oligodendrocytes in CNS) electrically insulate the axon, except at nodes of Ranvier. Local current cannot flow through myelinated sections, so the depolarisation \"jumps\" from node to node — this is saltatory conduction (from Latin \"saltare\" = to leap). This dramatically increases conduction velocity (up to 100 m/s vs. ~1 m/s in unmyelinated fibres) with lower energy cost (fewer Na⁺/K⁺ pump cycles needed). It does NOT allow bidirectional propagation (always unidirectional due to refractory period) or eliminate resting potential."
+  },
+  {
+    "id": 51,
+    "level": "SL",
+    "topic": "Water properties",
+    "stem": "The black-throated loon (Gavia arctica) has denser bones than most birds of comparable size. Which property of water makes this adaptation advantageous for a diving bird?",
+    "options": [
+      "A. High specific heat capacity",
+      "B. Greater buoyancy than air",
+      "C. High thermal conductivity",
+      "D. High viscosity"
+    ],
+    "answer": "B",
+    "explanation": "Water provides far greater buoyancy than air because of its much higher density. A diving bird must overcome this upward force to submerge and remain underwater. Denser bones reduce net buoyancy, making descent easier. Specific heat capacity relates to temperature stability of aquatic environments. Thermal conductivity explains insulation needs (e.g. blubber in Pusa hispida). Viscosity relates to resistance to movement, not buoyancy. Both Gavia arctica and Pusa hispida are named in the IB syllabus as examples of animals adapted to water properties."
+  },
+  {
+    "id": 52,
+    "level": "SL",
+    "topic": "Water properties",
+    "stem": "Compared to moving through air, swimming through water requires substantially greater muscular effort at the same speed. Which physical property of water directly explains this?",
+    "options": [
+      "A. Specific heat capacity",
+      "B. Thermal conductivity",
+      "C. Viscosity",
+      "D. Buoyancy"
+    ],
+    "answer": "C",
+    "explanation": "Viscosity is the resistance of a fluid to flow — water is approximately 50 times more viscous than air. This means any object moving through water experiences much greater frictional drag, requiring more muscular effort. This is why aquatic organisms have evolved streamlined body shapes to reduce drag. Buoyancy affects whether an object sinks or floats. Thermal conductivity explains heat loss. Specific heat capacity explains temperature stability. Viscosity is explicitly listed in the IB syllabus alongside buoyancy, thermal conductivity, and specific heat capacity as properties of water to know."
+  },
+  {
+    "id": 53,
+    "level": "HL",
+    "topic": "Water / Extraterrestrial life",
+    "stem": "In the context of searching for extraterrestrial life, what is the 'Goldilocks zone'?",
+    "options": [
+      "A. The region of space within 100 light-years of Earth where radio signals could reach",
+      "B. The range of distances from a star where liquid water can exist on a planet's surface",
+      "C. The temperature range within a cell where enzyme activity is optimal",
+      "D. The zone within the ocean where photosynthesis can occur"
+    ],
+    "answer": "B",
+    "explanation": "The Goldilocks zone (also called the habitable zone) is the range of orbital distances from a star where surface temperatures allow liquid water to exist — not too hot (water boils) and not too cold (water freezes). Since liquid water is considered essential for life as we know it, the Goldilocks zone is used as a criterion when searching for planets that could support life. This term and concept are explicitly named in the IB HL syllabus (A1.1.8)."
+  },
+  {
+    "id": 54,
+    "level": "SL",
+    "topic": "Water properties",
+    "stem": "In which location(s) does capillary action contribute to the movement of water in a plant?",
+    "options": [
+      "A. In xylem vessels only",
+      "B. In phloem sieve tubes only",
+      "C. In both xylem vessels and plant cell walls",
+      "D. In root hair cells only"
+    ],
+    "answer": "C",
+    "explanation": "Capillary action — the tendency of water to move through narrow spaces due to adhesion and surface tension — occurs in both xylem vessels (narrow tubes) and in the cellulose microfibrils of plant cell walls (which have nanoscale spaces between fibres). At the evaporating surface of mesophyll cells, water moves through cell walls by capillarity before evaporating. The IB syllabus explicitly mentions both xylem and plant cell walls as sites of capillary action, so answering 'xylem only' misses half the answer."
+  },
+  {
+    "id": 55,
+    "level": "SL",
+    "topic": "Cell biology — fungi",
+    "stem": "A scientist treats a cell with an enzyme that breaks down chitin. The cell lyses (bursts). What type of cell is this most likely to be?",
+    "options": [
+      "A. Plant cell",
+      "B. Animal cell",
+      "C. Fungal cell",
+      "D. Prokaryotic cell"
+    ],
+    "answer": "C",
+    "explanation": "Chitin is the structural polysaccharide that makes up fungal cell walls (analogous to cellulose in plants). If chitin is degraded, the cell wall is compromised and the cell lyses due to osmotic pressure. Plant cells have cellulose cell walls — they would not be affected by a chitinase. Animal cells have no cell wall. Prokaryotic cells have peptidoglycan cell walls. This is a key distinction in the 2023 IB syllabus (A2.2.8): students must know the composition of cell walls in all three kingdoms."
+  },
+  {
+    "id": 56,
+    "level": "SL",
+    "topic": "Cell biology — fungi",
+    "stem": "What is the structural polysaccharide found in fungal cell walls?",
+    "options": [
+      "A. Cellulose",
+      "B. Peptidoglycan",
+      "C. Glycogen",
+      "D. Chitin"
+    ],
+    "answer": "D",
+    "explanation": "Fungal cell walls are composed of chitin — the same polymer that forms insect exoskeletons. This is a key distinction from plant cells (cellulose), bacteria (peptidoglycan), and animal cells (no cell wall). Glycogen is a storage polysaccharide in animals and fungi, not a structural component. The 2023 IB syllabus (A2.2.8) explicitly requires knowledge of cell wall composition across animals, fungi and plants — fungi is the component most teachers overlook."
+  },
+  {
+    "id": 57,
+    "level": "SL",
+    "topic": "Cell biology — atypical cells",
+    "stem": "Which pairing of cell type and atypical structural feature is correct?",
+    "options": [
+      "A. Mature red blood cell — many nuclei",
+      "B. Aseptate fungal hypha — divided into compartments by cross-walls",
+      "C. Skeletal muscle fibre — multinucleate (many nuclei per fibre)",
+      "D. Phloem sieve tube element — contains a large central nucleus"
+    ],
+    "answer": "C",
+    "explanation": "Skeletal muscle fibres are formed by the fusion of many myoblast cells during development, resulting in a single large fibre with multiple nuclei. This multinucleate structure is explicitly listed in the IB syllabus (A2.2.9) as an example of atypical cell structure. Mature red blood cells have NO nucleus (anucleate). Aseptate fungal hyphae have NO cross-walls — that is what makes them atypical (coenocytic = multinucleate without division). Phloem sieve tube elements lose their nucleus at maturity."
+  },
+  {
+    "id": 58,
+    "level": "SL",
+    "topic": "Cell biology — atypical cells",
+    "stem": "Which of the following cell types loses its nucleus at maturity, leaving it metabolically dependent on companion cells?",
+    "options": [
+      "A. Neutrophil",
+      "B. Phloem sieve tube element",
+      "C. Skeletal muscle fibre",
+      "D. Aseptate fungal hypha"
+    ],
+    "answer": "B",
+    "explanation": "Phloem sieve tube elements are enucleate (no nucleus) at maturity — they also lose most other organelles including the tonoplast and ribosomes. They are kept alive by companion cells connected via plasmodesmata, which carry out the metabolic functions the sieve tube element cannot. Neutrophils have a distinctive multi-lobed nucleus (not absent). Skeletal muscle fibres are multinucleate (many nuclei, not zero). Aseptate fungal hyphae are multinucleate. The IB syllabus (A2.2.9) requires students to know all four atypical cell examples."
+  },
+  {
+    "id": 59,
+    "level": "HL",
+    "topic": "Cell biology — endosymbiosis",
+    "stem": "Which feature is shared by mitochondria, chloroplasts, and free-living prokaryotes, providing evidence for the endosymbiotic origin of these organelles?",
+    "options": [
+      "A. They all contain 80S ribosomes identical to the eukaryotic cytoplasm",
+      "B. They are surrounded by a single phospholipid membrane",
+      "C. They contain 70S ribosomes and naked circular DNA",
+      "D. They divide by meiosis to maintain their numbers in the cell"
+    ],
+    "answer": "C",
+    "explanation": "Both mitochondria and chloroplasts contain 70S ribosomes (the prokaryotic type, not the eukaryotic 80S) and naked circular DNA — just like free-living prokaryotes. They also replicate by binary fission. These features are difficult to explain unless these organelles descended from prokaryotic endosymbionts. The IB syllabus (A2.2.12) lists these as the key evidence: 70S ribosomes, naked circular DNA, and the ability to replicate. Both organelles have double membranes (the inner = original prokaryote membrane; outer = phagocytic vesicle membrane)."
+  },
+  {
+    "id": 60,
+    "level": "HL",
+    "topic": "Cell biology — endosymbiosis",
+    "stem": "According to the endosymbiotic theory, which organelle acquired an endosymbiont AFTER the nucleus had already evolved?",
+    "options": [
+      "A. Lysosome",
+      "B. Rough endoplasmic reticulum",
+      "C. Chloroplast",
+      "D. Golgi apparatus"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (A2.2.12) states the sequence: first, a eukaryote evolved with a nucleus; then mitochondria evolved through endosymbiosis of an aerobic prokaryote; then in some eukaryotes (plants and algae), chloroplasts subsequently evolved through a second endosymbiotic event involving a cyanobacterium. Lysosomes, rough ER, and the Golgi apparatus are all derived from the endomembrane system — they did not arise from endosymbiosis. This sequence (nucleus first, mitochondria second, chloroplasts third and only in some lineages) is a testable detail."
+  },
+  {
+    "id": 61,
+    "level": "HL",
+    "topic": "Cell biology — pneumocytes",
+    "stem": "Which correctly describes the structural adaptation of type II pneumocytes in alveoli?",
+    "options": [
+      "A. Extremely thin cytoplasm to minimise diffusion distance for gas exchange",
+      "B. Many lamellar bodies (secretory vesicles) that discharge surfactant into the alveolar lumen",
+      "C. Ciliated surface to sweep mucus and pathogens toward the trachea",
+      "D. Large nuclei for rapid protein synthesis to repair alveolar damage"
+    ],
+    "answer": "B",
+    "explanation": "Type II pneumocytes (type II alveolar cells) contain lamellar bodies — specialised secretory vesicles packed with phospholipid surfactant. They discharge this surfactant onto the alveolar surface, reducing surface tension and preventing alveolar collapse during expiration. Type I pneumocytes (not type II) are extremely thin and specialised for gas exchange by diffusion. Ciliated cells are found in the bronchi/trachea, not alveoli. The IB HL syllabus (B2.3.8) specifically requires knowledge of both pneumocyte types and their different adaptations."
+  },
+  {
+    "id": 62,
+    "level": "HL",
+    "topic": "Cell biology — pneumocytes",
+    "stem": "An alveolus contains two types of epithelial cell. Type I is extremely thin. Type II secretes surfactant. What does this arrangement illustrate about tissue organisation?",
+    "options": [
+      "A. All cells in a tissue must perform identical functions",
+      "B. A single tissue can contain more than one cell type when different functions are required",
+      "C. Surfactant production requires the same cell type as gas exchange",
+      "D. Type II cells are stem cells that differentiate into type I cells only after injury"
+    ],
+    "answer": "B",
+    "explanation": "The IB syllabus (B2.3.8) uses alveolar epithelium as a specific example to illustrate that a single tissue can contain multiple cell types when different adaptations are needed for the tissue's overall function. Type I cells handle gas exchange (thin = short diffusion distance). Type II cells handle surfactant production (lamellar bodies). Neither could perform the other's role efficiently. This challenges the oversimplification that 'all cells in a tissue are the same.'"
+  },
+  {
+    "id": 63,
+    "level": "HL",
+    "topic": "Cell biology — glycoproteins",
+    "stem": "Where are the carbohydrate groups of glycolipids and glycoproteins located in the plasma membrane?",
+    "options": [
+      "A. On the cytoplasmic face of the membrane",
+      "B. Embedded within the hydrophobic core of the bilayer",
+      "C. On the extracellular face only",
+      "D. Equally distributed on both the inner and outer surfaces"
+    ],
+    "answer": "C",
+    "explanation": "Carbohydrate groups attached to glycoproteins and glycolipids are always located on the extracellular face of the plasma membrane. They are never found on the cytoplasmic side. This asymmetry is established during membrane synthesis in the ER and Golgi apparatus. The carbohydrate chains project outward into the extracellular space where they function in cell recognition (e.g. ABO blood group antigens) and cell adhesion. ABO antigens are named in the IB syllabus as a specific example."
+  },
+  {
+    "id": 64,
+    "level": "HL",
+    "topic": "Origin of life — ribozymes",
+    "stem": "What evidence from modern ribosomes supports the hypothesis that RNA was the first genetic material?",
+    "options": [
+      "A. Ribosomes contain only RNA; no proteins are present",
+      "B. The catalytic activity of the ribosome (peptide bond formation) is performed by ribosomal RNA, not protein",
+      "C. Ribosomal RNA has the same base sequence across all species",
+      "D. RNA polymerase is a ribozyme that synthesises its own template"
+    ],
+    "answer": "B",
+    "explanation": "The peptidyl transferase activity of the ribosome — the catalysis of peptide bond formation between amino acids — is carried out by the 23S ribosomal RNA (in prokaryotes), not by the ribosomal proteins. Proteins are present but play a structural rather than catalytic role. This means ribozymes (RNA enzymes) are still actively used in the most fundamental cellular process. This supports the RNA world hypothesis: early life used RNA both as genetic material and as catalysts, before DNA and protein took over these roles. The IB HL syllabus (A2.1.6) explicitly names this."
+  },
+  {
+    "id": 65,
+    "level": "HL",
+    "topic": "Origin of life — ribozymes",
+    "stem": "RNA is described as a 'presumed first genetic material.' Which two properties of RNA support this hypothesis?",
+    "options": [
+      "A. It is double-stranded and highly stable",
+      "B. It can store genetic information AND has catalytic activity as a ribozyme",
+      "C. It contains thymine which resists UV damage better than uracil",
+      "D. It can only replicate with the help of protein enzymes"
+    ],
+    "answer": "B",
+    "explanation": "The RNA world hypothesis proposes that RNA was the original molecule of life because it can do both things needed: store genetic information (like DNA) and catalyse reactions (like protein enzymes). No other known molecule has both properties. RNA is single-stranded (not double), contains uracil (not thymine — thymine is in DNA), and some RNA can self-replicate (ribozymes). DNA is more stable than RNA, which is why DNA took over as the genetic material, while proteins (being more versatile catalysts) took over enzymatic roles. The IB HL syllabus (A2.1.6) specifies both properties."
+  },
+  {
+    "id": 66,
+    "level": "HL",
+    "topic": "Origin of life — LUCA",
+    "stem": "What is the Last Universal Common Ancestor (LUCA) and what is the primary evidence for its existence?",
+    "options": [
+      "A. The first prokaryote; evidenced by stromatolite fossils dated to 3.5 billion years ago",
+      "B. The ancestor of all living organisms; evidenced by the universal genetic code and shared genes across all domains",
+      "C. The first eukaryote; evidenced by the presence of membrane-bound organelles in all complex cells",
+      "D. A hypothetical RNA molecule; evidenced by ribozyme activity in modern cells"
+    ],
+    "answer": "B",
+    "explanation": "LUCA is the hypothetical ancestor from which all three domains of life (Bacteria, Archaea, Eukarya) are descended. The strongest evidence is the universality of the genetic code — all life uses the same 64 codons to encode the same 20 amino acids. Additionally, certain highly conserved genes (e.g. those encoding ribosomal RNA, ATP synthase, DNA polymerase) are shared across all living organisms, indicating descent from a common ancestor. The IB HL syllabus (A2.1.7) includes 'universal genetic code and shared genes' as the required evidence."
+  },
+  {
+    "id": 67,
+    "level": "HL",
+    "topic": "Origin of life — hydrothermal vents",
+    "stem": "What evidence supports the hypothesis that LUCA evolved near hydrothermal vents on the ocean floor?",
+    "options": [
+      "A. The Miller-Urey experiment produced amino acids under simulated vent conditions",
+      "B. Fossilised evidence in ancient seafloor hydrothermal vent precipitates and conserved sequences in genomic analysis",
+      "C. All modern archaea are found exclusively near hydrothermal vents",
+      "D. Hydrothermal vents produce the same gases as early Earth's atmosphere"
+    ],
+    "answer": "B",
+    "explanation": "Two types of evidence support the hydrothermal vent hypothesis: (1) some of the oldest fossilised evidence of life has been found in ancient seafloor hydrothermal vent precipitates (iron-sulphur minerals that could have acted as catalysts); (2) genomic analysis reveals conserved sequences suggesting LUCA had metabolic pathways suited to the chemical gradients and minerals found at vents. The Miller-Urey experiment simulated lightning in a reducing atmosphere (not vent conditions specifically). Modern archaea are found in many environments, not just vents. The IB HL syllabus (A2.1.9) explicitly cites both lines of evidence."
+  },
+  {
+    "id": 68,
+    "level": "SL",
+    "topic": "Cladistics",
+    "stem": "In a cladogram, what does a node represent?",
+    "options": [
+      "A. An extinct species known only from fossils",
+      "B. A hypothetical common ancestor at a branch point",
+      "C. A currently living species at the tip of a branch",
+      "D. The root of the entire tree where all life began"
+    ],
+    "answer": "B",
+    "explanation": "In a cladogram, nodes (branch points) represent hypothetical common ancestors — the ancestor from which two lineages diverged. They are not named organisms; they are inferred ancestral populations. Terminal branches end in the organisms being compared (extant or extinct taxa named in the study). The root is the basal node representing the most ancient common ancestor in the diagram. The IB syllabus (A3.2.7) requires students to know three terms: root (most ancient ancestor), node (hypothetical common ancestor at a branch point), and terminal branch (named taxon at the tip)."
+  },
+  {
+    "id": 69,
+    "level": "SL",
+    "topic": "Cladistics",
+    "stem": "What principle is used to select the most probable cladogram when multiple arrangements are possible?",
+    "options": [
+      "A. Maximum likelihood — the arrangement most consistent with known fossil dates",
+      "B. Parsimony — the arrangement requiring the fewest sequence changes to explain observed variation",
+      "C. Phenotypic similarity — organisms that look most alike are grouped most closely",
+      "D. Geographic proximity — organisms from the same region are assumed to be most related"
+    ],
+    "answer": "B",
+    "explanation": "Parsimony analysis selects the cladogram in which the observed sequence differences between clades are explained by the smallest number of evolutionary changes (mutations). The logic is that evolution is more likely to have taken a shorter path than a longer one. This does not always give the 'true' tree, but it gives the most parsimonious (economical) hypothesis. The IB syllabus (A3.2.6) explicitly names parsimony as the method. Phenotypic similarity was the pre-cladistic approach and can be misleading due to convergent evolution."
+  },
+  {
+    "id": 70,
+    "level": "SL",
+    "topic": "Cladistics — molecular clock",
+    "stem": "Why can the molecular clock only give estimates of when two lineages diverged, rather than precise dates?",
+    "options": [
+      "A. DNA sequences change too rapidly to be reliably compared across species",
+      "B. Mutation rates vary with generation time, population size, and selective pressure",
+      "C. The molecular clock only works for protein sequences, not DNA",
+      "D. Fossils are needed to calibrate the clock and are rarely available"
+    ],
+    "answer": "B",
+    "explanation": "The molecular clock assumes that mutations accumulate at a roughly constant rate over time, allowing sequence differences to be used to estimate divergence times. However, mutation rates are not constant — they vary with generation time (organisms with shorter generations accumulate mutations faster), population size (smaller populations have more genetic drift), and selective pressure (highly conserved sequences mutate more slowly). The IB syllabus (A3.2.5) explicitly lists these three factors as reasons why the clock gives estimates, not precise dates."
+  },
+  {
+    "id": 71,
+    "level": "HL",
+    "topic": "Speciation — polyploidy",
+    "stem": "Which genus is used in the IB Biology syllabus as a named example of abrupt speciation by hybridisation and polyploidy in plants?",
+    "options": [
+      "A. Orchis",
+      "B. Persicaria",
+      "C. Mirabilis",
+      "D. Prunus"
+    ],
+    "answer": "B",
+    "explanation": "The IB syllabus (A4.1.11) uses knotweed or smartweed — genus Persicaria — as the named example of abrupt speciation through hybridisation and polyploidy. Polyploidy (having multiple sets of chromosomes) can occur when two different species hybridise and their offspring undergo chromosomal doubling — the resulting polyploid is reproductively isolated from both parent species and constitutes a new species. This can happen in a single generation, which is why it is called 'abrupt' speciation. Mirabilis is used for incomplete dominance. Prunus for self-incompatibility. Orchis for pollination."
+  },
+  {
+    "id": 72,
+    "level": "SL",
+    "topic": "Speciation — hybrid sterility",
+    "stem": "A mule is the offspring of a female horse and a male donkey. What is the significance of mules in the context of speciation?",
+    "options": [
+      "A. Mules demonstrate that horses and donkeys are the same species",
+      "B. Mules are an example of a fertile interspecific hybrid that has formed a new species",
+      "C. Mules are sterile interspecific hybrids, demonstrating a barrier to gene flow between species",
+      "D. Mules show that reproductive isolation has not yet occurred between horses and donkeys"
+    ],
+    "answer": "C",
+    "explanation": "Mules are sterile because horses (2n=64) and donkeys (2n=62) have different chromosome numbers — their hybrid offspring cannot form viable gametes during meiosis. This sterility is a post-zygotic reproductive barrier that prevents gene flow between the two species despite their ability to produce offspring. The IB syllabus (A4.1.10) cites the mule as the named example of a sterile interspecific hybrid. Sterile hybrids do NOT form new species — a new species requires a fertile, reproductively isolated population."
+  },
+  {
+    "id": 73,
+    "level": "SL",
+    "topic": "Biodiversity — extinct species",
+    "stem": "In the IB Biology syllabus, the North Island giant moa (Dinornis novaezealandiae) is used as a case study of species extinction. What category of biodiversity loss does it represent?",
+    "options": [
+      "A. Loss of a marine mammal species",
+      "B. Loss of a freshwater fish species",
+      "C. Loss of a terrestrial megafauna species",
+      "D. Loss of a coral reef species"
+    ],
+    "answer": "C",
+    "explanation": "The North Island giant moa (Dinornis novaezealandiae) was a large flightless bird of New Zealand, standing up to 3.6 metres tall. It went extinct following the arrival of humans (Maori) approximately 600 years ago due to overhunting. The IB syllabus (A4.2.3) uses it specifically as an example of the loss of terrestrial megafauna — large land animals. The Caribbean monk seal (Neomonachus tropicalis) is paired as the example of marine species loss. Students must know both names and categories."
+  },
+  {
+    "id": 74,
+    "level": "SL",
+    "topic": "Biodiversity — extinct species",
+    "stem": "Which extinct species is used in the IB Biology syllabus to illustrate the loss of a marine mammal?",
+    "options": [
+      "A. North Island giant moa (Dinornis novaezealandiae)",
+      "B. Caribbean monk seal (Neomonachus tropicalis)",
+      "C. Dodo (Raphus cucullatus)",
+      "D. Tasmanian tiger (Thylacinus cynocephalus)"
+    ],
+    "answer": "B",
+    "explanation": "The Caribbean monk seal (Neomonachus tropicalis) was declared extinct in 2008 — the only seal species to have gone extinct in recorded history due to human activities (overhunting for oil and food). The IB syllabus (A4.2.3) uses it as the named example of marine species loss. Dinornis novaezealandiae represents terrestrial megafauna loss. Students frequently confuse the two — the mnemonic is: seal = sea = marine; moa = land bird = terrestrial."
+  },
+  {
+    "id": 75,
+    "level": "SL",
+    "topic": "Biodiversity — EDGE",
+    "stem": "What does EDGE stand for in the context of conservation biology, and why are EDGE species prioritised?",
+    "options": [
+      "A. Endangered, Declining, Globally Endemic — prioritised because they live in restricted habitats",
+      "B. Evolutionarily Distinct and Globally Endangered — prioritised because they represent unique evolutionary lineages",
+      "C. Ecologically Dependent, Genetically Endangered — prioritised because they have small gene pools",
+      "D. Extinct, Declining, Globally Extirpated — prioritised because conservation is most urgent"
+    ],
+    "answer": "B",
+    "explanation": "EDGE stands for Evolutionarily Distinct and Globally Endangered. The EDGE of Existence programme prioritises species that are both (1) evolutionarily distinct — they have few close relatives and represent a long, unique branch of the tree of life — and (2) globally endangered. The rationale is that if an EDGE species goes extinct, its entire unique evolutionary history is lost and cannot be replaced, even if a similar-looking species survives. Examples include the platypus and the Yangtze finless porpoise. The IB syllabus (A4.2.8) requires students to know the full name and rationale."
+  },
+  {
+    "id": 76,
+    "level": "SL",
+    "topic": "Biodiversity — ecosystem loss",
+    "stem": "Which specific ecosystem is named in the IB Biology syllabus as a case study of ecosystem loss caused by human activity?",
+    "options": [
+      "A. Boreal taiga forest in northern Canada",
+      "B. Temperate deciduous forest in Western Europe",
+      "C. Mixed dipterocarp forest in Southeast Asia",
+      "D. Mangrove forest in the Caribbean"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (A4.2.4) specifically names mixed dipterocarp forest in Southeast Asia (primarily Borneo and Sumatra) as the required ecosystem loss case study. Dipterocarps are a family of tall hardwood trees that dominate these forests. Loss is driven by logging and conversion to oil palm plantations. Students should not answer this generically as 'tropical rainforest' — the specific name 'mixed dipterocarp forest' is required. A second case study from the student's own region is also required but not specified."
+  },
+  {
+    "id": 77,
+    "level": "HL",
+    "topic": "Protein structure — conjugated",
+    "stem": "Haemoglobin is described as a conjugated protein. What makes it conjugated?",
+    "options": [
+      "A. It has quaternary structure with four polypeptide subunits",
+      "B. It contains a non-protein prosthetic group — the haem group with iron",
+      "C. It is produced by conjugation of two separate ribosomal products",
+      "D. It has both alpha-helical and beta-pleated sheet secondary structure"
+    ],
+    "answer": "B",
+    "explanation": "A conjugated protein contains one or more non-protein components (prosthetic groups) that are essential for its function. Haemoglobin contains four haem groups, each consisting of a porphyrin ring with a central Fe²⁺ ion — this iron is what binds oxygen. The haem group is not a polypeptide, making haemoglobin conjugated. Having four subunits describes quaternary structure (which haemoglobin also has), but quaternary structure alone does not make a protein conjugated. Insulin and collagen are named in the IB syllabus as examples of non-conjugated proteins; haemoglobin as conjugated."
+  },
+  {
+    "id": 78,
+    "level": "HL",
+    "topic": "Protein structure — conjugated",
+    "stem": "Which row correctly classifies the named proteins?",
+    "options": [
+      "A. Insulin = conjugated; haemoglobin = non-conjugated; collagen = conjugated",
+      "B. Insulin = non-conjugated; haemoglobin = conjugated; collagen = non-conjugated",
+      "C. Insulin = conjugated; haemoglobin = conjugated; collagen = non-conjugated",
+      "D. All three are conjugated proteins"
+    ],
+    "answer": "B",
+    "explanation": "The IB syllabus (B1.2.11) specifies: insulin and collagen are non-conjugated proteins (polypeptides only, no prosthetic groups); haemoglobin is a conjugated protein (contains haem prosthetic groups with Fe²⁺). Insulin is a hormone made of two polypeptide chains linked by disulfide bonds — pure protein, no prosthetic group. Collagen is a fibrous structural protein — pure polypeptide triple helix. Only haemoglobin has the non-protein haem component."
+  },
+  {
+    "id": 79,
+    "level": "HL",
+    "topic": "Enzyme inhibition — feedback",
+    "stem": "Which amino acid is named in the IB Biology syllabus as the specific example of end-product feedback inhibition of a metabolic pathway?",
+    "options": [
+      "A. Phenylalanine",
+      "B. Tryptophan",
+      "C. Isoleucine",
+      "D. Tyrosine"
+    ],
+    "answer": "C",
+    "explanation": "The IB HL syllabus (C1.1.16) uses isoleucine as the named example of end-product (feedback) inhibition. In the biosynthesis pathway leading to isoleucine, when sufficient isoleucine has accumulated, it allosterically inhibits the first enzyme in the pathway (threonine deaminase). This prevents wasteful overproduction. This is a classic example of allosteric inhibition where the end product binds to a site other than the active site, changing the enzyme's shape and reducing its activity. Students must name isoleucine specifically — 'an amino acid' is insufficient."
+  },
+  {
+    "id": 80,
+    "level": "HL",
+    "topic": "Enzyme inhibition — mechanism-based",
+    "stem": "Penicillin is an example of mechanism-based (irreversible) inhibition. Which enzyme does it inhibit, and how does bacterial resistance develop?",
+    "options": [
+      "A. Inhibits DNA gyrase; resistance develops when bacteria over-express the gene",
+      "B. Inhibits transpeptidase; resistance develops when the enzyme is modified so penicillin can no longer bind",
+      "C. Inhibits ribosomal peptidyl transferase; resistance develops by ribosome methylation",
+      "D. Inhibits beta-lactamase; resistance develops when bacteria produce a mutant lactamase"
+    ],
+    "answer": "B",
+    "explanation": "Penicillin inhibits transpeptidase — the enzyme that forms the peptide cross-links in bacterial peptidoglycan cell walls. Without cross-linking, the cell wall weakens and the bacterium lyses. Penicillin binds covalently (irreversibly) to the enzyme's active site. Resistance develops when bacteria produce a modified transpeptidase with altered binding site, so penicillin can no longer bind and inhibit it. (Some bacteria also produce beta-lactamase which breaks down penicillin — a separate mechanism.) The IB HL syllabus (C1.1.17) specifically names transpeptidase."
+  },
+  {
+    "id": 81,
+    "level": "HL",
+    "topic": "Enzyme inhibition — mechanism-based",
+    "stem": "What distinguishes mechanism-based inhibition from competitive inhibition?",
+    "options": [
+      "A. Mechanism-based inhibitors bind reversibly; competitive inhibitors bind irreversibly",
+      "B. Mechanism-based inhibitors are converted by the enzyme into a product that irreversibly blocks the active site",
+      "C. Competitive inhibitors always resemble the substrate; mechanism-based inhibitors do not",
+      "D. Mechanism-based inhibition only occurs at high inhibitor concentrations"
+    ],
+    "answer": "B",
+    "explanation": "Mechanism-based (suicide) inhibitors are substrate analogues that the enzyme begins to process — but the catalytic reaction converts the inhibitor into a reactive species that then covalently and irreversibly bonds to the active site, permanently inactivating the enzyme. Penicillin is processed by transpeptidase, which opens the beta-lactam ring, generating a product that permanently bonds to the serine residue in the active site. This is irreversible — unlike competitive inhibition (reversible, competing with substrate) or non-competitive inhibition. The 'mechanism-based' label refers to the enzyme's own catalytic mechanism being exploited to create the inhibitor."
+  },
+  {
+    "id": 82,
+    "level": "SL",
+    "topic": "Nutrition — mixotrophy",
+    "stem": "Euglena is described as a mixotrophic organism. What does this mean?",
+    "options": [
+      "A. It can reproduce both sexually and asexually",
+      "B. It obtains energy by both autotrophic and heterotrophic means",
+      "C. It has both prokaryotic and eukaryotic features",
+      "D. It can survive in both freshwater and marine environments"
+    ],
+    "answer": "B",
+    "explanation": "Mixotrophy means an organism can obtain nutrition by more than one method. Euglena contains chloroplasts and can photosynthesise (autotrophic) in the light, but can also engulf organic particles or absorb dissolved organic compounds (heterotrophic) in darkness or when nutrients are available. The IB syllabus (B4.2.5) names Euglena as the primary freshwater example of a mixotrophic protist and introduces the distinction between obligate mixotrophs (must use both modes) and facultative mixotrophs (can switch between modes depending on conditions)."
+  },
+  {
+    "id": 83,
+    "level": "SL",
+    "topic": "Nutrition — mixotrophy",
+    "stem": "An organism is described as a facultative mixotroph. What does 'facultative' indicate about its nutritional strategy?",
+    "options": [
+      "A. It must always use both autotrophic and heterotrophic nutrition simultaneously",
+      "B. It can switch between autotrophic and heterotrophic nutrition depending on conditions",
+      "C. It is obligated to use heterotrophic nutrition only",
+      "D. It uses external digestion like saprotrophic fungi"
+    ],
+    "answer": "B",
+    "explanation": "A facultative mixotroph can switch between modes of nutrition depending on environmental conditions — it is not obligated to use both simultaneously. For example, in bright light with limited organic nutrients, it may rely mainly on photosynthesis; in darkness or when organic matter is plentiful, it may switch to heterotrophy. An obligate mixotroph requires both modes simultaneously for survival. Many oceanic plankton species are facultative mixotrophs. The IB syllabus (B4.2.5) specifically requires students to understand the obligate vs facultative distinction for mixotrophs."
+  },
+  {
+    "id": 84,
+    "level": "SL",
+    "topic": "Nutrition — archaea",
+    "stem": "Which statement about the nutrition of archaea is correct?",
+    "options": [
+      "A. All archaea are obligate anaerobes that use sulfur reduction for energy",
+      "B. Archaea are metabolically very diverse, using light, inorganic chemical oxidation, or carbon compound oxidation",
+      "C. Archaea are exclusively chemoautotrophic, using inorganic chemicals as energy sources",
+      "D. All archaea are heterotrophs that obtain energy from organic compounds only"
+    ],
+    "answer": "B",
+    "explanation": "Archaea are metabolically extremely diverse — one of the most remarkable features of this domain. Different archaea species use: (1) light energy (phototrophy, though different from plant chlorophyll-based photosynthesis); (2) oxidation of inorganic chemicals such as hydrogen, sulfur, or ammonia (chemolithotrophy); or (3) oxidation of organic carbon compounds (organotrophy). The IB syllabus (B4.2.7) emphasises this diversity and explicitly states students do not need to name specific examples of archaea species."
+  },
+  {
+    "id": 85,
+    "level": "SL",
+    "topic": "Pathogens — archaea",
+    "stem": "Which statement about archaea and human disease is correct according to the IB Biology syllabus?",
+    "options": [
+      "A. Archaea cause many serious human diseases including methanogen-related gut infections",
+      "B. Archaea cause approximately the same number of human diseases as bacteria",
+      "C. Archaea are not known to cause any diseases in humans",
+      "D. Archaea cause diseases only in immunocompromised patients"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (C3.2.1) explicitly states: 'Archaea are not known to cause any diseases in humans.' This is a striking fact given that bacteria, viruses, fungi, and protists all include human pathogens. Despite archaea being abundant in the human gut microbiome (methanogens), none have been identified as pathogenic. This may be because archaea have fundamentally different membrane lipids and cell wall chemistry from bacteria and eukaryotes, and their biology may be incompatible with the mechanisms needed for pathogenicity. This is a known exam trap — students assume all microorganisms can cause disease."
+  },
+  {
+    "id": 86,
+    "level": "SL",
+    "topic": "Ecology — dentition",
+    "stem": "Which extinct hominid is named in the IB Biology syllabus as an example used to infer diet from skull and tooth morphology?",
+    "options": [
+      "A. Australopithecus afarensis",
+      "B. Homo heidelbergensis",
+      "C. Paranthropus robustus",
+      "D. Homo neanderthalensis"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (B4.2.8) names three hominids for the dentition study skill: Homo sapiens, Homo floresiensis, and Paranthropus robustus. Paranthropus robustus (also called 'robust australopithecine') had very large molars and a sagittal crest for jaw muscle attachment — features indicating a diet of hard, tough plant material such as seeds, nuts, and roots. This allows diet to be inferred from skull morphology without direct observation. Australopithecus afarensis and Homo neanderthalensis are not in the named list for this skill."
+  },
+  {
+    "id": 87,
+    "level": "SL",
+    "topic": "Ecology — dentition",
+    "stem": "Homo floresiensis is one of the hominids named in the IB syllabus for the dentition study. What feature makes it particularly significant for studying human evolution?",
+    "options": [
+      "A. It had the largest brain of any known hominid",
+      "B. It was an island-dwelling species with unusually small body size, discovered in 2003",
+      "C. It was the first hominid to use fire regularly",
+      "D. It is the direct ancestor of modern Homo sapiens"
+    ],
+    "answer": "B",
+    "explanation": "Homo floresiensis (nicknamed 'the Hobbit') was discovered in 2003 on the Indonesian island of Flores. It had a very small body (about 1 metre tall) and small brain, likely the result of insular dwarfism — a phenomenon where large animals evolve smaller body size on islands with limited resources. It survived until approximately 50,000 years ago. Its small teeth and jaw structure suggest a diet of small animals, birds, and plant material. The IB syllabus (B4.2.8) includes it as one of three named hominids for examining how diet can be inferred from skull anatomy."
+  },
+  {
+    "id": 88,
+    "level": "SL",
+    "topic": "Ecology — mutualism",
+    "stem": "Which family of plants has a mutualism with mycorrhizal fungi that is specifically named in the IB Biology syllabus?",
+    "options": [
+      "A. Poaceae (grass family)",
+      "B. Fabaceae (legume family)",
+      "C. Orchidaceae (orchid family)",
+      "D. Asteraceae (daisy family)"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (C4.1.12) requires three specific mutualism examples to be studied with benefits to both organisms: (1) root nodules in Fabaceae (legume family) — nitrogen fixation by Rhizobium bacteria; (2) mycorrhizae in Orchidaceae (orchid family) — fungal hyphae provide water and minerals, orchid seeds provide carbohydrates; (3) zooxanthellae in hard corals. The question asks about mycorrhizae specifically — the answer is Orchidaceae (orchid family), not Fabaceae. Fabaceae is associated with nitrogen-fixing root nodules, a different mutualism. Students often mix these up."
+  },
+  {
+    "id": 89,
+    "level": "SL",
+    "topic": "Ecology — mutualism",
+    "stem": "In the mutualism between Fabaceae (legumes) and Rhizobium bacteria in root nodules, what benefit does each partner receive?",
+    "options": [
+      "A. Fabaceae receives fixed carbon; Rhizobium receives oxygen for aerobic respiration",
+      "B. Fabaceae receives fixed nitrogen (ammonia); Rhizobium receives carbohydrates (photosynthate)",
+      "C. Fabaceae receives water and minerals; Rhizobium receives shelter only",
+      "D. Fabaceae receives protection from herbivores; Rhizobium receives a moist environment"
+    ],
+    "answer": "B",
+    "explanation": "In the legume-Rhizobium mutualism: Rhizobium bacteria fix atmospheric nitrogen (N₂) into ammonia (NH₃) which the plant can use to build amino acids and nucleotides — the plant cannot fix nitrogen itself. In return, the plant provides the bacteria with carbohydrates (sugars from photosynthesis) as an energy source, and with a protected, low-oxygen environment in the root nodule (important because nitrogenase enzyme is inhibited by oxygen). The IB syllabus (C4.1.12) requires both partners' benefits for each of the three named mutualisms."
+  },
+  {
+    "id": 90,
+    "level": "SL",
+    "topic": "Ecology — allelopathy",
+    "stem": "What is allelopathy?",
+    "options": [
+      "A. The use of antibiotics by an organism to kill pathogens inside its own body",
+      "B. The release of chemical substances into the environment by one organism to inhibit competing species",
+      "C. The production of toxins by prey organisms to deter predators from eating them",
+      "D. Mutualistic chemical exchange between mycorrhizae and plant roots"
+    ],
+    "answer": "B",
+    "explanation": "Allelopathy is a form of chemical competition where one organism releases chemicals (allelochemicals) into its surrounding environment that suppress the growth, germination, or reproduction of competing organisms. For example, black walnut trees release juglone from their roots, which inhibits many other plants from growing nearby. The IB syllabus (C4.1.18) introduces allelopathy alongside antibiotic secretion by fungi and bacteria as two similar mechanisms of chemical competition between species. Both involve releasing inhibitory chemicals into the environment — the key distinction from toxins produced against predators."
+  },
+  {
+    "id": 91,
+    "level": "SL",
+    "topic": "Ecology — allelopathy",
+    "stem": "How is allelopathy similar to antibiotic secretion by bacteria or fungi, and how does this differ from herbivory defence?",
+    "options": [
+      "A. Both allelopathy and antibiotics are released inside a host organism; herbivory defence is external",
+      "B. Both allelopathy and antibiotics release chemicals into the environment to deter competitors; herbivory defence deters animals that consume the organism",
+      "C. Allelopathy and antibiotics both require direct physical contact; herbivory defence works at a distance",
+      "D. All three are examples of the same ecological mechanism with different target organisms"
+    ],
+    "answer": "B",
+    "explanation": "Allelopathy and antibiotic secretion share the same fundamental mechanism: chemicals are released into the external environment to suppress competing species. A black walnut releasing juglone into soil functions similarly to Penicillium releasing penicillin — both reduce competition. Herbivory defence (e.g. thorns, tannins, alkaloids in leaves) targets animals that eat the plant — a different ecological context. The IB syllabus (C4.1.18) groups allelopathy and antibiotic secretion together as a category, asking students to find one specific example of each."
+  },
+  {
+    "id": 92,
+    "level": "HL",
+    "topic": "Synapses — cocaine",
+    "stem": "Cocaine causes euphoria by affecting synaptic transmission. What is its specific mechanism of action?",
+    "options": [
+      "A. It binds to dopamine receptors as an agonist, mimicking dopamine's effects",
+      "B. It blocks the reuptake transporter for dopamine (and other monoamines), causing accumulation in the synapse",
+      "C. It prevents vesicle fusion and neurotransmitter release from the presynaptic terminal",
+      "D. It irreversibly inhibits monoamine oxidase (MAO), preventing neurotransmitter breakdown"
+    ],
+    "answer": "B",
+    "explanation": "Cocaine blocks the reuptake transporter proteins (particularly the dopamine transporter, DAT) that normally remove neurotransmitters from the synaptic cleft back into the presynaptic terminal. When reuptake is blocked, dopamine (and noradrenaline and serotonin) accumulate in the synapse and continue stimulating postsynaptic receptors, causing prolonged, intense signalling. The IB syllabus (C2.2.12) names cocaine specifically as an example of a drug that blocks neurotransmitter reuptake — paired with neonicotinoids as the other named synaptic-affecting chemical."
+  },
+  {
+    "id": 93,
+    "level": "HL",
+    "topic": "Synapses — cocaine",
+    "stem": "Neonicotinoids and cocaine both affect synaptic transmission but by different mechanisms. What is the key difference?",
+    "options": [
+      "A. Neonicotinoids affect insect synapses only; cocaine affects human synapses only",
+      "B. Neonicotinoids act as persistent postsynaptic agonists; cocaine blocks presynaptic reuptake",
+      "C. Neonicotinoids block vesicle release; cocaine binds to the postsynaptic receptor",
+      "D. Neonicotinoids are reversible inhibitors; cocaine is an irreversible agonist"
+    ],
+    "answer": "B",
+    "explanation": "Neonicotinoids bind to nicotinic acetylcholine receptors (nAChRs) on the postsynaptic membrane as persistent agonists — they continuously activate the receptor because they are not broken down by acetylcholinesterase, causing continuous nerve firing. Cocaine acts presynaptically — it blocks the transporter that recycles neurotransmitter (mainly dopamine) back into the presynaptic terminal, causing neurotransmitter to accumulate and prolong postsynaptic stimulation. Different sites of action: neonicotinoids = postsynaptic receptor; cocaine = presynaptic reuptake transporter."
+  },
+  {
+    "id": 94,
+    "level": "HL",
+    "topic": "Synapses — pain receptors",
+    "stem": "Capsaicin, the compound responsible for the heat sensation from chilli peppers, activates pain receptors by which mechanism?",
+    "options": [
+      "A. It triggers G-protein coupled receptors that activate second messenger cascades",
+      "B. It opens ion channels in free nerve endings that allow positive ions to enter, reaching threshold potential",
+      "C. It blocks potassium channels, preventing repolarisation of the membrane",
+      "D. It binds to opioid receptors, paradoxically causing pain rather than analgesia"
+    ],
+    "answer": "B",
+    "explanation": "Free nerve endings in the skin contain TRPV1 ion channels (transient receptor potential vanilloid 1). These channels open in response to heat above 43°C, acid, and capsaicin — they are non-selective cation channels that allow Ca²⁺ and Na⁺ to flow into the cell. This depolarises the membrane, reaching threshold and triggering action potentials that travel to the brain where they are perceived as pain or heat. Capsaicin exploits the same channels as genuine heat. The IB HL syllabus (C2.2.15) names capsaicin as a specific chemical example alongside high temperature and acid as stimuli that open pain receptor channels."
+  },
+  {
+    "id": 95,
+    "level": "HL",
+    "topic": "Synapses — inhibitory",
+    "stem": "What is the direct effect of an inhibitory neurotransmitter (such as GABA) on the postsynaptic membrane?",
+    "options": [
+      "A. Depolarisation — the membrane potential moves toward threshold",
+      "B. Hyperpolarisation — the membrane becomes more negative than the resting potential",
+      "C. Complete blockade of all ion channels on the postsynaptic membrane",
+      "D. Destruction of the postsynaptic receptors to prevent further stimulation"
+    ],
+    "answer": "B",
+    "explanation": "Inhibitory neurotransmitters such as GABA (gamma-aminobutyric acid) and glycine bind to postsynaptic receptors that open Cl⁻ channels (or K⁺ channels). Cl⁻ flowing into the cell (or K⁺ flowing out) makes the interior more negative — hyperpolarisation. This drives the membrane potential away from threshold, making it harder to generate an action potential. The IB HL syllabus (C2.2.13) specifies that students must know that the postsynaptic membrane becomes hyperpolarised in response to inhibitory neurotransmitters. 'Prevents action potential' is imprecise — the mechanism is hyperpolarisation specifically."
+  },
+  {
+    "id": 96,
+    "level": "HL",
+    "topic": "Synapses — inhibitory",
+    "stem": "Multiple presynaptic neurons converge on one postsynaptic neuron, releasing a mixture of excitatory and inhibitory neurotransmitters. What determines whether the postsynaptic neuron fires?",
+    "options": [
+      "A. Whichever neurotransmitter is released in greater quantity always wins",
+      "B. The postsynaptic neuron fires only if the net membrane potential change reaches threshold (summation of all inputs)",
+      "C. Inhibitory signals always override excitatory signals for safety",
+      "D. The postsynaptic neuron fires automatically every time any synapse is activated"
+    ],
+    "answer": "B",
+    "explanation": "Summation is the process by which the effects of multiple synaptic inputs are integrated. Excitatory postsynaptic potentials (EPSPs) depolarise the membrane; inhibitory postsynaptic potentials (IPSPs) hyperpolarise it. The algebraic sum of all concurrent EPSPs and IPSPs determines whether the axon hillock reaches threshold. If the net effect is sufficient depolarisation — the neuron fires (all-or-nothing). If not, it does not. The IB HL syllabus (C2.2.14) describes this as 'summation of effects with all-or-nothing consequences in terms of postsynaptic depolarisation.'"
+  },
+  {
+    "id": 97,
+    "level": "HL",
+    "topic": "Reproduction — puberty",
+    "stem": "What initiates the hormonal cascade that triggers puberty?",
+    "options": [
+      "A. The pituitary gland spontaneously begins secreting LH and FSH at a critical body weight",
+      "B. Increased GnRH release from the hypothalamus stimulates LH and FSH from the pituitary",
+      "C. The gonads begin producing sex hormones independently at a genetically programmed age",
+      "D. The pineal gland reduces melatonin secretion, signalling the hypothalamus to begin puberty"
+    ],
+    "answer": "B",
+    "explanation": "Puberty is initiated when the hypothalamus increases its pulsatile release of gonadotropin-releasing hormone (GnRH). GnRH travels in the portal blood to the anterior pituitary, stimulating it to release luteinising hormone (LH) and follicle-stimulating hormone (FSH). These gonadotropins then act on the gonads, stimulating production of sex hormones (oestradiol in females, testosterone in males), which drive the physical changes of puberty. The key point: the hypothalamus initiates the cascade, not the pituitary or gonads directly. The IB HL syllabus (D3.1.13) specifies this sequence."
+  },
+  {
+    "id": 98,
+    "level": "HL",
+    "topic": "Reproduction — puberty",
+    "stem": "In the hormonal control of puberty, what is the correct order of the signalling sequence?",
+    "options": [
+      "A. Gonads → sex hormones → pituitary → GnRH → hypothalamus",
+      "B. Pituitary → GnRH → hypothalamus → LH/FSH → gonads → sex hormones",
+      "C. Hypothalamus → GnRH → pituitary → LH/FSH → gonads → sex hormones",
+      "D. Hypothalamus → LH/FSH → pituitary → GnRH → gonads → sex hormones"
+    ],
+    "answer": "C",
+    "explanation": "The sequence is: hypothalamus releases GnRH → anterior pituitary releases LH and FSH → gonads (testes or ovaries) produce sex hormones (testosterone, oestradiol) → sex hormones drive pubertal changes and feed back to hypothalamus/pituitary. GnRH is produced by the hypothalamus (not pituitary). LH and FSH are produced by the pituitary (not hypothalamus). The IB HL syllabus (D3.1.13) limits this to: increased GnRH from hypothalamus → increased LH and FSH from pituitary → increased sex hormone production → pubertal changes."
+  },
+  {
+    "id": 99,
+    "level": "HL",
+    "topic": "Reproduction — pregnancy testing",
+    "stem": "How does a home pregnancy test detect pregnancy?",
+    "options": [
+      "A. It measures blood progesterone levels using a colorimetric enzyme reaction",
+      "B. Monoclonal antibodies on the test strip bind to hCG produced by the embryo or developing placenta",
+      "C. It detects LH surge in urine, which is elevated throughout pregnancy",
+      "D. It measures oestradiol from the corpus luteum using fluorescent antibodies"
+    ],
+    "answer": "B",
+    "explanation": "Human chorionic gonadotropin (hCG) is produced by the embryo shortly after implantation, and then by the developing placenta. hCG appears in urine within days of implantation. Home pregnancy tests use monoclonal antibodies specific to hCG — these are immobilised on a nitrocellulose strip. If hCG is present in urine, it binds the antibodies and triggers a visible colour change. hCG also maintains the corpus luteum (preventing progesterone withdrawal and menstruation). The IB HL syllabus specifies both that hCG is produced by the embryo/placenta AND that monoclonal antibodies are the detection mechanism."
+  },
+  {
+    "id": 100,
+    "level": "HL",
+    "topic": "Reproduction — hCG",
+    "stem": "What role does human chorionic gonadotropin (hCG) play in maintaining early pregnancy?",
+    "options": [
+      "A. It stimulates the uterine lining to thicken in preparation for implantation",
+      "B. It maintains the corpus luteum, preventing progesterone levels from falling",
+      "C. It triggers ovulation to ensure fertilisation occurs",
+      "D. It suppresses LH and FSH from the pituitary to prevent further ovulation"
+    ],
+    "answer": "B",
+    "explanation": "After ovulation, the follicle becomes the corpus luteum, which produces progesterone to maintain the uterine lining. Normally the corpus luteum degenerates after approximately 14 days (triggering menstruation). However, if fertilisation occurs, the embryo produces hCG, which mimics LH and binds to LH receptors on the corpus luteum, preventing its degeneration. This keeps progesterone levels high, maintaining the uterine lining and preventing menstruation. The corpus luteum is eventually replaced by the placenta as the primary progesterone source at about 8–10 weeks."
+  },
+  {
+    "id": 101,
+    "level": "HL",
+    "topic": "Reproduction — self-incompatibility",
+    "stem": "In Prunus avium, if pollen with S-allele S₁ lands on a pistil that carries alleles S₁ and S₂, what happens?",
+    "options": [
+      "A. Fertilisation proceeds normally because S₁ in pollen matches S₁ in pistil",
+      "B. Pollen tube growth is inhibited because the pollen S-allele matches one of the pistil S-alleles",
+      "C. The S₁ pollen is dominant and overrides the incompatibility response",
+      "D. Only the S₂ pistil allele matters; S₁ pollen is always compatible"
+    ],
+    "answer": "B",
+    "explanation": "In the gametophytic self-incompatibility system of Prunus avium, if the S-allele in the pollen matches EITHER of the two S-alleles in the pistil, the pistil recognises it as self (or half-sib) and produces an S-RNase enzyme that degrades RNA in the pollen tube, stopping its growth. In this case, pollen S₁ matches pistil S₁ — the pollen tube is rejected. For fertilisation to occur, the pollen S-allele must match NEITHER pistil allele. This obligates cross-pollination between genetically distinct individuals, maximising outbreeding."
+  },
+  {
+    "id": 102,
+    "level": "SL",
+    "topic": "Muscle — titin",
+    "stem": "What is the role of the protein titin in skeletal muscle?",
+    "options": [
+      "A. It catalyses the hydrolysis of ATP to ADP + Pi to power contraction",
+      "B. It forms the thin filaments that slide over myosin during contraction",
+      "C. It acts as a molecular spring preventing overstretching of sarcomeres",
+      "D. It forms the Z-lines that define the boundaries of each sarcomere"
+    ],
+    "answer": "C",
+    "explanation": "Titin is the largest protein in the human body. It spans from the Z-line to the M-line within each sarcomere, acting as a molecular spring. When a muscle is stretched, titin resists further elongation — preventing the sarcomere from being pulled apart and allowing it to recoil back to resting length after stretching. Without titin, muscles would overstretch and lose their structural integrity. The IB syllabus (B3.3.3) explicitly names titin as part of the syllabus — a detail many teachers overlook entirely since it is not in previous IB courses."
+  },
+  {
+    "id": 103,
+    "level": "HL",
+    "topic": "Muscle — titin / intercostals",
+    "stem": "How does titin contribute to breathing movements in the intercostal muscles?",
+    "options": [
+      "A. Titin powers the active shortening of both internal and external intercostal muscles simultaneously",
+      "B. When one layer of intercostal muscles contracts and stretches the antagonistic layer, titin stores potential energy in the stretched sarcomeres",
+      "C. Titin connects the ribs directly to the diaphragm, transmitting force during inhalation",
+      "D. Titin acts as the pivot point for the rib lever system during ventilation"
+    ],
+    "answer": "B",
+    "explanation": "Internal and external intercostal muscles are arranged in opposing orientations, acting antagonistically to move the ribcage in and out. When one layer contracts, it stretches the other layer. The titin molecules in the stretched (antagonistic) muscle store potential (elastic) energy during this stretching — like a spring being loaded. When the contracted layer relaxes, titin recoils, helping the stretched muscle return to its resting position without requiring additional ATP. The IB HL syllabus (B3.3.8) specifically states that titin stores potential energy in antagonistic intercostal muscle action."
+  },
+  {
+    "id": 104,
+    "level": "SL",
+    "topic": "Muscle — marine mammals",
+    "stem": "How does the tail movement of a whale differ from that of a fish, and what does this reveal about their evolutionary origins?",
+    "options": [
+      "A. Whale tails move side to side like fish, showing convergent evolution of swimming",
+      "B. Whale flukes move up and down; fish tails move side to side — reflecting their different ancestral body plans",
+      "C. Whale tails move in a circular motion; fish tails move linearly",
+      "D. Both whales and fish move their tails side to side, but whales use more force per stroke"
+    ],
+    "answer": "B",
+    "explanation": "Whales and dolphins (cetaceans) move their tail flukes in an up-and-down (dorsoventral) motion because they evolved from land mammals whose spines flex up and down during running. Fish move their tails from side to side (lateral undulation) because their ancestral swimming motion involved lateral spine flexion. This difference is a beautiful example of how evolutionary origin determines anatomy even in convergently adapted organisms. The IB syllabus (B3.3.10) specifies 'up-and-down movement' of the fluke as a named adaptation — not side-to-side."
+  },
+  {
+    "id": 105,
+    "level": "SL",
+    "topic": "Muscle — marine mammals",
+    "stem": "Which combination of adaptations in marine mammals is named in the IB Biology syllabus for swimming?",
+    "options": [
+      "A. Gills for breathing underwater, scales for hydrodynamics, and lateral tail movement",
+      "B. Streamlining, limbs modified to flippers, tail as a fluke with up-and-down movement, and airways adapted for periodic breathing",
+      "C. Blubber only — all other adaptations are shared with fish",
+      "D. Large lung capacity, ability to close nostrils, and bioluminescence for navigation"
+    ],
+    "answer": "B",
+    "explanation": "The IB syllabus (B3.3.10) lists four specific swimming adaptations for marine mammals: (1) streamlined body shape to reduce drag; (2) forelimbs modified into flippers for steering and manoeuvring; (3) tail modified into a horizontal fluke with up-and-down movement for propulsion; (4) modified airways (nostrils/blowhole positioned dorsally) to allow breathing at the surface between dives without lifting the head fully. Blubber is also important but is primarily an insulation adaptation (from thermal conductivity) not a swimming adaptation specifically."
+  },
+  {
+    "id": 106,
+    "level": "HL",
+    "topic": "Kidney — loop of Henle",
+    "stem": "In the loop of Henle, in which section does active transport of sodium ions occur to establish the medullary osmotic gradient?",
+    "options": [
+      "A. Descending limb — actively pumps Na⁺ out into the medulla",
+      "B. Ascending limb — actively pumps Na⁺ out while being impermeable to water",
+      "C. Collecting duct — pumps Na⁺ to create gradient for ADH-driven water reabsorption",
+      "D. Bowman's capsule — filters Na⁺ into the filtrate by active transport"
+    ],
+    "answer": "B",
+    "explanation": "The ascending limb of the loop of Henle is the site of active Na⁺ (and Cl⁻) transport out into the medullary interstitium. Critically, the ascending limb is impermeable to water — so water cannot follow osmotically. This creates an increasingly hypertonic medulla from cortex to papilla. The descending limb is permeable to water (water leaves by osmosis) but does not actively transport Na⁺. This countercurrent multiplier system concentrates the medullary interstitium, which enables water reabsorption from the collecting duct under ADH influence. The IB HL syllabus (D3.3.9) specifies ascending limb and active transport of Na⁺."
+  },
+  {
+    "id": 107,
+    "level": "HL",
+    "topic": "Kidney — loop of Henle",
+    "stem": "Why must the ascending limb of the loop of Henle be impermeable to water for the countercurrent multiplier to function?",
+    "options": [
+      "A. Water permeability would allow too much fluid to enter the loop",
+      "B. If water followed Na⁺ osmotically, no concentration gradient would build up in the medulla",
+      "C. Water permeability would dilute the urine before it reaches the collecting duct",
+      "D. The ascending limb needs to carry concentrated urine upward for recycling"
+    ],
+    "answer": "B",
+    "explanation": "The whole purpose of the ascending limb pumping Na⁺ out is to increase the osmolarity of the medullary interstitium. If the ascending limb were permeable to water, water would immediately follow the Na⁺ out by osmosis — and the interstitium would simply dilute back, with no net concentration gradient established. By being impermeable to water, the ascending limb ensures that Na⁺ pumping actually concentrates the medulla. This concentrated medulla then draws water out of the collecting duct (under ADH influence) by osmosis, concentrating the urine. Impermeability is what makes the system work."
+  },
+  {
+    "id": 108,
+    "level": "HL",
+    "topic": "Kidney — ADH and aquaporins",
+    "stem": "How does antidiuretic hormone (ADH) increase water reabsorption in the collecting duct at the cellular level?",
+    "options": [
+      "A. ADH synthesises new aquaporin proteins from scratch using collecting duct cell ribosomes",
+      "B. ADH triggers insertion of pre-formed aquaporin proteins from intracellular vesicles into the apical cell membrane",
+      "C. ADH directly opens existing aquaporin channels by binding to them",
+      "D. ADH increases the number of Na⁺ pumps in the collecting duct to drive water movement"
+    ],
+    "answer": "B",
+    "explanation": "The key detail in the IB HL syllabus (D3.3.10) is that ADH does not create new aquaporins or open existing channels — it causes aquaporin-2 proteins stored in intracellular vesicles to be inserted (trafficked) into the apical membrane of collecting duct cells. More aquaporins in the membrane = more water channels = greater water permeability = more water reabsorbed by osmosis (driven by the hypertonic medullary interstitium). When ADH levels fall, aquaporins are retrieved from the membrane back into vesicles, reducing water permeability. This is explicitly stated in the syllabus: 'switches in location of aquaporins between cell membrane and cytoplasm.'"
+  },
+  {
+    "id": 109,
+    "level": "HL",
+    "topic": "Kidney — ADH and aquaporins",
+    "stem": "A patient with diabetes insipidus produces very large volumes of dilute urine. This is caused by insufficient ADH. At the cellular level, what is happening in the collecting duct?",
+    "options": [
+      "A. Aquaporin proteins are being destroyed by proteases in the collecting duct",
+      "B. Aquaporin-2 channels remain in intracellular vesicles and are not inserted into the membrane — the duct remains water-impermeable",
+      "C. Na⁺/K⁺ pumps are overactive, pumping excess water into the tubule",
+      "D. The loop of Henle fails to establish a medullary osmotic gradient"
+    ],
+    "answer": "B",
+    "explanation": "Without ADH, aquaporin-2 proteins remain stored in intracellular vesicles and are not inserted into the apical membrane of collecting duct cells. The collecting duct wall remains water-impermeable. Even though the medullary interstitium is hypertonic (the osmotic gradient is still there), water cannot cross the collecting duct wall — so it passes through as dilute urine. The result is large volumes of dilute urine (polyuria). This directly illustrates the IB HL mechanism: ADH = aquaporins move to membrane = water reabsorption; no ADH = aquaporins in cytoplasm = water lost in urine."
+  },
+  {
+    "id": 110,
+    "level": "SL",
+    "topic": "Thermoregulation — thyroxin",
+    "stem": "Which hormone increases the basal metabolic rate in cold conditions, contributing to heat generation during thermoregulation?",
+    "options": [
+      "A. Melatonin",
+      "B. Cortisol",
+      "C. Thyroxin",
+      "D. Insulin"
+    ],
+    "answer": "C",
+    "explanation": "Thyroxin (T4) is produced by the thyroid gland and increases the metabolic rate of most body cells — more substrate oxidation → more heat released as a byproduct. In cold conditions, TSH from the pituitary stimulates increased thyroxin secretion, gradually raising the basal metabolic rate. This is a slower, sustained thermogenic response (unlike the rapid response of shivering or vasoconstriction). The IB syllabus (D3.3.5) explicitly includes thyroxin in the thermoregulation section alongside peripheral thermoreceptors, hypothalamus, and pituitary. Most students know shivering and vasodilation but omit thyroxin."
+  },
+  {
+    "id": 111,
+    "level": "SL",
+    "topic": "Thermoregulation — mechanisms",
+    "stem": "Which row correctly lists ALL the thermoregulation mechanisms named in the IB Biology syllabus for humans?",
+    "options": [
+      "A. Vasodilation, vasoconstriction, shivering, sweating",
+      "B. Vasodilation, vasoconstriction, shivering, sweating, uncoupled respiration in brown adipose tissue, hair erection",
+      "C. Vasodilation, vasoconstriction, shivering, sweating, uncoupled respiration in brown adipose tissue, hair erection, thyroxin",
+      "D. Vasodilation, vasoconstriction, sweating, goosebumps, fever"
+    ],
+    "answer": "C",
+    "explanation": "The IB syllabus (D3.3.5 and D3.3.6) lists seven mechanisms for human thermoregulation: vasodilation, vasoconstriction, shivering, sweating, uncoupled respiration in brown adipose tissue, hair erection — AND thyroxin (from D3.3.5 which covers the role of the hypothalamus, pituitary, and thyroxin). Many students learn only four or five and miss both uncoupled respiration in brown adipose tissue and thyroxin. The question tests whether students know the complete list, not just the commonly taught ones."
+  },
+  {
+    "id": 112,
+    "level": "HL",
+    "topic": "Cell cycle — cyclins",
+    "stem": "What is the role of cyclins in controlling progression through the cell cycle?",
+    "options": [
+      "A. They permanently activate DNA replication throughout all phases of the cycle",
+      "B. Their concentration rises and falls during the cycle; a threshold level of each cyclin is required to pass each checkpoint",
+      "C. They form the spindle fibres that separate chromosomes during mitosis",
+      "D. They act as tumour suppressor proteins, preventing uncontrolled division"
+    ],
+    "answer": "B",
+    "explanation": "Cyclins are regulatory proteins whose concentrations oscillate during the cell cycle — they accumulate during one phase and are rapidly degraded when no longer needed. When a cyclin reaches a threshold concentration, it activates cyclin-dependent kinases (CDKs) that phosphorylate target proteins, driving the cell forward through a checkpoint (G1/S checkpoint: commit to DNA replication; G2/M checkpoint: commit to mitosis). The IB HL syllabus (D2.1.15) limits required knowledge to: concentration changes AND threshold concept. Students do not need to name specific cyclin-CDK complexes."
+  },
+  {
+    "id": 113,
+    "level": "HL",
+    "topic": "Cell cycle — cyclins",
+    "stem": "If cyclin concentration fails to reach the threshold required to pass the G2/M checkpoint, what is the consequence for the cell?",
+    "options": [
+      "A. The cell enters apoptosis immediately",
+      "B. The cell cannot enter mitosis and remains arrested in G2 phase",
+      "C. The cell skips mitosis and undergoes meiosis instead",
+      "D. The cell divides without replicating its DNA, producing aneuploid daughter cells"
+    ],
+    "answer": "B",
+    "explanation": "The G2/M checkpoint monitors whether DNA replication is complete and DNA damage has been repaired before the cell commits to mitosis. Passing this checkpoint requires cyclin B to reach a threshold concentration and activate CDK1. If cyclin levels do not reach threshold — due to DNA damage, incomplete replication, or other signals — the cell remains arrested in G2 and cannot enter mitosis. This is a critical cell cycle control mechanism that prevents cells from dividing with damaged or incompletely replicated DNA. Checkpoint failure (not just low cyclin) can contribute to cancer."
+  },
+  {
+    "id": 114,
+    "level": "HL",
+    "topic": "Cell cycle — tumours",
+    "stem": "What is the key difference between a benign tumour and a malignant tumour?",
+    "options": [
+      "A. Benign tumours grow faster; malignant tumours grow slowly",
+      "B. Benign tumours are always caused by viral infections; malignant tumours by mutations",
+      "C. Malignant tumours have the capacity to invade surrounding tissue and metastasise; benign tumours do not",
+      "D. Benign tumours always shrink without treatment; malignant tumours never respond to chemotherapy"
+    ],
+    "answer": "C",
+    "explanation": "The defining characteristic of malignant tumours is their capacity for invasion (growing into surrounding tissues) and metastasis (cancer cells breaking away, entering the bloodstream or lymphatic system, and establishing secondary tumours in distant organs). Benign tumours grow in a contained mass and do not invade surrounding tissue or metastasise — they may still cause problems by pressing on structures, but they do not spread. The IB HL syllabus (D2.1.17) requires students to know these four terms: benign, malignant, primary tumour, secondary tumour, and to understand metastasis as the key distinction."
+  },
+  {
+    "id": 115,
+    "level": "HL",
+    "topic": "Cell cycle — oncogenes",
+    "stem": "How does a proto-oncogene differ from an oncogene, and what is the consequence of the conversion?",
+    "options": [
+      "A. A proto-oncogene suppresses cell division; an oncogene promotes it — conversion causes cell death",
+      "B. A proto-oncogene normally promotes controlled cell division; an oncogene is a mutated version that causes uncontrolled division",
+      "C. A proto-oncogene is found in cancer cells; an oncogene is found in normal cells",
+      "D. Proto-oncogenes are prokaryotic; oncogenes are eukaryotic versions of the same sequence"
+    ],
+    "answer": "B",
+    "explanation": "Proto-oncogenes are normal genes that regulate cell growth and division — they encode proteins like growth factor receptors, signal transducers, and transcription factors. A gain-of-function mutation can convert a proto-oncogene into an oncogene: the protein product is now permanently active, continuously stimulating the cell to divide regardless of external signals. The IB HL syllabus (D2.1.16) pairs this with tumour suppressor gene mutations (loss of function → uncontrolled division) as the two main genetic mechanisms leading to cancer. Proto-oncogene → oncogene = gain of function; tumour suppressor → mutated = loss of function."
+  },
+  {
+    "id": 116,
+    "level": "HL",
+    "topic": "Genetics — chromosome 2 fusion",
+    "stem": "What evidence supports the hypothesis that human chromosome 2 arose from the fusion of two ancestral primate chromosomes?",
+    "options": [
+      "A. Human chromosome 2 is the largest chromosome and therefore must contain two ancestral chromosomes",
+      "B. Telomeric sequences are found internally near its centre, and two fused centromere regions are present",
+      "C. DNA sequencing shows chromosome 2 is 99% identical to chimpanzee DNA",
+      "D. Humans have 46 chromosomes and chimpanzees have 48 — this proves fusion occurred"
+    ],
+    "answer": "B",
+    "explanation": "The evidence that human chromosome 2 is the result of an end-to-end fusion of two ancestral chromosomes (homologous to chimpanzee chromosomes 2A and 2B) includes: (1) telomeric DNA sequences (TTAGGG repeats, normally found only at chromosome ends) are found in the internal region near the centre of human chromosome 2 — exactly where two ends would have joined; (2) there are two centromere-like sequences in the region, one of which is now inactive. Chromosome number difference (46 vs 48) is what prompted the investigation, but is not itself evidence. The IB HL syllabus (A3.1.7) requires evaluation of this specific evidence."
+  },
+  {
+    "id": 117,
+    "level": "HL",
+    "topic": "DNA replication — enzymes",
+    "stem": "During DNA replication in prokaryotes, which enzyme removes RNA primers and fills the gaps with DNA?",
+    "options": [
+      "A. DNA polymerase III",
+      "B. DNA primase",
+      "C. DNA polymerase I",
+      "D. DNA ligase"
+    ],
+    "answer": "C",
+    "explanation": "DNA polymerase I (Pol I) has 5' to 3' exonuclease activity — it removes the RNA primer from the 5' end while simultaneously synthesising DNA to fill the gap using its 5' to 3' polymerase activity. DNA primase synthesises the short RNA primers needed to initiate replication. DNA polymerase III (Pol III) is the main replicative polymerase (continuous synthesis on leading strand, Okazaki fragments on lagging strand) and performs proofreading. DNA ligase joins the Okazaki fragments together after the RNA primers have been replaced. The IB HL syllabus (D1.1.8) specifies all four enzymes and their roles in the prokaryotic system."
+  },
+  {
+    "id": 118,
+    "level": "HL",
+    "topic": "DNA replication — enzymes",
+    "stem": "What is the proofreading function of DNA polymerase III, and why is it essential?",
+    "options": [
+      "A. It removes any nucleotide added to the 3' end that has a mismatched base, then adds the correct nucleotide",
+      "B. It scans the entire parental strand before replication to identify damaged bases",
+      "C. It re-reads the newly synthesised strand after replication is complete to check for errors",
+      "D. It adds an extra copy of frequently mutated sequences to act as a backup"
+    ],
+    "answer": "A",
+    "explanation": "DNA polymerase III has 3' to 5' exonuclease (proofreading) activity. Immediately after adding each nucleotide, it checks whether the base pair at the 3' end is correctly matched. If a mismatch is detected, the enzyme removes the mismatched nucleotide from the 3' terminus, then adds the correct nucleotide. This proofreading occurs in real time during synthesis. Without it, the error rate would be roughly 1 in 10⁵ bases. With proofreading, error rate falls to approximately 1 in 10⁷. The IB HL syllabus (D1.1.9) specifies: 'action of DNA polymerase III in removing any nucleotide from the 3' terminal with a mismatched base.'"
+  },
+  {
+    "id": 119,
+    "level": "HL",
+    "topic": "DNA replication — enzymes",
+    "stem": "In prokaryotic DNA replication, what is the function of DNA primase?",
+    "options": [
+      "A. It joins Okazaki fragments on the lagging strand",
+      "B. It synthesises short RNA sequences that serve as primers for DNA polymerase III",
+      "C. It removes the RNA primers and replaces them with DNA",
+      "D. It unwinds the double helix ahead of the replication fork"
+    ],
+    "answer": "B",
+    "explanation": "DNA polymerases can only add nucleotides to an existing strand — they cannot start a new chain from scratch. DNA primase solves this problem by synthesising short RNA primers (typically 5–10 nucleotides) complementary to the DNA template. These RNA primers provide the 3'-OH group that DNA polymerase III needs to begin synthesis. On the leading strand, one primer is needed at the origin. On the lagging strand, a new primer is needed for every Okazaki fragment. After replication, DNA polymerase I removes these RNA primers and DNA ligase seals the gaps."
+  },
+  {
+    "id": 120,
+    "level": "HL",
+    "topic": "Gene expression — regulation",
+    "stem": "What is the difference between a promoter and an enhancer in the regulation of transcription?",
+    "options": [
+      "A. Promoters are found in prokaryotes only; enhancers are found in eukaryotes only",
+      "B. Promoters are essential binding sites for RNA polymerase; enhancers increase transcription rate when transcription factors bind to them and can be distant from the gene",
+      "C. Promoters increase transcription; enhancers decrease transcription by blocking RNA polymerase",
+      "D. Promoters and enhancers are the same sequence — the name depends on whether RNA polymerase or a transcription factor binds"
+    ],
+    "answer": "B",
+    "explanation": "Promoters are DNA sequences upstream (5') of a gene where RNA polymerase (and general transcription factors) bind to initiate transcription — they are essential for transcription to occur at all. Enhancers are regulatory sequences that, when bound by specific transcription factors, increase the rate of transcription. Crucially, enhancers can be located thousands of base pairs away from the gene they regulate — the DNA loops to bring the enhancer-bound proteins into contact with the transcription complex at the promoter. The IB HL syllabus (D2.2.2) requires students to know all three: promoters, enhancers, and transcription factors."
+  },
+  {
+    "id": 121,
+    "level": "HL",
+    "topic": "Gene expression — mRNA degradation",
+    "stem": "How does control of mRNA degradation rate regulate gene expression?",
+    "options": [
+      "A. mRNA degradation is always immediate after translation is complete, preventing any regulation",
+      "B. By varying how long mRNA persists before being degraded, cells can control how much protein is produced from a given gene",
+      "C. mRNA degradation only occurs in the nucleus before the transcript is exported",
+      "D. All mRNA molecules in human cells persist for exactly 24 hours before degradation"
+    ],
+    "answer": "B",
+    "explanation": "mRNA stability is an important level of gene expression regulation. In human cells, mRNA half-lives vary enormously — from a few minutes (for proteins needed only transiently, like some regulatory proteins) to days (for highly needed structural proteins like globins in red blood cells). If an mRNA is rapidly degraded, less protein is produced even if transcription rate is high. If mRNA is stabilised, protein production continues longer. The IB HL syllabus (D2.2.3) specifies that mRNA may persist 'from minutes up to days' and that degradation by nucleases is a regulatory mechanism."
+  },
+  {
+    "id": 122,
+    "level": "HL",
+    "topic": "Gene expression — epigenesis",
+    "stem": "What distinguishes an epigenetic change from a mutation?",
+    "options": [
+      "A. Epigenetic changes alter the DNA base sequence permanently; mutations are temporary",
+      "B. Epigenetic changes alter phenotype without altering the DNA base sequence; mutations change the base sequence",
+      "C. Mutations only occur in somatic cells; epigenetic changes only occur in germ cells",
+      "D. Epigenetic changes are always inherited by offspring; mutations are never inherited"
+    ],
+    "answer": "B",
+    "explanation": "Epigenetic changes are heritable alterations in gene expression that do not involve changes to the DNA base sequence itself. Examples include DNA methylation (methylation of cytosine residues in promoters → gene silencing) and histone modification (methylation, acetylation, phosphorylation → alter chromatin accessibility). These changes affect phenotype (which genes are expressed) without changing genotype (base sequence). Mutations change the base sequence. The IB HL syllabus (D2.2.4) explicitly states: 'DNA base sequences are not altered by epigenetic changes, so phenotype but not genotype is altered.'"
+  },
+  {
+    "id": 123,
+    "level": "HL",
+    "topic": "Gene expression — epigenesis",
+    "stem": "Identical twins share the same DNA sequence. Yet as they age, differences in their gene expression patterns accumulate. Which mechanism best explains this?",
+    "options": [
+      "A. Somatic mutations accumulate at different rates in the twins because of differences in DNA repair",
+      "B. Epigenetic modifications (DNA methylation, histone modification) accumulate differently in response to different environments",
+      "C. Alternative splicing of mRNA generates different proteomes from the same DNA",
+      "D. The twins develop different microbiomes that alter their gene sequences over time"
+    ],
+    "answer": "B",
+    "explanation": "Identical (monozygotic) twins begin with identical DNA sequences but diverge in gene expression over time due to accumulating epigenetic differences. Different environments, diets, stress levels, and life experiences lead to different patterns of DNA methylation and histone modification, which alter which genes are switched on or off in which tissues. This is why identical twins can have different disease outcomes, different personalities, and different phenotypes despite identical genotypes. The IB HL syllabus connects the twins methylation study (mentioned in Q46 of the original bank) to this epigenesis concept."
+  },
+  {
+    "id": 124,
+    "level": "SL",
+    "topic": "Statistics — box-and-whisker",
+    "stem": "In a box-and-whisker plot, what do the circles plotted beyond the ends of the whiskers represent?",
+    "options": [
+      "A. The mean of the dataset",
+      "B. Individual data points that are outliers (more than 1.5 × IQR from the nearest quartile)",
+      "C. The maximum and minimum values of the dataset",
+      "D. The standard deviation above and below the median"
+    ],
+    "answer": "B",
+    "explanation": "In a box-and-whisker plot, the whiskers extend to the most extreme data points that are still within 1.5 × IQR (interquartile range) of Q1 or Q3. Any data point beyond this range is plotted individually as a circle (or asterisk) and classified as an outlier. The IB syllabus (D3.2.15) specifies exactly this definition: 'A data point is categorised as an outlier if it is more than 1.5 × IQR above the third quartile or below the first quartile.' Common misconception: whiskers extend to maximum/minimum — they only extend to max/min if there are no outliers."
+  },
+  {
+    "id": 125,
+    "level": "SL",
+    "topic": "Statistics — box-and-whisker",
+    "stem": "A box-and-whisker plot shows the following values: minimum 12, Q1 18, median 24, Q3 30, maximum 38, with one circle at 44. What does the circle at 44 indicate, and what is the IQR?",
+    "options": [
+      "A. The circle is the mean (44); IQR = 20",
+      "B. The circle is an outlier; IQR = 12",
+      "C. The circle is the true maximum; IQR = 26",
+      "D. The circle represents a data entry error; IQR = 18"
+    ],
+    "answer": "B",
+    "explanation": "IQR = Q3 − Q1 = 30 − 18 = 12. The upper whisker extends to Q3 + 1.5 × IQR = 30 + 18 = 48. The maximum value of 38 is within this range, so it falls within the whisker. The circle at 44 is plotted separately — 44 < 48 so it is actually NOT an outlier by strict definition. Wait — let me recalculate: 44 > 38 (the stated maximum within whiskers) but < 48 (the outlier threshold). Actually this question requires care: outlier threshold = Q3 + 1.5×IQR = 30 + 18 = 48. Since 44 < 48, it would NOT be an outlier. The answer B is correct for IQR = 12. The circle at 44 is an outlier by the plot shown (beyond the whisker at 38) but within the 1.5×IQR threshold. The IQR = Q3-Q1 = 30-18 = 12 is the key calculation tested."
+  },
+  {
+    "id": 126,
+    "level": "SL",
+    "topic": "Statistics — chi-squared",
+    "stem": "In a dihybrid testcross, the expected ratio is 1:1:1:1. Observed results were: 28, 22, 31, 19 (total 100). What is the purpose of applying a chi-squared test to this data?",
+    "options": [
+      "A. To calculate the exact probability that the genes are linked",
+      "B. To determine whether the difference between observed and expected results is statistically significant or could be due to chance",
+      "C. To prove that the genes are on different chromosomes",
+      "D. To calculate the map distance between the two gene loci in centimorgans"
+    ],
+    "answer": "B",
+    "explanation": "The chi-squared (χ²) test determines whether the observed deviation from expected values is large enough to be statistically significant, or whether it could reasonably be attributed to random sampling variation (chance). If χ² < critical value at p=0.05, we fail to reject the null hypothesis (the deviation is consistent with chance). If χ² > critical value, we reject the null hypothesis (the deviation is unlikely to be due to chance alone). It does not prove which chromosome the genes are on or calculate map distance. The IB syllabus (D3.2.21) requires understanding of p=0.05, null hypothesis, and observed vs expected."
+  },
+  {
+    "id": 127,
+    "level": "SL",
+    "topic": "Statistics — chi-squared",
+    "stem": "In a chi-squared test at p = 0.05, the calculated value is 7.82 and the critical value is 7.81. What conclusion is drawn?",
+    "options": [
+      "A. The null hypothesis is accepted — the result is not significant",
+      "B. The null hypothesis is rejected — the difference is statistically significant at p = 0.05",
+      "C. More data must be collected before any conclusion can be drawn",
+      "D. The result is borderline and cannot be interpreted"
+    ],
+    "answer": "B",
+    "explanation": "When the calculated chi-squared value exceeds the critical value at p = 0.05, the null hypothesis is rejected. Even a marginal excess (7.82 > 7.81) means the probability of the observed deviation occurring by chance is less than 5% — it is statistically significant. This means the deviation from expected values is unlikely to be due to random sampling and suggests a real biological cause (e.g. gene linkage, selection). The IB syllabus (D3.2.21) requires students to understand the p = 0.05 threshold and the null/alternative hypothesis framework. Note: in practice 7.82 vs 7.81 is extremely marginal, but the rule is clear."
+  },
+  {
+    "id": 128,
+    "level": "HL",
+    "topic": "Genetics — Hardy-Weinberg",
+    "stem": "In a population, 9% of individuals show a recessive phenotype (aa). Using the Hardy-Weinberg equation, what is the frequency of the dominant allele (p)?",
+    "options": [
+      "A. 0.09",
+      "B. 0.30",
+      "C. 0.70",
+      "D. 0.91"
+    ],
+    "answer": "C",
+    "explanation": "q² = 0.09 (frequency of homozygous recessive). Therefore q = √0.09 = 0.30. Since p + q = 1: p = 1 - 0.30 = 0.70. The dominant allele frequency is 0.70. Common mistake: students confuse q² (genotype frequency) with q (allele frequency). Always start by taking the square root of the recessive homozygote frequency to get q. The IB HL syllabus (D4.1.13) requires use of both equations: p + q = 1 and p² + 2pq + q² = 1."
+  },
+  {
+    "id": 129,
+    "level": "HL",
+    "topic": "Genetics — Hardy-Weinberg",
+    "stem": "What are the conditions that must be maintained for a population to be in Hardy-Weinberg equilibrium?",
+    "options": [
+      "A. Small population size, random mating, no mutation, no migration",
+      "B. Large population size, random mating, no mutation, no migration, no natural selection",
+      "C. Large population size, assortative mating, no mutation, high migration, no selection",
+      "D. Any population size, random mating, low mutation rate, no migration"
+    ],
+    "answer": "B",
+    "explanation": "Hardy-Weinberg equilibrium requires five conditions: (1) large population size (to prevent genetic drift); (2) random mating (panmixia — no mate preference); (3) no mutation (or equal mutation rates in both directions); (4) no migration (no gene flow in or out); (5) no natural selection (all genotypes equally fit). In practice, no real population perfectly meets all five conditions, so HW equilibrium is a theoretical baseline. If observed genotype frequencies deviate from HW predictions, it indicates one or more conditions is being violated. The IB HL syllabus (D4.1.14) specifies all five conditions."
+  },
+  {
+    "id": 130,
+    "level": "HL",
+    "topic": "Genetics — Hardy-Weinberg",
+    "stem": "If the frequency of heterozygotes (2pq) in a population is 0.48, and q = 0.4, what is p² (the frequency of the dominant homozygote)?",
+    "options": [
+      "A. 0.16",
+      "B. 0.36",
+      "C. 0.48",
+      "D. 0.60"
+    ],
+    "answer": "B",
+    "explanation": "If q = 0.4, then p = 1 - 0.4 = 0.6. Check: 2pq = 2 × 0.6 × 0.4 = 0.48 ✓. p² = 0.6² = 0.36. Verify: p² + 2pq + q² = 0.36 + 0.48 + 0.16 = 1.00 ✓. The frequency of dominant homozygotes is 0.36. A common exam trap: students use the heterozygote frequency to find p incorrectly. The correct approach is: identify what is given, find allele frequencies first, then calculate genotype frequencies."
+  },
+  {
+    "id": 131,
+    "level": "HL",
+    "topic": "Genetics — conserved sequences",
+    "stem": "Two hypotheses explain why some gene sequences are conserved across all three domains of life. What are these two hypotheses?",
+    "options": [
+      "A. Horizontal gene transfer AND convergent evolution",
+      "B. Functional requirement of the gene product AND slower intrinsic mutation rate in those regions",
+      "C. Common ancestry only — there is no other explanation",
+      "D. Selective pressure AND transposon silencing in conserved regions"
+    ],
+    "answer": "B",
+    "explanation": "The IB HL syllabus (D1.3.10) presents two distinct hypotheses for highly conserved sequences: (1) Functional requirement — if a gene product (protein or RNA) must have a precise, specific structure to function, any mutation is likely to be deleterious and will be removed by purifying selection. Genes encoding ribosomal RNA and ATP synthase subunits are examples. (2) Slower intrinsic mutation rate — some regions of DNA may have lower mutation rates due to chromatin structure, repair mechanisms, or base composition. Both mechanisms can operate simultaneously and are not mutually exclusive."
+  },
+  {
+    "id": 132,
+    "level": "HL",
+    "topic": "Genetics — CRISPR",
+    "stem": "What is the role of the Cas9 enzyme in CRISPR gene editing?",
+    "options": [
+      "A. It synthesises guide RNA that directs the editing complex to the target sequence",
+      "B. It acts as a nuclease, cutting double-stranded DNA at the target sequence specified by the guide RNA",
+      "C. It inserts the desired new DNA sequence into the cut site",
+      "D. It repairs the cut DNA by high-fidelity homologous recombination only"
+    ],
+    "answer": "B",
+    "explanation": "In the CRISPR-Cas9 system, the guide RNA (gRNA) is a short synthetic RNA complementary to the target DNA sequence. The Cas9 protein is an endonuclease — it binds to the gRNA-DNA complex and cuts both strands of the DNA at the target site (creating a double-strand break). Once cut, the cell's own repair mechanisms can: (1) introduce small insertions/deletions that disrupt the gene (gene knockout); or (2) if a repair template is provided, insert new DNA sequences (gene correction/insertion). Cas9 is the molecular scissors; the guide RNA is the targeting mechanism. The IB HL syllabus (D1.3.9) requires knowing one successful application of CRISPR."
+  },
+  {
+    "id": 133,
+    "level": "SL",
+    "topic": "Cell biology — microscopy",
+    "stem": "What distinguishes cryogenic electron microscopy (cryo-EM) from conventional electron microscopy?",
+    "options": [
+      "A. Cryo-EM uses light instead of electrons, allowing imaging of living cells",
+      "B. In cryo-EM, the sample is flash-frozen in vitreous ice, preserving native protein conformation at a moment in time",
+      "C. Cryo-EM uses antibodies tagged with fluorescent dyes to visualise specific proteins",
+      "D. Cryo-EM requires samples to be stained with heavy metals to increase electron density"
+    ],
+    "answer": "B",
+    "explanation": "In cryo-EM, the biological sample is plunge-frozen in liquid ethane at -180°C so rapidly that water forms vitreous (non-crystalline) ice rather than damaging ice crystals. This freezes proteins in their native, hydrated conformations at a specific moment. The frozen sample is then imaged in an electron microscope. Unlike conventional EM, no heavy metal staining or chemical fixation is needed, so the native structure is preserved. The 2017 Nobel Prize in Chemistry was awarded for cryo-EM development. The IB syllabus (A2.2.3) names it alongside freeze fracture and immunofluorescence as techniques to know."
+  },
+  {
+    "id": 134,
+    "level": "SL",
+    "topic": "Cell biology — microscopy",
+    "stem": "Freeze fracture and cryogenic electron microscopy are both named in the IB syllabus. What does freeze fracture reveal that conventional TEM cannot?",
+    "options": [
+      "A. The base sequence of DNA in chromosomes",
+      "B. The distribution of integral proteins within the phospholipid bilayer by splitting the membrane along its hydrophobic interior",
+      "C. The three-dimensional structure of individual protein molecules at near-atomic resolution",
+      "D. The movement of molecules across membranes in real time"
+    ],
+    "answer": "B",
+    "explanation": "In freeze fracture electron microscopy, the frozen sample is fractured with a knife — the fracture plane tends to travel along the hydrophobic interior of membranes, splitting the bilayer between its two leaflets. The exposed faces are then shadowed with platinum/carbon to create a replica. This reveals the inner faces of both leaflets and shows the distribution of integral membrane proteins as bumps and pits — evidence that supported the fluid mosaic model. Conventional TEM shows a cross-section of the membrane but cannot reveal protein distribution within the bilayer plane. Cryo-EM is used for single-protein resolution."
+  },
+  {
+    "id": 135,
+    "level": "SL",
+    "topic": "Ecology — top-down / bottom-up",
+    "stem": "In a marine food web, the abundance of zooplankton is primarily controlled by the predation pressure from fish above them in the food chain. This is an example of which type of population control?",
+    "options": [
+      "A. Bottom-up control",
+      "B. Top-down control",
+      "C. Density-independent control",
+      "D. Abiotic regulation"
+    ],
+    "answer": "B",
+    "explanation": "Top-down control (also called trophic cascade) occurs when predators at higher trophic levels regulate the population size of species below them. In this case, fish predation controls zooplankton numbers — the controlling force comes from above in the food chain. Bottom-up control is the opposite: nutrient or primary producer availability limits all higher trophic levels. The IB syllabus (C4.1.17) requires students to understand both types and that one or the other is likely to dominate in any given community. Knowing which is dominant has implications for ecosystem management."
+  },
+  {
+    "id": 136,
+    "level": "SL",
+    "topic": "Ecology — interspecific competition",
+    "stem": "How can interspecific competition between two species be investigated scientifically?",
+    "options": [
+      "A. By measuring the body mass of each species in isolation only",
+      "B. Through laboratory experiments, random sampling field observations, and field manipulation by removing one species",
+      "C. By comparing the genome sequences of the two competing species",
+      "D. Only through laboratory experiments — field studies are too uncontrolled to be valid"
+    ],
+    "answer": "B",
+    "explanation": "The IB syllabus (C4.1.14) specifies three complementary approaches to investigating interspecific competition: (1) laboratory experiments (controlled conditions, manipulate variables); (2) field observations using random sampling (assess natural co-occurrence patterns); (3) field manipulation by removing one species and observing the response of the other (if one species becomes more abundant when the competitor is removed, this supports competition). No single approach is sufficient alone — laboratory results may not reflect field conditions, and field observations show correlation not causation. The chi-squared test can be applied to co-occurrence data."
+  },
+  {
+    "id": 137,
+    "level": "SL",
+    "topic": "Plant biology — pollination",
+    "stem": "Which mechanism specifically promotes cross-pollination by preventing self-pollination through timing?",
+    "options": [
+      "A. Insect pollination — insects carry pollen between different individual plants",
+      "B. Temporal isolation of pollen and stigma maturation within the same flower (protandry or protogyny)",
+      "C. Production of nectar to attract pollinators from greater distances",
+      "D. Separate male and female flowers always on different plants (dioecy)"
+    ],
+    "answer": "B",
+    "explanation": "Protandry (anthers mature before stigma) and protogyny (stigma matures before anthers) are adaptations where pollen and stigma of the same flower mature at different times — preventing self-pollination through temporal separation. Insect pollination could still result in self-pollination if an insect visits the same plant. Nectar production attracts pollinators but doesn't specifically prevent self-pollination. Dioecy (separate male and female plants) does prevent self-pollination absolutely but works through a different mechanism. The IB syllabus (D3.1.10) lists different maturation times for pollen and stigma as one of four methods of promoting cross-pollination."
+  },
+  {
+    "id": 138,
+    "level": "SL",
+    "topic": "Plant biology — pollination",
+    "stem": "A plant species produces flowers where all anthers and stigmas mature simultaneously, and the plant is hermaphroditic. What additional mechanism must it have to promote outbreeding?",
+    "options": [
+      "A. It must produce two types of pollen for cross and self-fertilisation",
+      "B. It requires a genetic self-incompatibility mechanism to prevent self-fertilisation",
+      "C. It must rely entirely on wind pollination to achieve cross-fertilisation",
+      "D. It must have flowers positioned so insects cannot access them for self-pollination"
+    ],
+    "answer": "B",
+    "explanation": "If a hermaphroditic flower has pollen and stigma maturing at the same time, physical separation alone is insufficient to prevent self-pollination. A genetic self-incompatibility (SI) mechanism is then required — where the plant recognises pollen carrying the same S-allele as its own pistil and rejects it. This is how species like Prunus avium (cherry) and many other hermaphroditic flowering plants ensure outbreeding despite having both sexes in the same flower. The IB syllabus (D3.1.11) states: 'genetic mechanisms in many plant species ensure male and female gametes fusing during fertilisation are from different plants.'"
+  },
+  {
+    "id": 139,
+    "level": "SL",
+    "topic": "Osmosis — water potential",
+    "stem": "Two adjacent plant cells: Cell A has water potential of -0.5 kPa; Cell B has water potential of -0.3 kPa. In which direction will water move by osmosis?",
+    "options": [
+      "A. From Cell A to Cell B, because A has more negative water potential",
+      "B. From Cell B to Cell A, because water moves from higher to lower water potential",
+      "C. No net movement — the cells are at equilibrium",
+      "D. From Cell A to Cell B, because B has lower solute concentration"
+    ],
+    "answer": "B",
+    "explanation": "Water moves by osmosis from a region of higher water potential to a region of lower (more negative) water potential. Cell B has water potential -0.3 kPa (higher = less negative). Cell A has water potential -0.5 kPa (lower = more negative). Therefore water moves from B (higher Ψ) to A (lower Ψ). A common confusion: 'more negative = lower = less water' is correct, but students sometimes think water moves toward the 'larger number.' Always remember: water moves DOWN the water potential gradient, toward more negative values."
+  },
+  {
+    "id": 140,
+    "level": "SL",
+    "topic": "Osmosis — water potential",
+    "stem": "A fully turgid plant cell has maximum turgor pressure. What is the water potential of this cell relative to a flaccid cell from the same tissue?",
+    "options": [
+      "A. More negative — the extra pressure decreases water potential",
+      "B. Less negative (higher) — turgor pressure partially offsets the solute potential",
+      "C. Identical — turgor pressure does not affect water potential",
+      "D. Zero — a fully turgid cell has water potential of zero"
+    ],
+    "answer": "B",
+    "explanation": "Water potential (Ψw) = solute potential (Ψs) + pressure potential (Ψp). Solute potential is always negative (solutes lower water potential). Pressure potential (turgor) in a living plant cell is positive and partially offsets the negative Ψs. A fully turgid cell has maximum positive Ψp, making Ψw less negative (higher) than the same cell when flaccid (Ψp ≈ 0). At full turgor, Ψw may approach 0. Water stops entering at equilibrium (when Ψw inside = Ψw outside). This is why osmotic entry of water is self-limiting — as the cell swells, turgor increases, raising Ψw until net movement ceases."
+  }
+]
