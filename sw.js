@@ -1,7 +1,7 @@
 const VERSION = 'obscuro-v1';
 const SHELL = [
   './',
-  'obscuro.html',
+  'index.html',
   'styles.css',
   'gears.js',
   'store.js',
