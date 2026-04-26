@@ -183,8 +183,6 @@
   function showSetupModal() {
     const modal = document.getElementById('modal-setup');
     modal.classList.remove('hidden');
-    const dateInput = document.getElementById('setup-date');
-    dateInput.value = window.OB_STORE.defaultExamDate();
 
     // Mode toggle
     document.querySelectorAll('#setup-mode .mode-btn').forEach((btn) => {
@@ -196,10 +194,9 @@
 
     document.getElementById('setup-submit').addEventListener('click', () => {
       const S = window.OB_STORE.state;
-      const date = dateInput.value || window.OB_STORE.defaultExamDate();
       const activeMode = document.querySelector('#setup-mode .mode-btn.active');
       const mode = activeMode ? activeMode.dataset.mode : 'both';
-      S.examDate = date;
+      S.examDate = window.OB_STORE.defaultExamDate();
       S.mode = mode;
       window.OB_STORE.markSetupDone();
       window.OB_STORE.persistAll();
