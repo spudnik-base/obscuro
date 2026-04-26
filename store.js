@@ -46,17 +46,6 @@
     return `${y}-${m}-${day}`;
   }
 
-  function addDaysISO(iso, days) {
-    const d = new Date(iso + 'T00:00:00');
-    d.setDate(d.getDate() + days);
-    return todayISO.call({}, d) || (() => {
-      const y = d.getFullYear();
-      const m = String(d.getMonth() + 1).padStart(2, '0');
-      const dd = String(d.getDate()).padStart(2, '0');
-      return `${y}-${m}-${dd}`;
-    })();
-  }
-
   function daysBetween(fromISO, toISO) {
     const a = new Date(fromISO + 'T00:00:00');
     const b = new Date(toISO + 'T00:00:00');

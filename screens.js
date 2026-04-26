@@ -254,20 +254,20 @@
     const fireBtn = el('button', {
       type: 'button',
       class: 'btn-primary',
-      text: dailyDone >= 5 ? 'KEEP GOING' : 'FIRE UP THE MACHINE',
-      onclick: () => window.OB_APP.startSession(),
+      text: dailyDone >= 5 ? '+ MORE QUESTIONS TODAY' : 'FIRE UP THE MACHINE',
+      onclick: () => window.OB_APP.startSession(dailyDone >= 5),
     });
     if (c.remaining === 0) {
       fireBtn.disabled = true;
       fireBtn.textContent = 'ALL QUESTIONS DONE';
     }
     btnSection.appendChild(fireBtn);
+
     if (dailyDone >= 5 && c.remaining > 0) {
-      btnSection.appendChild(el('button', {
-        type: 'button',
-        class: 'btn-secondary',
-        text: '+ MORE QUESTIONS TODAY',
-        onclick: () => window.OB_APP.startSession(true),
+      btnSection.appendChild(el('div', {
+        class: 'sub-num',
+        style: 'text-align:center; margin-top:6px;',
+        text: 'Daily set complete - bonus run',
       }));
     }
     root.appendChild(btnSection);
