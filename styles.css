@@ -1114,3 +1114,131 @@ a:hover { text-decoration: underline; }
 
 .gear-pulley { animation: spin-cw 3s linear infinite; transform-box: fill-box; transform-origin: center; }
 .gear-pulley-rev { animation: spin-ccw 3s linear infinite; transform-box: fill-box; transform-origin: center; }
+
+/* ============================================================
+   Typography pass - bump small sizes and tighten line-heights
+   for actual readability on phone screens. Courier New at sub-11px
+   is a strain. This block runs last so it overrides the earlier
+   per-component font-sizes.
+   ============================================================ */
+
+body {
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+/* Uppercase labels (a touch bigger so they stop disappearing) */
+.label-sm,
+.modal-label,
+.weak-id,
+.syllabus-id,
+.syllabus-ref,
+.syllabus-section-label,
+.q-badge,
+.paper-card .lvl,
+.detail-panel .trap-label,
+.belt-scale,
+.stamp-sub,
+.stat-cell .lbl,
+.synopsis-header .label,
+.boot-label,
+.q-topic { font-size: 11px; }
+
+/* Body and secondary text - 13px reads cleanly in Courier */
+.session-text,
+.chain-sub,
+.option,
+.option-body,
+.modal-sub,
+.synopsis-terminal,
+.synopsis-header .score-meta,
+.weak-item,
+.queue-list,
+.paper-sub,
+.dl-link,
+.syllabus-item,
+.syllabus-detail,
+.detail-panel,
+.empty-state,
+.btn-secondary,
+.mode-btn,
+.explain-toggle,
+.correct-reveal,
+.sub-num { font-size: 13px; }
+
+/* Primary read text - stem, options, explanation, inputs */
+.q-stem {
+  font-size: 14.5px;
+  line-height: 1.7;
+  padding: 16px;
+}
+
+.explain-box {
+  font-size: 14px;
+  line-height: 1.75;
+  padding: 16px;
+}
+
+.modal-sub {
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.modal-input,
+.search-input { font-size: 14px; }
+
+.paper-title { font-size: 14px; line-height: 1.45; }
+
+/* Option button: bigger letter cap, more breathing room */
+.option {
+  padding: 13px 14px;
+  line-height: 1.55;
+  min-height: 50px;
+}
+.option-letter { font-size: 16px; min-width: 18px; }
+
+/* Numbers stay prominent */
+.stat-cell .num { font-size: 24px; }
+.stat-cell .lbl { margin-top: 6px; }
+.modal-title { font-size: 18px; letter-spacing: 0.18em; }
+.wordmark { font-size: 28px; letter-spacing: 0.18em; }
+
+/* Header machine bumped 25% so the gears actually present */
+#header-machine { max-width: 275px; height: 55px; }
+.top-machine { padding: 12px 14px 10px; gap: 12px; }
+
+.q-left-num { font-size: 19px; }
+.q-left-num .denom { font-size: 12px; }
+
+/* Nav labels readable, icons proportional */
+.nav-item { font-size: 11px; padding: 11px 4px 10px; }
+.nav-icon { width: 22px; height: 22px; }
+
+/* Synopsis terminal - line-height bump, room to breathe */
+.synopsis-terminal {
+  line-height: 1.85;
+  padding: 16px;
+}
+
+/* Stamp text gets a touch more weight via wider letter spacing */
+.stamp { font-size: 30px; padding: 6px 18px; }
+
+/* Section padding bump so cards don't feel cramped */
+.section { padding: 14px 16px; }
+
+/* Badges sit nicely at the new size */
+.q-badge { padding: 4px 9px; }
+
+/* Buttons - more presence */
+.btn-primary { font-size: 14px; padding: 14px 16px; }
+.btn-secondary { padding: 11px 14px; }
+.mode-btn { padding: 10px 4px; }
+
+/* Detail panel - actually readable now */
+.detail-panel { padding: 12px 14px; line-height: 1.7; }
+.detail-panel .trap-label { margin-bottom: 6px; }
+
+/* Paper card body */
+.paper-card { padding: 14px 12px; line-height: 1.65; }
