@@ -187,13 +187,34 @@
   }
 
   /**
+   * Read the current theme palette from the body's CSS custom
+   * properties. Lets the gear machine recolour itself when the
+   * user switches palette without touching the JS gear code.
+   */
+  function themeColors() {
+    const cs = getComputedStyle(document.body);
+    const get = (name, fallback) => {
+      const v = cs.getPropertyValue(name).trim();
+      return v || fallback;
+    };
+    return {
+      cream: get('--cream', '#F2EBD9'),
+      paper: get('--paper', '#FAF6EE'),
+      ink:   get('--ink',   '#1A1705'),
+      red:   get('--red',   '#C8341A'),
+    };
+  }
+
+  /**
    * Render the header gear chain into the given SVG element.
    * Three meshing gears (large, medium, small) with connecting rods.
-   * Cream-on-ink palette since this sits on the black header bar.
+   * Cream-on-ink palette since this sits on the dark header bar.
    */
   function renderHeaderMachine(svg) {
     if (!svg) return;
     while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+    const t = themeColors();
 
     // viewBox is 280 x 44
     // Layout: large gear left, medium center, small right, tiny offset
@@ -209,9 +230,9 @@
       const a = positions[i];
       const b = positions[i + 1];
       svg.appendChild(buildRod(a.cx, a.cy, b.cx, b.cy, {
-        stroke: '#FAF6EE',
+        stroke: t.paper,
         strokeWidth: 1.6,
-        boltFill: '#C8341A',
+        boltFill: t.red,
         boltR: 2,
       }));
     }
@@ -221,9 +242,9 @@
         teeth: p.teeth,
         outerR: p.outerR,
         innerR: p.innerR,
-        bodyFill: '#FAF6EE',
-        accentFill: '#C8341A',
-        hubFill: '#1A1705',
+        bodyFill: t.paper,
+        accentFill: t.red,
+        hubFill: t.ink,
         spokeHoles: p.spokes,
         showTick: true,
         spinClass: p.cls,
@@ -237,17 +258,32 @@
   function renderBootGear(group) {
     if (!group) return;
     while (group.firstChild) group.removeChild(group.firstChild);
+    const t = themeColors();
     const g = buildGear(32, 32, {
       teeth: 14,
       outerR: 26,
       innerR: 19,
-      bodyFill: '#C8341A',
-      accentFill: '#1A1705',
-      hubFill: '#F2EBD9',
+      bodyFill: t.red,
+      accentFill: t.ink,
+      hubFill: t.cream,
       spokeHoles: 5,
       showTick: false,
     });
     group.appendChild(g);
+  }
+
+  /**
+   * Re-render every gear that's currently on the page. Called when
+   * the theme switches so the gears pick up the new CSS variables.
+   * The dashboard pulleys live inside .belt-pulley svg containers
+   * and get rebuilt by re-rendering the dashboard.
+   */
+  function repaintAll() {
+    renderHeaderMachine(document.getElementById('header-machine'));
+    renderBootGear(document.getElementById('boot-gear-g'));
+    if (window.OB_RENDERERS && typeof window.OB_RENDERERS[window.OB_STORE.state.currentScreen] === 'function') {
+      window.OB_RENDERERS[window.OB_STORE.state.currentScreen]();
+    }
   }
 
   /* ============================================================
@@ -298,6 +334,8 @@
     buildRod,
     renderHeaderMachine,
     renderBootGear,
+    repaintAll,
+    themeColors,
     gearsCorrect,
     gearsWrong,
     judderHeader,

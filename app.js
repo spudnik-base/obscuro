@@ -281,6 +281,7 @@
     // Hydrate persisted state, then load data
     window.OB_STORE.hydrate();
     window.OB_STORE.applyDisplay();
+    window.OB_STORE.applyTheme();
     try {
       await window.OB_STORE.loadData();
     } catch (err) {

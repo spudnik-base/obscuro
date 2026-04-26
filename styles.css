@@ -1400,6 +1400,36 @@ body.reader-mode .synopsis-header .score {
 .display-mini-btn:last-child { border-right: none; }
 .display-mini-btn.active { background: var(--ink); color: var(--paper); }
 
+/* Theme swatch toggle - two coloured dots */
+.theme-mini-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.theme-swatch {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: transparent;
+  border: 1.5px solid var(--mid);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.12s, transform 0.08s;
+}
+.theme-swatch:hover { border-color: var(--ink); }
+.theme-swatch:active { transform: scale(0.92); }
+.theme-swatch.active { border-color: var(--ink); border-width: 2px; }
+.theme-swatch-inner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  display: block;
+}
+
 .reset-link {
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -1565,6 +1595,49 @@ body.reader-mode .guide-rule-row {
   font-size: 15px;
   line-height: 1.6;
 }
+
+/* ============================================================
+   ROSE PALETTE - opt-in via body.theme-rose. Same component
+   structure, different colour temperature: deep plum where the
+   ink was, magenta where the red was, violet for the streak gold,
+   teal for correct. The gear axles, streak chains, action buttons,
+   and accent strokes all pick this up automatically since they
+   read CSS custom properties.
+   ============================================================ */
+
+body.theme-rose {
+  --cream:   #F7EEF4;
+  --paper:   #FCF6FA;
+  --ink:     #2A1538;
+  --red:     #C2185B;
+  --gold:    #7B2CBF;
+  --mid:     #8D7B95;
+  --light:   #ECDFEE;
+  --green:   #2D7A66;
+  --green-bg:#E1F2EC;
+  --red-bg:  #FCE7EE;
+  --amber:   #E0B0FF;
+}
+
+/* Paper cards in rose theme - rebalance the SL/HL tints */
+body.theme-rose .paper-card.sl-card {
+  background: #EDF7F2;
+  border-color: var(--green);
+}
+body.theme-rose .paper-card.sl-card .lvl,
+body.theme-rose .paper-card.sl-card .dl-link { color: var(--green); }
+
+body.theme-rose .paper-card.hl-card {
+  background: #FAEEF4;
+  border-color: #7A1F4F;
+}
+body.theme-rose .paper-card.hl-card .lvl,
+body.theme-rose .paper-card.hl-card .dl-link { color: #7A1F4F; }
+
+/* Keep the orange-amber emphasis colour distinct in rose theme too */
+body.theme-rose .explain-box strong,
+body.theme-rose .synopsis-terminal strong,
+body.theme-rose .explain-toggle { color: #E5B0FF; }
 
 /* Tighter dashboard sections so 6 sections + nav fit on small phones */
 .app-frame .section { padding: 11px 16px; }

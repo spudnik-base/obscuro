@@ -31,6 +31,7 @@
     EXAM_DATE:  'obscuro_exam_date',
     MODE:       'obscuro_mode',
     DISPLAY:    'obscuro_display',
+    THEME:      'obscuro_theme',
     PROGRESS:   'obscuro_progress',
     STREAK:     'obscuro_streak',
     QUEUE:      'obscuro_queue',
@@ -64,6 +65,7 @@
     syllabus:  [],
     mode:      'both',          // 'SL' | 'HL' | 'both'
     display:   'machine',       // 'machine' | 'reader'
+    theme:     'ink',           // 'ink' | 'rose'
     examDate:  null,
     progress:  {},              // { id: { seen, correct, lastSeen, timesAnswered } }
     streak:    { lastDate: null, count: 0 },
@@ -82,6 +84,7 @@
   function hydrate() {
     state.mode      = Store.get(KEYS.MODE, 'both');
     state.display   = Store.get(KEYS.DISPLAY, 'machine');
+    state.theme     = Store.get(KEYS.THEME, 'ink');
     state.examDate  = Store.get(KEYS.EXAM_DATE, null);
     state.progress  = Store.get(KEYS.PROGRESS, {});
     state.streak    = Store.get(KEYS.STREAK, { lastDate: null, count: 0 });
@@ -101,6 +104,7 @@
   function persistAll() {
     Store.set(KEYS.MODE,       state.mode);
     Store.set(KEYS.DISPLAY,    state.display);
+    Store.set(KEYS.THEME,      state.theme);
     Store.set(KEYS.EXAM_DATE,  state.examDate);
     Store.set(KEYS.PROGRESS,   state.progress);
     Store.set(KEYS.STREAK,     state.streak);
@@ -157,6 +161,12 @@
     document.body.classList.toggle('reader-mode', state.display === 'reader');
   }
 
+  function applyTheme() {
+    document.body.classList.toggle('theme-rose', state.theme === 'rose');
+    // Notify the gear renderer so it can re-paint with new CSS variables
+    if (window.OB_GEARS && window.OB_GEARS.repaintAll) window.OB_GEARS.repaintAll();
+  }
+
   function resetAll() {
     Object.values(KEYS).forEach((k) => Store.remove(k));
   }
@@ -189,6 +199,7 @@
     daysBetween,
     defaultExamDate,
     applyDisplay,
+    applyTheme,
     resetAll,
     isStarred,
     toggleStar,

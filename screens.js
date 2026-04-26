@@ -305,13 +305,14 @@
     }
     root.appendChild(btnSection);
 
-    // Footer: compact Display toggle + Reset link
+    // Footer: compact Font toggle, Theme toggle, Reset link
     const footer = el('div', { class: 'dash-footer' });
 
+    // Font toggle
     const dispMini = el('div', { class: 'display-mini' });
     dispMini.appendChild(el('span', { class: 'display-mini-label', text: 'Font' }));
     const miniToggle = el('div', { class: 'display-mini-toggle' });
-    [['machine', 'Aa'], ['reader', 'Aa']].forEach(([val, label], idx) => {
+    [['machine', 'Aa'], ['reader', 'Aa']].forEach(([val, label]) => {
       const isActive = (S.display || 'machine') === val;
       const btn = el('button', {
         type: 'button',
@@ -325,7 +326,6 @@
           renderDashboard();
         },
       });
-      // Visually differentiate the two by font-family on the button itself
       if (val === 'reader') {
         btn.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       }
@@ -335,6 +335,36 @@
     dispMini.appendChild(miniToggle);
     footer.appendChild(dispMini);
 
+    // Theme toggle (Ink / Rose)
+    const themeMini = el('div', { class: 'display-mini' });
+    themeMini.appendChild(el('span', { class: 'display-mini-label', text: 'Look' }));
+    const themeToggle = el('div', { class: 'theme-mini-toggle' });
+    [
+      { val: 'ink',  primary: '#C8341A', bg: '#1A1705' },
+      { val: 'rose', primary: '#C2185B', bg: '#2A1538' },
+    ].forEach((t) => {
+      const isActive = (S.theme || 'ink') === t.val;
+      const btn = el('button', {
+        type: 'button',
+        class: 'theme-swatch' + (isActive ? ' active' : ''),
+        'data-theme': t.val,
+        title: t.val === 'ink' ? 'Ink palette' : 'Rose palette',
+        onclick: () => {
+          S.theme = t.val;
+          window.OB_STORE.persistAll();
+          window.OB_STORE.applyTheme();
+        },
+      });
+      const dotInner = el('span', { class: 'theme-swatch-inner' });
+      dotInner.style.background = t.primary;
+      dotInner.style.borderColor = t.bg;
+      btn.appendChild(dotInner);
+      themeToggle.appendChild(btn);
+    });
+    themeMini.appendChild(themeToggle);
+    footer.appendChild(themeMini);
+
+    // Reset
     const resetBtn = el('button', {
       type: 'button',
       class: 'reset-link',
