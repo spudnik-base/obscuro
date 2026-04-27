@@ -1257,6 +1257,32 @@ body {
 .detail-panel        { font-size: 14.5px; line-height: 1.7; padding: 13px 14px; }
 .detail-panel .trap-label { font-size: 12px; margin-bottom: 6px; }
 
+/* Syllabus level filter row + tiny per-entry level chip */
+.syllabus-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.mode-toggle.syllabus-filter { flex: 1; }
+.mode-toggle.syllabus-filter .mode-btn { padding: 7px 4px; font-size: 11.5px; }
+
+.syllabus-id { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.syllabus-level-chip {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  background: var(--light);
+  padding: 1px 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.syllabus-level-chip.hl-only {
+  color: var(--paper);
+  background: var(--ink);
+}
+
 /* ============================================================
    READER MODE - opt-in via body.reader-mode class.
    Body text swaps to system sans-serif, sized up another notch.

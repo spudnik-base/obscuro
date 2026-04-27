@@ -863,12 +863,47 @@
       + escapeHtml(text.slice(idx + query.length));
   }
 
+  function syllabusMatchesLevel(entry, filter) {
+    if (filter === 'all') return true;
+    const lvl = (entry.level || '').toUpperCase();
+    if (filter === 'SL') return lvl.indexOf('SL') !== -1;
+    if (filter === 'HL') return lvl.indexOf('HL') !== -1;
+    return true;
+  }
+
   function renderSyllabus() {
     const S = window.OB_STORE.state;
     const root = $('screen-syllabus');
     root.innerHTML = '';
 
+    // Default filter: pick up the dashboard mode if not already chosen
+    if (!S.syllabusFilter) {
+      if (S.mode === 'SL') S.syllabusFilter = 'SL';
+      else if (S.mode === 'HL') S.syllabusFilter = 'HL';
+      else S.syllabusFilter = 'all';
+    }
+
     const section = el('div', { class: 'section' });
+
+    // Level filter
+    const filterRow = el('div', { class: 'syllabus-filter-row' });
+    filterRow.appendChild(el('span', { class: 'display-mini-label', text: 'Show' }));
+    const filterToggle = el('div', { class: 'mode-toggle syllabus-filter' });
+    [['all', 'All'], ['SL', 'SL'], ['HL', 'HL']].forEach(([val, label]) => {
+      const btn = el('button', {
+        type: 'button',
+        class: 'mode-btn' + (S.syllabusFilter === val ? ' active' : ''),
+        'data-syllabus-filter': val,
+        text: label,
+        onclick: () => {
+          S.syllabusFilter = val;
+          renderSyllabus();
+        },
+      });
+      filterToggle.appendChild(btn);
+    });
+    filterRow.appendChild(filterToggle);
+    section.appendChild(filterRow);
 
     // Search
     const searchWrap = el('div', { class: 'search-wrap' });
@@ -892,6 +927,7 @@
       listWrap.innerHTML = '';
       const q = (filter || '').trim().toLowerCase();
       const entries = S.syllabus.filter((e) => {
+        if (!syllabusMatchesLevel(e, S.syllabusFilter)) return false;
         if (!q) return true;
         return (
           (e.id || '').toLowerCase().includes(q) ||
@@ -903,7 +939,10 @@
       });
 
       if (entries.length === 0) {
-        listWrap.appendChild(el('div', { class: 'empty-state', text: 'No matches. Try a different term.' }));
+        const msg = q
+          ? 'No matches. Try a different term.'
+          : `No ${S.syllabusFilter === 'all' ? '' : S.syllabusFilter + ' '}entries.`;
+        listWrap.appendChild(el('div', { class: 'empty-state', text: msg }));
         return;
       }
 
@@ -921,7 +960,14 @@
             type: 'button',
             class: 'syllabus-item',
           });
-          item.appendChild(el('div', { class: 'syllabus-id', text: e.id }));
+          const idCell = el('div', { class: 'syllabus-id' });
+          idCell.appendChild(document.createTextNode(e.id));
+          // Tiny level chip next to the id
+          const lvlChip = el('span', { class: 'syllabus-level-chip', text: e.level === 'HL' ? 'HL' : 'SL+HL' });
+          if (e.level === 'HL') lvlChip.classList.add('hl-only');
+          idCell.appendChild(lvlChip);
+          item.appendChild(idCell);
+
           const detail = el('div', { class: 'syllabus-detail' });
           detail.innerHTML = highlightMatch(e.detail || '', q);
           if (e.ref) detail.appendChild(el('span', { class: 'syllabus-ref', text: ` ${e.ref}` }));
