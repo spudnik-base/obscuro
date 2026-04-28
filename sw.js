@@ -1,4 +1,4 @@
-const VERSION = 'obscuro-v7';
+const VERSION = 'obscuro-v8';
 const SHELL = [
   './',
   'index.html',
