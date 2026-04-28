@@ -99,7 +99,7 @@
   },
   {
     "id": 8,
-    "level": "HL",
+    "level": "SL",
     "topic": "Biotechnology / Microscopy",
     "stem": "In 2020, researchers imaged the GABA_A membrane receptor protein. Their technique involved treating the sample to stabilise protein molecules at a moment in time. Which technique did they use?",
     "options": [
@@ -407,7 +407,7 @@
   },
   {
     "id": 30,
-    "level": "HL",
+    "level": "SL",
     "topic": "Genetics / Self-incompatibility",
     "stem": "Cherry trees (Prunus avium) have self-incompatibility alleles at the S-locus. What benefit do these alleles provide?",
     "options": [
@@ -435,7 +435,7 @@
   },
   {
     "id": 32,
-    "level": "HL",
+    "level": "SL",
     "topic": "Zooxanthellae / Coral",
     "stem": "What is a benefit of the mutualistic relationship between coral and zooxanthellae?",
     "options": [
@@ -869,7 +869,7 @@
   },
   {
     "id": 63,
-    "level": "HL",
+    "level": "SL",
     "topic": "Cell biology — glycoproteins",
     "stem": "Where are the carbohydrate groups of glycolipids and glycoproteins located in the plasma membrane?",
     "options": [
@@ -939,7 +939,7 @@
   },
   {
     "id": 68,
-    "level": "SL",
+    "level": "HL",
     "topic": "Cladistics",
     "stem": "In a cladogram, what does a node represent?",
     "options": [
@@ -953,7 +953,7 @@
   },
   {
     "id": 69,
-    "level": "SL",
+    "level": "HL",
     "topic": "Cladistics",
     "stem": "What principle is used to select the most probable cladogram when multiple arrangements are possible?",
     "options": [
@@ -995,7 +995,7 @@
   },
   {
     "id": 72,
-    "level": "SL",
+    "level": "HL",
     "topic": "Speciation — hybrid sterility",
     "stem": "A mule is the offspring of a female horse and a male donkey. What is the significance of mules in the context of speciation?",
     "options": [
@@ -1401,7 +1401,7 @@
   },
   {
     "id": 101,
-    "level": "HL",
+    "level": "SL",
     "topic": "Reproduction — self-incompatibility",
     "stem": "In Prunus avium, if pollen with S-allele S₁ lands on a pistil that carries alleles S₁ and S₂, what happens?",
     "options": [
@@ -1443,7 +1443,7 @@
   },
   {
     "id": 104,
-    "level": "SL",
+    "level": "HL",
     "topic": "Muscle — marine mammals",
     "stem": "How does the tail movement of a whale differ from that of a fish, and what does this reveal about their evolutionary origins?",
     "options": [
@@ -1457,7 +1457,7 @@
   },
   {
     "id": 105,
-    "level": "SL",
+    "level": "HL",
     "topic": "Muscle — marine mammals",
     "stem": "Which combination of adaptations in marine mammals is named in the IB Biology syllabus for swimming?",
     "options": [
@@ -1751,7 +1751,7 @@
   },
   {
     "id": 126,
-    "level": "SL",
+    "level": "HL",
     "topic": "Statistics — chi-squared",
     "stem": "In a dihybrid testcross, the expected ratio is 1:1:1:1. Observed results were: 28, 22, 31, 19 (total 100). What is the purpose of applying a chi-squared test to this data?",
     "options": [

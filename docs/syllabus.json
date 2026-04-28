@@ -49,7 +49,7 @@
   },
   {
     "id": "CB-07",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "A2.2.14",
     "detail": "Multicellularity has evolved REPEATEDLY — not just once. Fungi, algae, plants, animals all evolved multicellularity independently",
     "trap": "Students assume multicellularity evolved once. Syllabus explicitly states it evolved repeatedly. Advantages: larger body size and cell specialisation.",
@@ -65,7 +65,7 @@
   },
   {
     "id": "CB-09",
-    "level": "HL",
+    "level": "SL+HL",
     "ref": "B2.1.9",
     "detail": "Glycoproteins and glycolipids: carbohydrate groups are ALWAYS on the extracellular side. Functions: cell adhesion and cell recognition",
     "trap": "Students forget the extracellular-only location. Also: ABO blood group antigens are glycoproteins (named in syllabus as example).",
@@ -73,7 +73,7 @@
   },
   {
     "id": "CB-10",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "B2.2.9",
     "detail": "Clathrin coats the cytoplasmic face of the membrane and polymerises to form a pit that buds off as a coated vesicle — it is a mechanical scaffolding protein only",
     "trap": "Clathrin is not a transport protein, does not create gradients or transport ions. It simply curves the membrane. Easy to confuse with integral transport proteins.",
@@ -129,7 +129,7 @@
   },
   {
     "id": "CL-01",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "A3.2.7",
     "detail": "Cladogram terminology: root (earliest common ancestor), node (hypothetical common ancestor), terminal branch (extant/named taxon). Parsimony = fewest sequence changes",
     "trap": "Students label nodes incorrectly or confuse node with terminal branch. Node = hypothetical common ancestor at a branch point, not a named organism.",
@@ -145,7 +145,7 @@
   },
   {
     "id": "CL-03",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "A3.2.9",
     "detail": "Three-domain system established using rRNA base sequences (specifically 16S/18S rRNA), not mRNA, not cytochrome c, not DNA methylation",
     "trap": "Students often say DNA sequences or amino acid sequences. Must be rRNA. Woese used 16S rRNA (prokaryotes) and 18S rRNA (eukaryotes).",
@@ -153,7 +153,7 @@
   },
   {
     "id": "CL-04",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "A4.1.11",
     "detail": "Abrupt speciation in plants by hybridization + polyploidy. Named example: Persicaria (knotweed/smartweed genus). Mule = sterile interspecific hybrid (not a new species)",
     "trap": "Students confuse polyploidy (new species) with hybrid sterility (mule). Polyploidy CAN produce new species abruptly in plants. Mule = hybrid but sterile, so NOT speciation.",
@@ -249,7 +249,7 @@
   },
   {
     "id": "NS-01",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "C2.2.12",
     "detail": "Two named synapse-affecting chemicals: neonicotinoids (bind to nAChRs as persistent agonists — block transmission by continuous activation) AND cocaine (blocks neurotransmitter reuptake)",
     "trap": "Students often confuse mechanism: neonicotinoids are AGONISTS (not blockers of release). Cocaine blocks REUPTAKE (prevents recycling of neurotransmitter — causes accumulation in synapse).",
@@ -257,7 +257,7 @@
   },
   {
     "id": "NS-02",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "C2.2.15",
     "detail": "Pain receptors: free nerve endings with ion channels that open in response to heat, acid, or capsaicin (the chemical in chilli peppers). Entry of positive ions = threshold reached = pain signal",
     "trap": "Capsaicin is the named chemical example. Students may not know the receptor mechanism: positive ion channel opening (not G-protein signalling). This generates an action potential identical to heat/acid.",
@@ -313,7 +313,7 @@
   },
   {
     "id": "MV-02",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "B3.3.7",
     "detail": "Goniometer measures joint angles. Students should measure joint angles using computer analysis of images OR a goniometer. Not a ruler (can't measure curved joint angles)",
     "trap": "The goniometer appeared in Paper 1B 2025. Students need to know what it measures (angles) and why a ruler is inappropriate (measures straight-line distances; joints are curved).",
@@ -321,7 +321,7 @@
   },
   {
     "id": "MV-03",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "B3.3.10",
     "detail": "Marine mammal swimming adaptations: streamlining, limbs → flippers, tail → fluke with up-and-down (not side-to-side) movement, airways adapted for periodic breathing between dives",
     "trap": "Students often say 'tail moves side to side' — that is fish. Marine mammals (whales, seals) move their tail/fluke UP AND DOWN. Also: airways (not gills) are modified.",
@@ -369,7 +369,7 @@
   },
   {
     "id": "GC-03",
-    "level": "HL",
+    "level": "SL+HL",
     "ref": "A3.1.7",
     "detail": "Human chromosome 2 is hypothesised to have arisen from fusion of chromosomes 12 and 13 of a shared primate ancestor. Evidence: banding patterns, telomeric sequences at centre, two centromeres fused into one",
     "trap": "This is a named hypothesis in the syllabus requiring evaluation. Students should know: humans 46 chromosomes, chimpanzees 48 — the difference is accounted for by chromosome 2 fusion.",
@@ -425,7 +425,7 @@
   },
   {
     "id": "ST-02",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "D3.2.21",
     "detail": "Chi-squared test at p=0.05. Null hypothesis = no association (or 1:1:1:1 expected). If chi-squared > critical value at p=0.05, reject null hypothesis. Used for dihybrid crosses AND interspecific competition",
     "trap": "Students often just know chi-squared exists. The syllabus requires: understanding p=0.05, null vs alternative hypothesis, observed vs expected, and that the test is used in TWO contexts: genetics AND ecology.",
