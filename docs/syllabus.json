@@ -137,7 +137,7 @@
   },
   {
     "id": "CL-02",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "A3.2.5",
     "detail": "Molecular clock: gradual accumulation of sequence differences used to estimate when clades diverged. Rate affected by: generation time, population size, selective pressure",
     "trap": "Students say molecular clock is perfectly accurate. Syllabus emphasises it gives estimates only, because mutation rates vary with these three factors.",
@@ -305,7 +305,7 @@
   },
   {
     "id": "MV-01",
-    "level": "SL+HL",
+    "level": "HL",
     "ref": "B3.3.3",
     "detail": "Titin: the largest protein in the body. Prevents overstretching of sarcomeres. In intercostal muscles: stores potential energy when antagonistic muscles stretch it",
     "trap": "Students know actin and myosin but miss titin entirely. The syllabus explicitly states both its role in preventing overstretching AND its energy-storing role in intercostal antagonism.",

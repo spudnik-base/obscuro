@@ -967,7 +967,7 @@
   },
   {
     "id": 70,
-    "level": "SL",
+    "level": "HL",
     "topic": "Cladistics — molecular clock",
     "stem": "Why can the molecular clock only give estimates of when two lineages diverged, rather than precise dates?",
     "options": [
@@ -1415,7 +1415,7 @@
   },
   {
     "id": 102,
-    "level": "SL",
+    "level": "HL",
     "topic": "Muscle — titin",
     "stem": "What is the role of the protein titin in skeletal muscle?",
     "options": [
