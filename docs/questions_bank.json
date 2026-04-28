@@ -323,7 +323,7 @@
   },
   {
     "id": 24,
-    "level": "SL",
+    "level": "HL",
     "topic": "Evolution / Natural selection",
     "stem": "What is an outcome of disruptive selection?",
     "options": [
@@ -379,7 +379,7 @@
   },
   {
     "id": 28,
-    "level": "SL",
+    "level": "HL",
     "topic": "Osmosis / Water potential",
     "stem": "A plant cell has a water potential of −0.24 kPa and a pressure potential of 0.46 kPa. What is the solute potential? (Ψw = Ψs + Ψp)",
     "options": [
@@ -1933,7 +1933,7 @@
   },
   {
     "id": 139,
-    "level": "SL",
+    "level": "HL",
     "topic": "Osmosis — water potential",
     "stem": "Two adjacent plant cells: Cell A has water potential of -0.5 kPa; Cell B has water potential of -0.3 kPa. In which direction will water move by osmosis?",
     "options": [
@@ -1947,7 +1947,7 @@
   },
   {
     "id": 140,
-    "level": "SL",
+    "level": "HL",
     "topic": "Osmosis — water potential",
     "stem": "A fully turgid plant cell has maximum turgor pressure. What is the water potential of this cell relative to a flaccid cell from the same tissue?",
     "options": [
